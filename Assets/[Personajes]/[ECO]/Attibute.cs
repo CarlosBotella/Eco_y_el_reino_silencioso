@@ -8,7 +8,7 @@ public class Attibute : MonoBehaviour
     public float heal;
     public float attack;
     public Image vida;
-
+    public GameOverScript GameOverScript;
 
 
     private void Update()
@@ -25,6 +25,7 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount=0;
             Destroy(gameObject);
+            GameOverScript.Setup();
         }
     }
 }
