@@ -34,8 +34,9 @@ public class Enemy1 : MonoBehaviour
          attack = Physics.CheckSphere(transform.position, 2, playermask);
         if(attack == true)
         {
-            Knockback();
-            //player1.TakeDamage(enemy.attack);
+            //Knockback();
+            print("MA PEGAO");
+            player1.TakeDamage(enemy.attack);
         }
     }
 

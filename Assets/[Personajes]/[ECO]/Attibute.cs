@@ -24,8 +24,9 @@ public class Attibute : MonoBehaviour
          if(heal<=0)
         {
             vida.fillAmount=0;
-            Destroy(gameObject);
             GameOverScript.Setup();
+            Destroy(gameObject);
+            
         }
     }
 }
