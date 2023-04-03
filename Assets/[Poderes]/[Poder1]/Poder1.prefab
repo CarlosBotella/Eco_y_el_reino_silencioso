@@ -143,4 +143,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 3
   poder1: {fileID: -2411729235939067900}
-  isStun: 1
+  stunTime: 0.25
