@@ -26,6 +26,13 @@ public class Attibute : MonoBehaviour
                 heal=heal+5*Time.deltaTime;
             }
         }
+        if(heal<=0)
+        {
+            vida.fillAmount=0;
+            GameOverScript.Setup();
+            Destroy(gameObject);
+            
+        }
     }
 
     public void TakeDamage(float amount){

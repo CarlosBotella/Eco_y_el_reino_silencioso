@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private float verticalMove;
     private Vector3 playerInput;
     public CharacterController player;
+    public GameObject palo;
     public float playerSpeed;
     public Vector3 movePlayer;
     public float gravity= 9.81f;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         player=GetComponent<CharacterController>();
+        Cursor.lockState=CursorLockMode.Locked;
     }
 
     void Update()
