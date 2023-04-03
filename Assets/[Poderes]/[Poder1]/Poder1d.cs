@@ -6,7 +6,6 @@ public class Poder1d : MonoBehaviour
 {
    public float life = 3f;
    public AtriburosPoder1 poder1;
-   private float stunCooldown=5f;
    public float stunTime;
     private float speed;
      private Enemy1 enemy1;

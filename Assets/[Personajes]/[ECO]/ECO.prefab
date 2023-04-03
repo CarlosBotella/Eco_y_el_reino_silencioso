@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 7346578676269668204}
   - component: {fileID: 8612140431319028982}
   - component: {fileID: 9162737414345934860}
-  - component: {fileID: 923298676546105099}
+  - component: {fileID: 1134563193633629417}
   m_Layer: 0
   m_Name: ECO
   m_TagString: Untagged
@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  palo: {fileID: 0}
   playerSpeed: 0
   movePlayer: {x: 0, y: 0, z: 0}
   gravity: 9.81
@@ -319,7 +320,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2151207986700599412, guid: ec7393a8e68a64f4eabcfe391fb908b1, type: 3}
   bulletSpeed: 10
   poder1Cooldown: 0
---- !u!114 &923298676546105099
+--- !u!114 &1134563193633629417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,13 +329,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5286779099281855573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97f259a3a4182141909dea8908506dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 39f212255bba1a741986ffec3b73f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  bulletSpeed: 10
-  poder1Cooldown: 0
+  rango: 0
+  player: {fileID: 0}
 --- !u!1 &5691759535722158293
 GameObject:
   m_ObjectHideFlags: 0
