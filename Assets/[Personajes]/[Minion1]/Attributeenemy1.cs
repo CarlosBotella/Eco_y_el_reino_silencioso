@@ -8,22 +8,29 @@ public class Attributeenemy1 : MonoBehaviour
     public float attack;
    public GameObject textdmg;
    public Transform player;
+    private float criticChanche = 0.15f;
+    private float criticDmg = 1.5f;
     public void TakeDamage(float amount){
-        heal-= amount;
-        if(textdmg && heal>0){
-             showtextdmg();
+        float totalDmg = amount;
+        if(Random.Range(0f,1f)<=criticChanche)
+        {
+            totalDmg*=criticDmg;
         }
+        if(textdmg){
+             showtextdmg(totalDmg);
+        }
+         heal-= totalDmg;
          if(heal<=0)
         {
             Destroy(gameObject);
         }
     }
     
-   private void showtextdmg()
+   private void showtextdmg(float dmg)
     {   
         Vector3 relativePos = transform.position - player.position;
         var go=Instantiate(textdmg,transform.position,Quaternion.LookRotation(relativePos, Vector3.up),transform);
-        go.GetComponent<TextMesh>().text = heal.ToString();
+        go.GetComponent<TextMesh>().text = dmg.ToString();
     }
 
 }

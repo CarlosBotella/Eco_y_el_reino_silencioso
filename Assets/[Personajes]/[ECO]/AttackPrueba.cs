@@ -11,7 +11,8 @@ public class AttackPrueba : MonoBehaviour
      public float rango;
      public Transform enemyv;
      public LayerMask playermask;
-
+      private float nextTime=0;
+      public float attackCooldown=2;
 
     // Update is called once per frame
     void Update()
@@ -20,10 +21,18 @@ public class AttackPrueba : MonoBehaviour
         {
         Vector3 posEnemu = new Vector3(enemyv.position.x , transform.position.y , enemyv.position.z);
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Input.GetMouseButtonDown(0) &&  Alert==true)
+        if(Alert==true)
         {
-            transform.LookAt(posEnemu);
-            enemy.TakeDamage(player.attack);
+            if(Time.time>nextTime)
+            {
+                if(Input.GetMouseButtonDown(0))
+                {
+                    transform.LookAt(posEnemu);
+                    enemy.TakeDamage(player.attack);
+                    nextTime=Time.time+attackCooldown;
+                }
+            }
+            
         }
         }
        
@@ -33,4 +42,6 @@ public class AttackPrueba : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, rango);
     }
+
+    
 }
