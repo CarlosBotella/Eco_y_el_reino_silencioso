@@ -9,18 +9,23 @@ public class Enemy1 : MonoBehaviour
     public float rango;
     public LayerMask playermask;
     private bool Alert;
-
-    public PlayerController playercontroller;
+    PlayerController playerController;
     public Transform player;
     public float Speed;
     public bool attack;
     public float KnockbackForce;
+    public float KnockbackCooldown=2f;
+    private float nextTime=0;
+    public float KnockbackTime;
+    public float heal;
+    float speed1;
 
      void Start()
     {
-        playercontroller = GetComponent<PlayerController>();
-
+            playerController = player.GetComponent<PlayerController>();
+            speed1=Speed;
     }
+
     void Update()
     {
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
@@ -31,11 +36,21 @@ public class Enemy1 : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(transform.position, 2, playermask);
-        if(attack == true)
+         attack = Physics.CheckSphere(transform.position, 1, playermask);
+        if(attack == true && Speed != 0)
         {
-            Knockback();
-            //player1.TakeDamage(enemy.attack);
+            if(Time.time > nextTime)
+            {
+                StartCoroutine(Knockback());
+                player1.TakeDamage(enemy.attack);
+                StartCoroutine(Stop());
+                nextTime = Time.time+KnockbackCooldown;
+            }
+
+        }
+        if(Speed == 0)
+        {
+            StartCoroutine(Stun());
         }
     }
 
@@ -44,14 +59,39 @@ public class Enemy1 : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, rango);
 
          Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 2);
+        Gizmos.DrawWireSphere(transform.position, 1);
     } 
 
-     void Knockback()
+     IEnumerator Knockback()
     {
-        //player1.transform.position += transform.forward * Time.deltaTime * KnockbackForce;
-        playercontroller.player.Move(transform.forward *KnockbackForce*Time.deltaTime);
-        print(player1.attack);
+        if(player1)
+        {
+             heal=enemy.heal/20;
+            float startTime=Time.time;
+        while(Time.time < startTime+ KnockbackTime )
+        {
+            playerController.player.Move((player.transform.position-transform.position)*KnockbackForce*heal*Time.deltaTime);
+        yield return null;
+        }
+        }
     }
+    IEnumerator Stop()
+     {
+        Speed=0.5f;
+        yield return new WaitForSeconds(1);
+        Speed=speed1;
+     }
+
+     public IEnumerator Stun()
+     {
+        float heal3=enemy.heal;
+        if(enemy.heal<heal3)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(2);
+        Speed=speed1;
+     }
+
      
 }
