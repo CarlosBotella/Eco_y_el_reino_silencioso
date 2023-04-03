@@ -56,10 +56,10 @@ public class Enemy1 : MonoBehaviour
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, rango);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y-1,transform.position.z) , rango);
 
          Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), 1);
     } 
 
      IEnumerator Knockback()
@@ -77,21 +77,17 @@ public class Enemy1 : MonoBehaviour
     }
     IEnumerator Stop()
      {
-        Speed=0.5f;
+        Speed=0.01f;
         yield return new WaitForSeconds(1);
         Speed=speed1;
      }
 
      public IEnumerator Stun()
      {
-        float heal3=enemy.heal;
-        if(enemy.heal<heal3)
-        {
-            yield return null;
-        }
         yield return new WaitForSeconds(2);
         Speed=speed1;
      }
+     
 
      
 }
