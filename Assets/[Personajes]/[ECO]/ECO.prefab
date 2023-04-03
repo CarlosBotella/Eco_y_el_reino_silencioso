@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 8612140431319028982}
   - component: {fileID: 9162737414345934860}
   - component: {fileID: 923298676546105099}
-  - component: {fileID: 5227158285859997595}
   m_Layer: 0
   m_Name: ECO
   m_TagString: Untagged
@@ -302,7 +301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heal: 0
   attack: 0
-  vida: {fileID: 0}
+  vida: {fileID: 6308805217010387729}
+  GameOverScript: {fileID: 0}
 --- !u!114 &9162737414345934860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,18 +335,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   bulletSpeed: 10
   poder1Cooldown: 0
---- !u!114 &5227158285859997595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5286779099281855573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069643baa4369034ca24d8f692d6c6b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5691759535722158293
 GameObject:
   m_ObjectHideFlags: 0
