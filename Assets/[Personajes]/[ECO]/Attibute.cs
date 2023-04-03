@@ -37,8 +37,8 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount=0;
             GameOverScript.Setup();
+            Cursor.lockState = CursorLockMode.None;
             Destroy(gameObject);
-            
         }
     }
     public void Cuarar(float cantidad)

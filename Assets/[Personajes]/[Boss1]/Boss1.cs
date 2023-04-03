@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Boss1 : MonoBehaviour
 {
     public Attibute player1;
     public Attributeenemy1 enemy;
@@ -36,10 +36,9 @@ public class Enemy1 : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(transform.position, 1, playermask);
-        if(attack == true && Speed != 0)
+         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y-2,transform.position.z), 4, playermask);
+        if (attack == true && Speed != 0)
         {
-           
             if (Time.time > nextTime)
             {
                 
@@ -60,15 +59,15 @@ public class Enemy1 : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, rango);
 
-         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 4);
     } 
 
      IEnumerator Knockback()
     {
         if(player1)
         {
-             heal=enemy.heal/20;
+             heal=1-enemy.heal/140;
             float startTime=Time.time;
         while(Time.time < startTime+ KnockbackTime )
         {

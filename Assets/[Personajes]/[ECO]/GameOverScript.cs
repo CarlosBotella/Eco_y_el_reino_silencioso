@@ -18,7 +18,8 @@ public class GameOverScript : MonoBehaviour
 
     public void Continuar()
     {
-        print("1");
-        SceneManager.LoadScene("1");
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+        print(scene.name);
     }
 }
