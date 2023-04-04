@@ -9,6 +9,7 @@ public class Poder1d : MonoBehaviour
    public float stunTime;
     private float speed;
      private Enemy1 enemy1;
+     private Boss1 boss1;
     void Awake() {
         Destroy(gameObject,life);
     }
@@ -22,6 +23,16 @@ public class Poder1d : MonoBehaviour
             attributeenemy2.TakeDamage(poder1.attack);
             speed = enemy1.Speed;
             enemy1.Speed=0;
+            
+        }
+        if(collision.gameObject.tag =="Boss1")
+        {   
+            boss1 = collision.transform.gameObject.GetComponent<Boss1>();
+            Attributeenemy1 attributeenemy2 = collision.transform.gameObject.GetComponent<Attributeenemy1>();
+            attributeenemy2.TakeDamage(poder1.attack);
+            speed = boss1.Speed;
+            boss1.Speed=0;
+            
         }
         Destroy(gameObject);
     }
