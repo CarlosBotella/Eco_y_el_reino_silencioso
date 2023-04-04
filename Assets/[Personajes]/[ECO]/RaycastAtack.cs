@@ -6,6 +6,7 @@ public class RaycastAtack : MonoBehaviour
 {
     public float rango;
     Attributeenemy1 attributeenemy1;
+    Attributeenemy1 attributeenemy2;
     public Attibute player;
     private float nextTime=0;
     public float AttackCooldown = 1;
@@ -32,6 +33,18 @@ public class RaycastAtack : MonoBehaviour
                     {
                         attributeenemy1 = hit.collider.gameObject.GetComponent<Attributeenemy1>();
                         attributeenemy1.TakeDamage(player.attack);
+                        nextTime = Time.time+AttackCooldown;
+                    }
+                }
+            }
+            if(hit.collider.CompareTag("Boss1"))
+            {
+                if(Time.time > nextTime)
+                {       
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        attributeenemy2 = hit.collider.gameObject.GetComponent<Attributeenemy1>();
+                        attributeenemy2.TakeDamage(player.attack);
                         nextTime = Time.time+AttackCooldown;
                     }
                 }

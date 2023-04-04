@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rango: 0
   player: {fileID: 0}
+  AttackCooldown: 1
 --- !u!1 &5691759535722158293
 GameObject:
   m_ObjectHideFlags: 0
