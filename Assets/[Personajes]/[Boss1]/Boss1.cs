@@ -7,6 +7,7 @@ public class Boss1 : MonoBehaviour
     public Attibute player1;
     public Attributeenemy1 enemy;
     public float rango;
+    public float kr;
     public LayerMask playermask;
     private bool Alert;
     PlayerController playerController;
@@ -19,6 +20,7 @@ public class Boss1 : MonoBehaviour
     public float KnockbackTime;
     public float heal;
     float speed1;
+    
 
      void Start()
     {
@@ -36,8 +38,8 @@ public class Boss1 : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y-2,transform.position.z), 4, playermask);
-        if (attack == true && Speed != 0)
+         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y-2,transform.position.z), kr, playermask);
+        if (attack == true && Speed != 0.5f)
         {
             if (Time.time > nextTime)
             {
@@ -60,7 +62,7 @@ public class Boss1 : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, rango);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 4);
+        Gizmos.DrawWireSphere(transform.position, kr);
     } 
 
      IEnumerator Knockback()

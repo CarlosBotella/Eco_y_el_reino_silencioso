@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8695061843546137924}
   - component: {fileID: 4547779791537893362}
   - component: {fileID: 3449397559451835575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 3523160707686495530}
   - component: {fileID: 4527196026132869229}
   - component: {fileID: 2375721834113048187}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 8566542589832283698}
   - component: {fileID: 7942290453503143522}
   - component: {fileID: 416716875019500439}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,9 +307,9 @@ GameObject:
   - component: {fileID: -5238362417383844157}
   - component: {fileID: 6801460589495925543}
   - component: {fileID: 5551619102817463750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boss
-  m_TagString: Enemigo1
+  m_TagString: Boss1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,14 +376,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
   enemy: {fileID: 0}
-  rango: 0
+  rango: 25
   playermask:
     serializedVersion: 2
     m_Bits: 0
   player: {fileID: 0}
-  Speed: 0
+  Speed: 8
   attack: 0
-  KnockbackForce: 0
+  KnockbackForce: 7
   KnockbackCooldown: 2
-  KnockbackTime: 0
+  KnockbackTime: 0.25
   heal: 0
