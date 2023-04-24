@@ -20,6 +20,11 @@ public class Enemy1 : MonoBehaviour
     public float heal;
     float speed1;
 
+    //float gravity = 9.81f;
+    //float fallVelocity;
+    //float rangor =2;
+    public ConstantForce gravity;
+
      void Start()
     {
             playerController = player.GetComponent<PlayerController>();
@@ -28,6 +33,7 @@ public class Enemy1 : MonoBehaviour
 
     void Update()
     {
+        SetGravity();
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
         if(Alert == true)
         {
@@ -89,7 +95,24 @@ public class Enemy1 : MonoBehaviour
         yield return new WaitForSeconds(2);
         Speed=speed1;
      }
-     
+     void SetGravity()
+     {
+       /* Vector3 direction = Vector3.down;
+        Ray theRay = new Ray(transform.position, transform.TransformDirection(direction*rangor));
+        Debug.DrawRay(transform.position, transform.TransformDirection(direction*rangor));
+        if(Physics.Raycast(theRay, out RaycastHit hit, rangor))
+        {
+            Debug.Log(hit.collider.tag);
+            /*if(hit.collider.CompareTag("Suelo"))
+            {
+                Debug.Log("Suelo");
+            }
+        }
+            //fallVelocity -= gravity * Time.deltaTime;  
+            //transform.position = new Vector3(transform.position.x, fallVelocity, transform.position.z);
+     }*/
+      
+     }
 
      
 }
