@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Attibute : MonoBehaviour
 {
-    public float heal;
-    public float attack;
+    public float heal = 100;
+    public float attack = 10;
     public Image vida;
     public GameOverScript GameOverScript;
     private float maxheal;
