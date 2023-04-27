@@ -8,6 +8,11 @@ TagManager:
   - PlayerInteractionZone
   - Palo
   - Boss1
+  - Swampit
+  - MiniSwampit
+  - Mogou
+  - Stormbitz
+  - Nikolo
   layers:
   - Default
   - TransparentFX

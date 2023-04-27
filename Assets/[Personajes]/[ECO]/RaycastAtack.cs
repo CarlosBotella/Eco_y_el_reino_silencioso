@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class RaycastAtack : MonoBehaviour
 {
-    public float rango;
+    public float rango = 3;
     Attributeenemy1 attributeenemy1;
-    Attributeenemy1 attributeenemy2;
+    Attributeenemy1 attributeboss1;
+
+    Attributeenemy2 attributeenemy2;
+
+    AttributeMiniSwampit attributeMiniSwampit;
+    AttributeMogou attributeMogou;
+    AttributeStormbitz attributeStormbitz;
     public Attibute player;
     private float nextTime=0;
     public float AttackCooldown = 1;
@@ -25,6 +31,7 @@ public class RaycastAtack : MonoBehaviour
         Debug.DrawRay(transform.position, transform.TransformDirection(direction*rango));
         if(Physics.Raycast(theRay, out RaycastHit hit, rango))
         {
+            //Dark Nibble
             if(hit.collider.CompareTag("Enemigo1"))
             {
                 if(Time.time > nextTime)
@@ -37,18 +44,79 @@ public class RaycastAtack : MonoBehaviour
                     }
                 }
             }
+
+            // Dark nibble king
             if(hit.collider.CompareTag("Boss1"))
             {
                 if(Time.time > nextTime)
                 {       
                     if(Input.GetMouseButtonDown(0))
                     {
-                        attributeenemy2 = hit.collider.gameObject.GetComponent<Attributeenemy1>();
+                        attributeboss1 = hit.collider.gameObject.GetComponent<Attributeenemy1>();
+                        attributeboss1.TakeDamage(player.attack);
+                        nextTime = Time.time+AttackCooldown;
+                    }
+                }
+            }
+
+            //Swampit
+             if(hit.collider.CompareTag("Swampit"))
+            {
+                if(Time.time > nextTime)
+                {       
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        attributeenemy2 = hit.collider.gameObject.GetComponent<Attributeenemy2>();
                         attributeenemy2.TakeDamage(player.attack);
                         nextTime = Time.time+AttackCooldown;
                     }
                 }
             }
+
+            //MiniSwampit
+             if(hit.collider.CompareTag("MiniSwampit"))
+            {
+                if(Time.time > nextTime)
+                {       
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        attributeMiniSwampit = hit.collider.gameObject.GetComponent<AttributeMiniSwampit>();
+                        attributeMiniSwampit.TakeDamage(player.attack);
+                        nextTime = Time.time+AttackCooldown;
+                    }
+                }
+            }
+
+            //Mogou
+             if(hit.collider.CompareTag("Mogou"))
+            {
+                if(Time.time > nextTime)
+                {       
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        attributeMogou = hit.collider.gameObject.GetComponent<AttributeMogou>();
+                        attributeMogou.TakeDamage(player.attack);
+                        nextTime = Time.time+AttackCooldown;
+                    }
+                }
+            }
+
+            //Stormbitz
+             if(hit.collider.CompareTag("Stormbitz"))
+            {
+                if(Time.time > nextTime)
+                {       
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        attributeStormbitz = hit.collider.gameObject.GetComponent<AttributeStormbitz>();
+                        attributeStormbitz.TakeDamage(player.attack);
+                        nextTime = Time.time+AttackCooldown;
+                    }
+                }
+            }
+
+
+            
         }
     }
 }

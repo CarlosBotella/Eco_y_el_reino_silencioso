@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DashPlayer : MonoBehaviour
 {
-    public float dashSpeed;
-    public float dashTime;
+    public float dashSpeed = 3;
+    public float dashTime = 0.25f;
     PlayerController playercontroller;
-    public float dashCooldown;
+    public float dashCooldown = 0;
     private float nextTime=0;
     
 
