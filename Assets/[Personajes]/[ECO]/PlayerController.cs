@@ -8,11 +8,11 @@ public class PlayerController : MonoBehaviour
     private float verticalMove;
     private Vector3 playerInput;
     public CharacterController player;
-    public float playerSpeed;
+    public float playerSpeed = 10;
     public Vector3 movePlayer;
     public float gravity= 9.81f;
     private float fallVelocity;
-    public float jumpForce;
+    public float jumpForce = 6;
 
     public Camera mainCamera;
     private Vector3 camFroward;
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         player=GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
         
 
         player.Move(movePlayer * Time.deltaTime);
+        
 
     }
 

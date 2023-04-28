@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Enemigo1
   - PlayerInteractionZone
+  - Palo
+  - Boss1
+  - Swampit
+  - MiniSwampit
+  - Mogou
+  - Stormbitz
+  - Nikolo
   layers:
   - Default
   - TransparentFX
@@ -15,9 +22,9 @@ TagManager:
   - UI
   - Player
   - Character
-  - 
-  - 
-  - 
+  - Pared
+  - IsWalked
+  - Suelo
   - 
   - 
   - 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8695061843546137924}
   - component: {fileID: 4547779791537893362}
   - component: {fileID: 3449397559451835575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 8566542589832283698}
   - component: {fileID: 7942290453503143522}
   - component: {fileID: 416716875019500439}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,8 @@ GameObject:
   - component: {fileID: 5624884820040377763}
   - component: {fileID: -5238362417383844157}
   - component: {fileID: 6801460589495925543}
-  m_Layer: 0
+  - component: {fileID: 8642851888286266233}
+  m_Layer: 7
   m_Name: Enemigo
   m_TagString: Enemigo1
   m_Icon: {fileID: 0}
@@ -248,10 +249,15 @@ MonoBehaviour:
   rango: 6
   playermask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   player: {fileID: 0}
   Speed: 5
   attack: 0
+  KnockbackForce: 7
+  KnockbackCooldown: 2
+  KnockbackTime: 0.2
+  heal: 0
+  gravity: {fileID: 0}
 --- !u!114 &-5238362417383844157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,9 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ab59e33d3c5b542b5378d13be17f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heal: 100
+  heal: 20
   attack: 5
   textdmg: {fileID: 4800495277794462709, guid: f2e0294b73eee464596edd674dfa7bae, type: 3}
+  player: {fileID: 0}
+  player1: {fileID: 0}
 --- !u!65 &6801460589495925543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -280,3 +288,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8642851888286266233
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037371599287814095}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

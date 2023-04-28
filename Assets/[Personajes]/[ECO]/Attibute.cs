@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Attibute : MonoBehaviour
 {
-    public float heal;
-    public float attack;
+    public float heal = 100;
+    public float attack = 10;
     public Image vida;
     public GameOverScript GameOverScript;
     private float maxheal;
@@ -26,6 +26,13 @@ public class Attibute : MonoBehaviour
                 heal=heal+5*Time.deltaTime;
             }
         }
+        if(heal<=0)
+        {
+            vida.fillAmount=0;
+            GameOverScript.Setup();
+            Destroy(gameObject);
+            
+        }
     }
 
     public void TakeDamage(float amount){
@@ -37,8 +44,8 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount=0;
             GameOverScript.Setup();
+            Cursor.lockState = CursorLockMode.None;
             Destroy(gameObject);
-            
         }
     }
     public void Cuarar(float cantidad)

@@ -5,12 +5,11 @@ using UnityEngine;
 public class Corazon : MonoBehaviour
 {
     public float heal = 50f;
-    private void OnTriggerEnter(Collider other) {
-        if(other.CompareTag("Player"))
+    private   void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag=="Player")
         {
-            other.GetComponent<Attibute>().Cuarar(heal);
+            other.transform.GetComponent<Attibute>().Cuarar(heal);
             Destroy(gameObject);
         }
-        print(other.tag);
     }
 }
