@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Poder1 : MonoBehaviour
 { 
-    public Transform bulletSpawnPoint;
-    public GameObject bulletPrefab;
-    public float bulletSpeed = 10;
     public float poder1Cooldown;
+    public float range;
     private float nextTime=0;
+    public float damage;
+    AttributesEnemies attributesEnemies;
 
     public Image poder1;
     public Image cpoder1;
@@ -26,8 +26,16 @@ public class Poder1 : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
-                var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-                bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+                    Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
+                    foreach (var hitCollider in hitColliders)
+                    {
+                        if(hitCollider.transform.gameObject.layer == 7)
+                        {
+                            attributesEnemies = hitCollider.gameObject.GetComponent<AttributesEnemies>();
+                            attributesEnemies.TakeDamage(damage);
+                            attributesEnemies.speed=0;
+                        } 
+                    }
                 nextTime = Time.time+poder1Cooldown;
                 poder1.fillAmount= 0;
             }

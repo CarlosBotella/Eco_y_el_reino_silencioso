@@ -72,8 +72,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6633407804578986495}
   - component: {fileID: 1792487505983121410}
-  - component: {fileID: 7589455227535807279}
   - component: {fileID: 8820239055520405521}
+  - component: {fileID: 7316796441739240148}
   m_Layer: 7
   m_Name: Mogou
   m_TagString: Mogou
@@ -113,8 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb280f1d87a069418ad9df09e3449ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 0}
-  player: {fileID: 0}
   SpawnerSwampit: {fileID: 1688964445598511062}
   SpawnerMiniSwampit: {fileID: 2147054217034234930}
   MoguAttack: {fileID: 3896178670714970292}
@@ -122,7 +120,6 @@ MonoBehaviour:
   Swampit: {fileID: 3157028745599595937, guid: 4324152feb64fd745a43cc862fb993be, type: 3}
   AttackMogu: {fileID: 8819650998451228446, guid: 9473503a496139449b09fda3a210f1b4, type: 3}
   bulletSpeed: 15
-  Speed: 5
   rango: 25
   rangoattack: 12
   playermask:
@@ -130,22 +127,6 @@ MonoBehaviour:
     m_Bits: 64
   attack: 0
   AttackCooldown: 1
---- !u!114 &7589455227535807279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2969444897741695701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486a5c7e522faf44f9e1c324cd7b12b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heal: 120
-  textdmg: {fileID: 4800495277794462709, guid: 54dcff1bdf24bfa42870b00c37616df9, type: 3}
-  player: {fileID: 0}
-  player1: {fileID: 0}
 --- !u!65 &8820239055520405521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159,6 +140,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 2, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7316796441739240148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969444897741695701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3a304495703e042bff972884c64c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal: 120
+  attack: 18
+  speed: 5
+  textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
 --- !u!1 &2970139339694967257
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +249,7 @@ BoxCollider:
   m_GameObject: {fileID: 2970139339694967257}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -380,7 +377,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5132064498570338440}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1

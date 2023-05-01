@@ -17,16 +17,29 @@ public class PlayerController : MonoBehaviour
     public Camera mainCamera;
     private Vector3 camFroward;
     private Vector3 camRight;
-
+    private float speedr;
 
     private void Start()
     {
         player=GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+        speedr = playerSpeed;
     }
 
     void Update()
     {
+        if(playerSpeed == 0 )
+        {
+            StartCoroutine(Stun());
+        }
+         if(playerSpeed == 0.1f)
+        {
+            StartCoroutine(Sobrecarga());
+        }
+        if(playerSpeed == 7.5f)
+        {
+            StartCoroutine(Slow());
+        }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
@@ -80,6 +93,30 @@ public class PlayerController : MonoBehaviour
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;
         }
+    }
+
+    IEnumerator Stun()
+    {
+        yield return new WaitForSeconds(0.8f);
+        playerSpeed = speedr*0.8f;
+         yield return new WaitForSeconds(2.5f);
+        playerSpeed=speedr;
+    }
+
+    IEnumerator Sobrecarga()
+    {
+        playerSpeed = 0f;
+        yield return new WaitForSeconds(0.4f);
+        playerSpeed=speedr*0.85f;
+        yield return new WaitForSeconds(5f);
+        playerSpeed=speedr;
+    }
+
+     IEnumerator Slow()
+    {
+
+        yield return new WaitForSeconds(2f);
+        playerSpeed=speedr;
     }
 
 }
