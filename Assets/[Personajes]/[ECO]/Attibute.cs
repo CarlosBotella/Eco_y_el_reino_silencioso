@@ -50,7 +50,7 @@ public class Attibute : MonoBehaviour
     }
     public void Cuarar(float cantidad)
     {
-        float heal2=heal=heal+cantidad;
+        float heal2=heal+cantidad;
         if((heal2)>maxheal)
         {
             heal=maxheal;

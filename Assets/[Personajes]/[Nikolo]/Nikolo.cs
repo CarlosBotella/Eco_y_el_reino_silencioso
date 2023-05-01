@@ -6,14 +6,14 @@ public class Nikolo : MonoBehaviour
 {
      GameObject Eco;
     private Attibute player1;
-    private AttributeNicolo enemy;
+    private AttributesEnemies enemy;
     PlayerController playerController;
      private Transform player;
 
      float speed1;
-     public float Speed = 5;
      private bool Alert;
      public float rango;
+     public float rangoattack;
      public LayerMask playermask;
      public bool attack;
      private float nextTime=0;
@@ -23,6 +23,10 @@ public class Nikolo : MonoBehaviour
      public GameObject rayo;
      public Transform spawnnube;
     float c=0;
+
+    public float bulletSpeed;
+    public Transform spawnAttack;
+    public GameObject AttackNikolo;
     
 
     
@@ -35,59 +39,60 @@ public class Nikolo : MonoBehaviour
         playerController = Eco.GetComponent<PlayerController>();
          player1 = Eco.GetComponent<Attibute>();
         player  = Eco.transform;
-        enemy = gameObject.GetComponent<AttributeNicolo>();
-        speed1=Speed;
+        enemy = gameObject.GetComponent<AttributesEnemies>();
+        speed1=enemy.speed;
         speedr = playerController.playerSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Eco)
+        {
+        Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Alert == true)
+        if(Alert == true && attack !=true)
         {
             if(c==0)
             {
                 Instantiate(nube, spawnnube.position, spawnnube.rotation);
                 c++;
             }
-            Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.LookAt(posPlayer);
-            transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
+            transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(transform.position, 1, playermask);
-        if(attack == true && Speed != 0)
+         attack = Physics.CheckSphere(transform.position, rangoattack, playermask);
+        if(attack == true && enemy.speed != 0)
         {
-           
+            transform.LookAt(posPlayer);
             if (Time.time > nextTime)
             {
                 
                 StartCoroutine(Attack());
-                player1.TakeDamage(enemy.attack);
-                StartCoroutine(Stop());
                 nextTime = Time.time+AttackCooldown;
             }
 
         }
-        if(Speed == 0)
+        if(enemy.speed == 0)
         {
             StartCoroutine(Stun());
+        }
         }
     }
 
     public IEnumerator Stun()
      {
-        Speed = 0;
+        enemy.speed = 0;
         yield return new WaitForSeconds(2);
-        Speed=speed1;
+        enemy.speed=speed1;
      }
 
      IEnumerator Stop()
      {
-        Speed=0.01f;
+        enemy.speed=0.01f;
         yield return new WaitForSeconds(1);
-        Speed=speed1;
+        enemy.speed=speed1;
      }
 
      private void OnDrawGizmos() {
@@ -95,18 +100,16 @@ public class Nikolo : MonoBehaviour
         Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y-1,transform.position.z) , rango);
 
          Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), 1);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), rangoattack);
     } 
 
      IEnumerator Attack()
     {
         if(player1)
         {
-            float startTime=Time.time;
-            //while(Time.time < startTime+ AttackCooldown )
-           // {
-                yield return  new WaitForSecondsRealtime(0.75f);
-            //}
-            }
+            var bullet = Instantiate(AttackNikolo, spawnAttack.position, spawnAttack.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = spawnAttack.forward * bulletSpeed;
+            yield return  new WaitForSecondsRealtime(1f);
+        }
     }
 }

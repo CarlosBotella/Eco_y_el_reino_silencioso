@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6334654814460281067}
   - component: {fileID: 4521985200811362247}
-  - component: {fileID: -5891822034353799408}
   - component: {fileID: 574427607949819743}
+  - component: {fileID: 8834459426102009813}
   m_Layer: 7
   m_Name: 'Nikolo '
   m_TagString: Nikolo
@@ -34,6 +34,7 @@ Transform:
   - {fileID: 4541459278848116468}
   - {fileID: 4107168946037728670}
   - {fileID: 2609920534581621488}
+  - {fileID: 6114781721702329698}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,31 +50,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69f2097c3b85a446ab8e9c83b6f9224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
   rango: 25
+  rangoattack: 12
   playermask:
     serializedVersion: 2
     m_Bits: 64
   attack: 0
-  AttackCooldown: 1
-  nube: {fileID: 0}
-  rayo: {fileID: 0}
+  AttackCooldown: 3
+  nube: {fileID: 5958669782192106913, guid: be5b3aa45b3444a4a8efc45c2a02ef21, type: 3}
+  rayo: {fileID: 6514391135259511708, guid: 12e751771e331ab4eb95fc3a4e22963d, type: 3}
   spawnnube: {fileID: 2609920534581621488}
---- !u!114 &-5891822034353799408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489493326348724020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831ae085dde24cd489630bb05db7bcb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heal: 105
-  attack: 12
-  textdmg: {fileID: 4800495277794462709, guid: f2e0294b73eee464596edd674dfa7bae, type: 3}
+  bulletSpeed: 15
+  spawnAttack: {fileID: 6114781721702329698}
+  AttackNikolo: {fileID: 3406664030252480018, guid: 8cfd6bb41dfa03249bcbf71cd759d8a8, type: 3}
 --- !u!65 &574427607949819743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87,6 +76,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 2, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8834459426102009813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489493326348724020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3a304495703e042bff972884c64c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal: 105
+  attack: 12
+  speed: 10
+  textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
 --- !u!1 &1780848307271505212
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,11 +185,42 @@ CapsuleCollider:
   m_GameObject: {fileID: 1780848307271505212}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4109956013433182807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6114781721702329698}
+  m_Layer: 0
+  m_Name: SpawnAtack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6114781721702329698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109956013433182807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6334654814460281067}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4770554845317137629
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +345,7 @@ BoxCollider:
   m_GameObject: {fileID: 8260365953739101875}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

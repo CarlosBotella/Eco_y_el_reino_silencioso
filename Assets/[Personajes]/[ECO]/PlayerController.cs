@@ -17,16 +17,59 @@ public class PlayerController : MonoBehaviour
     public Camera mainCamera;
     private Vector3 camFroward;
     private Vector3 camRight;
-
+    private float speedr;
 
     private void Start()
     {
-        player=GetComponent<CharacterController>();
+        player = GetComponent<CharacterController>();
+        speedr = playerSpeed;
+
+        // Bloquear el cursor al inicio
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
+        // Buscar el objeto del menú por su nombre
+        GameObject menuObject = GameObject.Find("EscMenu");
+
+        if (menuObject != null)
+        {
+            // Detectar si el menú está activo o no
+            bool isMenuActive = menuObject.activeSelf;
+
+            // Ajustar el bloqueo del cursor según el estado del menú
+            if (isMenuActive)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+
+            // Detectar si se ha presionado la tecla "Escape" para abrir/cerrar el menú
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                menuObject.SetActive(!isMenuActive);
+            }
+        }
+
+        if (playerSpeed == 0 )
+        {
+            StartCoroutine(Stun());
+        }
+         if(playerSpeed == 0.1f)
+        {
+            StartCoroutine(Sobrecarga());
+        }
+        if(playerSpeed == 7.5f)
+        {
+            StartCoroutine(Slow());
+        }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
@@ -81,6 +124,30 @@ public class PlayerController : MonoBehaviour
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;
         }
+    }
+
+    IEnumerator Stun()
+    {
+        yield return new WaitForSeconds(0.8f);
+        playerSpeed = speedr*0.8f;
+         yield return new WaitForSeconds(2.5f);
+        playerSpeed=speedr;
+    }
+
+    IEnumerator Sobrecarga()
+    {
+        playerSpeed = 0f;
+        yield return new WaitForSeconds(0.4f);
+        playerSpeed=speedr*0.85f;
+        yield return new WaitForSeconds(5f);
+        playerSpeed=speedr;
+    }
+
+     IEnumerator Slow()
+    {
+
+        yield return new WaitForSeconds(2f);
+        playerSpeed=speedr;
     }
 
 }
