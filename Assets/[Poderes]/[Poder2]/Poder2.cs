@@ -25,7 +25,7 @@ public class Poder2 : MonoBehaviour
     {
         if (Time.time > nextTime)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
                 foreach (var hitCollider in hitColliders)
