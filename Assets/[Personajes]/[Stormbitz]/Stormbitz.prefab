@@ -93,7 +93,7 @@ BoxCollider:
   m_GameObject: {fileID: 3740378590040808395}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -107,8 +107,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6249060949802008963}
   - component: {fileID: -5195878337123968807}
-  - component: {fileID: -6271378371049555}
   - component: {fileID: 3431832258590061835}
+  - component: {fileID: -4360293184857094567}
   m_Layer: 7
   m_Name: Stormbitz
   m_TagString: Stormbitz
@@ -145,28 +145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94547c42d82ce6846af357c65ab6e5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
   rango: 10
   playermask:
     serializedVersion: 2
     m_Bits: 64
   attack: 0
   AttackCooldown: 1
---- !u!114 &-6271378371049555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3930046957247768667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec1759d28d160a64d92a2add2a6a8a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heal: 25
-  attack: 5
-  textdmg: {fileID: 4800495277794462709, guid: f2e0294b73eee464596edd674dfa7bae, type: 3}
 --- !u!65 &3431832258590061835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -180,6 +164,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 2, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-4360293184857094567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930046957247768667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3a304495703e042bff972884c64c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal: 25
+  attack: 5
+  speed: 5
+  textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
 --- !u!1 &5260113874918493575
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5260113874918493575}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1

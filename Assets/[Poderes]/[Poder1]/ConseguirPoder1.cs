@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class ConseguirPoder1 : MonoBehaviour
 {
-    public GameObject player;
     Poder1 poder1;
-    public Image image;
+    GameObject imagen;
     // Start is called before the first frame update
+    void Start()
+    {
+        imagen = GameObject.Find("ECO/Canvas/Poder1");
+    }
      void OnTriggerEnter(Collider other) {
     
         if(other.gameObject.tag=="Player")
         {
             poder1 = other.transform.gameObject.GetComponent<Poder1>();
             poder1.enabled = true;
-            image.enabled = true;
+            imagen.SetActive(true);
             Destroy(gameObject);
         }
     }

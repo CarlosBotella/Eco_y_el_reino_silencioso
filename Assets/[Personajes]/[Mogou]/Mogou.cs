@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Mogou : MonoBehaviour
 {
-     public Attibute player1;
-    private AttributeMogou enemy;
+      GameObject Eco;
+     private Attibute player1;
+    private AttributesEnemies enemy;
     PlayerController playerController;
-     public Transform player;
+     private Transform player;
     public Transform SpawnerSwampit;
     public Transform SpawnerMiniSwampit;
     public Transform MoguAttack;
@@ -16,7 +17,6 @@ public class Mogou : MonoBehaviour
     public GameObject AttackMogu;
     public float bulletSpeed;
      float speed1;
-     public float Speed = 5;
      private bool Alert;
      public float rango;
      public float rangoattack;
@@ -24,7 +24,6 @@ public class Mogou : MonoBehaviour
      public bool attack;
      private float nextTime=0;
      public float AttackCooldown;
-     private float speedr;
      private float attackr;
      private float c=0;
      float vidatotal;
@@ -32,10 +31,12 @@ public class Mogou : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerController = player.GetComponent<PlayerController>();
-        enemy = gameObject.GetComponent<AttributeMogou>();
-        speed1=Speed;
-        speedr = playerController.playerSpeed;
+        Eco = GameObject.FindWithTag("Player");
+        playerController = Eco.GetComponent<PlayerController>();
+        player  = Eco.transform;
+        player1 = Eco.GetComponent<Attibute>();
+        enemy = gameObject.GetComponent<AttributesEnemies>();
+        speed1=enemy.speed;
         attackr =player1.attack;
         vidatotal= enemy.heal;
     }
@@ -43,6 +44,9 @@ public class Mogou : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Eco)
+        {
+            Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             if(enemy.heal <= vidatotal/2 && c==1)
             {
                 StartCoroutine(SpawnSwampit());
@@ -54,22 +58,21 @@ public class Mogou : MonoBehaviour
                 c++;
             }
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Alert == true)
+        if(Alert == true && attack !=true)
         {
-            if(c==0)
+            transform.LookAt(posPlayer);
+            transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime );
+             if(c==0)
             {
                 StartCoroutine(SpawnMiniSwampit());
                 c++;
             }
-            Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
-            transform.LookAt(posPlayer);
-            transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
         }
 
          attack = Physics.CheckSphere(transform.position, rangoattack, playermask);
-        if(attack == true && Speed != 0)
+        if(attack == true && enemy.speed != 0)
         {
-           
+           transform.LookAt(posPlayer);
             if (Time.time > nextTime)
             {
                 StartCoroutine(Attack());
@@ -78,24 +81,25 @@ public class Mogou : MonoBehaviour
             }
 
         }
-        if(Speed == 0)
+        if(enemy.speed == 0)
         {
             StartCoroutine(Stun());
+        }
         }
     }
 
     public IEnumerator Stun()
      {
-        Speed = 0;
+        enemy.speed = 0;
         yield return new WaitForSeconds(2);
-        Speed=speed1;
+        enemy.speed=speed1;
      }
 
      IEnumerator Stop()
      {
-        Speed=0.01f;
+        enemy.speed=0.01f;
         yield return new WaitForSeconds(1);
-        Speed=speed1;
+        enemy.speed=speed1;
      }
 
      private void OnDrawGizmos() {
@@ -110,35 +114,35 @@ public class Mogou : MonoBehaviour
     {
         if(player1)
         {
-               var bullet = Instantiate(AttackMogu, MoguAttack.position, MoguAttack.rotation);
-                bullet.GetComponent<Rigidbody>().velocity = MoguAttack.forward * bulletSpeed;
-                yield return  new WaitForSecondsRealtime(1f);
+            var bullet = Instantiate(AttackMogu, MoguAttack.position, MoguAttack.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = MoguAttack.forward * bulletSpeed;
+            yield return  new WaitForSecondsRealtime(1f);
         }
     }
 
     IEnumerator SpawnMiniSwampit()
     {
-        Speed = 0.1f;
+        enemy.speed = 0.1f;
         Instantiate(MiniSwampit, SpawnerMiniSwampit.position,SpawnerMiniSwampit.rotation);
         yield return  new WaitForSecondsRealtime(1f);
-        Speed = speed1;
+        enemy.speed = speed1;
     }
 
 
      IEnumerator SpawnSwampit()
     {
-        Speed = 0.1f;
+        enemy.speed = 0.1f;
         Instantiate(Swampit, SpawnerSwampit.position,SpawnerSwampit.rotation);
         yield return  new WaitForSecondsRealtime(1f);
-        Speed = speed1;
+        enemy.speed = speed1;
     }
 
      IEnumerator SpawnSwampitMiniSwampit()
     {
-        Speed = 0.1f;
+        enemy.speed = 0.1f;
         Instantiate(MiniSwampit, SpawnerMiniSwampit.position,SpawnerMiniSwampit.rotation);
         Instantiate(Swampit, SpawnerSwampit.position,SpawnerSwampit.rotation);
         yield return  new WaitForSecondsRealtime(1f);
-        Speed = speed1;
+        enemy.speed = speed1;
     }
 }
