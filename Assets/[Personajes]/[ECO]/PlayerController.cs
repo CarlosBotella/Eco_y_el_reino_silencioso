@@ -21,14 +21,44 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        player=GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
+        player = GetComponent<CharacterController>();
         speedr = playerSpeed;
+
+        // Bloquear el cursor al inicio
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        if(playerSpeed == 0 )
+        // Buscar el objeto del menú por su nombre
+        GameObject menuObject = GameObject.Find("EscMenu");
+
+        if (menuObject != null)
+        {
+            // Detectar si el menú está activo o no
+            bool isMenuActive = menuObject.activeSelf;
+
+            // Ajustar el bloqueo del cursor según el estado del menú
+            if (isMenuActive)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+
+            // Detectar si se ha presionado la tecla "Escape" para abrir/cerrar el menú
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                menuObject.SetActive(!isMenuActive);
+            }
+        }
+
+        if (playerSpeed == 0 )
         {
             StartCoroutine(Stun());
         }

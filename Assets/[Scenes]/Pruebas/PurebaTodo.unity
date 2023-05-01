@@ -841,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2292053738376991776, guid: b83196d6cb8632b41b971ac129c8ad43, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2292053738376991776, guid: b83196d6cb8632b41b971ac129c8ad43, type: 3}
       propertyPath: m_AnchorMax.x
@@ -932,6 +932,10 @@ PrefabInstance:
       value: GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 2292053738376991788, guid: b83196d6cb8632b41b971ac129c8ad43, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292053738517935431, guid: b83196d6cb8632b41b971ac129c8ad43, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1430,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6905916617775323595, guid: 09ec4825fb4a1a74095d6eaf89a953b1, type: 3}
       propertyPath: poder4Cooldown
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8612140431319028982, guid: 09ec4825fb4a1a74095d6eaf89a953b1, type: 3}
       propertyPath: GameOverScript
@@ -3493,7 +3497,7 @@ Transform:
   - {fileID: 57139430}
   - {fileID: 656708063}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1921353012
 GameObject:
