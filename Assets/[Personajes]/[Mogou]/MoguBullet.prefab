@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2604070298493013382}
   - component: {fileID: 965141761405460062}
   - component: {fileID: 4525290995085399053}
-  - component: {fileID: 5345371613315728028}
   - component: {fileID: -4161419332380569661}
+  - component: {fileID: -6816155799217853222}
   m_Layer: 0
   m_Name: MoguBullet
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8819650998451228446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.891115, y: 3.559825, z: 41.114784}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,20 +99,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5345371613315728028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8819650998451228446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09ec92c1ac34a4548a505a443c9c377e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 3
-  attack: 18
 --- !u!54 &-4161419332380569661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,3 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6816155799217853222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8819650998451228446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77132387ab2cbf54286bbda7084a92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  attack: 18

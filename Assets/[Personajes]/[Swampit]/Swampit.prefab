@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9003848446290746502}
   - component: {fileID: -8049801608165084139}
-  - component: {fileID: -4922854462383188471}
   - component: {fileID: 3975582030130516301}
-  m_Layer: 0
+  - component: {fileID: -3672089246583034422}
+  m_Layer: 7
   m_Name: Swampit
   m_TagString: Swampit
   m_Icon: {fileID: 0}
@@ -48,28 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9ca1853f423b549824bdf49b4bd4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 9
   rango: 10
   playermask:
     serializedVersion: 2
     m_Bits: 64
   attack: 0
   AttackCooldown: 1
---- !u!114 &-4922854462383188471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3157028745599595937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebc2019a2be0c4468ae2f369a813812, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heal: 30
-  attack: 6
-  textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
 --- !u!65 &3975582030130516301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83,6 +67,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 3, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3672089246583034422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3157028745599595937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3a304495703e042bff972884c64c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal: 30
+  attack: 6
+  speed: 9
+  textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
 --- !u!1 &3981319147183326175
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3686858772305750788}
   - component: {fileID: 3737498884421915355}
   - component: {fileID: 863709676996956176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 3981319147183326175}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 4370160161725754314}
   - component: {fileID: 1158384145836998882}
   - component: {fileID: 6148878407392506190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ BoxCollider:
   m_GameObject: {fileID: 5151104783234056572}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

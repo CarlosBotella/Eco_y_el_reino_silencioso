@@ -10,11 +10,15 @@ public class Nube : MonoBehaviour
      public float rango;
      public LayerMask playermask;
      private Transform player;
+     public GameObject rayo;
+     public Transform spawnrayo;
+
     // Start is called before the first frame update
     void Start()
     {
          Eco = GameObject.FindWithTag("Player");
          player  = Eco.transform;
+
     }
 
     // Update is called once per frame
@@ -25,11 +29,18 @@ public class Nube : MonoBehaviour
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, Speed * Time.deltaTime );
-        }
+        } 
     }
 
       private void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y-1,transform.position.z) , rango);
     } 
+
+    private void OnTriggerEnter(Collider other) {
+      if(other.CompareTag("Player"))
+        {
+        Instantiate(rayo,spawnrayo.position,spawnrayo.rotation);
+        }
+    }
 }
