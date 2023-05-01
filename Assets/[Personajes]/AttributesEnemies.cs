@@ -13,11 +13,13 @@ public class AttributesEnemies : MonoBehaviour
     private Attibute player1;
     private float criticChanche = 0.15f;
     private float criticDmg = 1.5f;
+    PlayerController playerController;
 
     void Start()
     {
          Eco = GameObject.FindWithTag("Player");
          player1 = Eco.GetComponent<Attibute>();
+         playerController = Eco.GetComponent<PlayerController>();
         player  = Eco.transform;
     }
     public void TakeDamage(float amount){
@@ -32,6 +34,8 @@ public class AttributesEnemies : MonoBehaviour
          heal-= totalDmg;
          if(heal<=0)
         {
+            player1.attack = 10;
+            playerController.playerSpeed = 10;
             Destroy(gameObject,0.1f);
         }
     }

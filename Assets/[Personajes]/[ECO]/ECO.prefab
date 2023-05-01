@@ -92,7 +92,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466557444870021664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -673,9 +673,13 @@ MonoBehaviour:
   dashSpeed: 3
   dashTime: 0.25
   dashCooldown: 1
-  dmg: 25
   poder5: {fileID: 2544819504428711652}
   cpoder5: {fileID: 2160693534973675421}
+  dmg: 25
+  dash: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &8612140431319028982
 MonoBehaviour:
   m_ObjectHideFlags: 0
