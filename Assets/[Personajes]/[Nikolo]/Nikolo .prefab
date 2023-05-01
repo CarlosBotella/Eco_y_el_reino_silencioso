@@ -56,7 +56,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attack: 0
-  AttackCooldown: 2
+  AttackCooldown: 3
   nube: {fileID: 5958669782192106913, guid: be5b3aa45b3444a4a8efc45c2a02ef21, type: 3}
   rayo: {fileID: 6514391135259511708, guid: 12e751771e331ab4eb95fc3a4e22963d, type: 3}
   spawnnube: {fileID: 2609920534581621488}
