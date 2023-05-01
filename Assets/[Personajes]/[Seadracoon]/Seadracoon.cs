@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Seadracoon: MonoBehaviour
 {
    GameObject Eco;
@@ -17,6 +16,10 @@ public class Seadracoon: MonoBehaviour
      public bool attack;
      private float nextTime=0;
      public float AttackCooldown;
+     private float nextTimeHeal = 0; 
+     public float nextHeal;
+     private float theal;
+     public LayerMask layerMask;
 
     // Start is called before the first frame update
     void Start()
@@ -27,21 +30,23 @@ public class Seadracoon: MonoBehaviour
         player  = Eco.transform;
         enemy = gameObject.GetComponent<AttributesEnemies>();
         speed1=enemy.speed;
+        theal = enemy.heal;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Alert == true)
+        if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.LookAt(posPlayer);
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime );
         }
-
-         attack = Physics.CheckSphere(transform.position, 1, playermask);
-        if(attack == true && enemy.speed != 0)
+        
+        attack = Physics.CheckSphere(transform.position, 1, playermask);
+         if(attack == true && enemy.speed != 0)
         {
            
             if (Time.time > nextTime)
@@ -52,10 +57,29 @@ public class Seadracoon: MonoBehaviour
             }
 
         }
-        if(enemy.speed == 0)
+
+        Vector3 direction = Vector3.down;
+        Ray theRay = new Ray(transform.position, transform.TransformDirection(direction*1));
+        if(Physics.Raycast(theRay, out RaycastHit hit, 1,layerMask))
+        {
+            enemy.speed = 9;
+            if (Time.time > nextTimeHeal)
+            {
+                    enemy.speed = 9;
+                    enemy.heal = enemy.heal + 5;
+                    if(enemy.heal > theal)
+                    {
+                        enemy.heal = theal;
+                    }
+                nextTimeHeal = Time.time+nextHeal;
+            }
+        }
+
+        if( enemy.speed == 0 )
         {
             StartCoroutine(Stun());
         }
+
     }
 
     public IEnumerator Stun()

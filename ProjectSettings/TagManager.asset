@@ -19,6 +19,7 @@ TagManager:
   - Vipernox
   - Nyx
   - Seadraccon
+  - Poder1Img
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Pared
   - IsWalked
   - Suelo
-  - 
+  - Agua
   - 
   - 
   - 

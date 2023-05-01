@@ -54,6 +54,10 @@ MonoBehaviour:
     m_Bits: 64
   attack: 0
   AttackCooldown: 1
+  nextHeal: 3
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &-1018017043259201710
 MonoBehaviour:
   m_ObjectHideFlags: 0

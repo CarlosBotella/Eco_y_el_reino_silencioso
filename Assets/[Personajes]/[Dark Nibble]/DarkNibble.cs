@@ -36,7 +36,7 @@ public class DarkNibble : MonoBehaviour
         {
 
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Alert == true && enemy.speed != 0)
+        if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.LookAt(posPlayer);

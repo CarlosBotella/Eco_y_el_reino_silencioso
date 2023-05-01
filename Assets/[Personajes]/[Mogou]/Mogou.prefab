@@ -126,7 +126,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attack: 0
-  AttackCooldown: 1
+  AttackCooldown: 3
 --- !u!65 &8820239055520405521
 BoxCollider:
   m_ObjectHideFlags: 0

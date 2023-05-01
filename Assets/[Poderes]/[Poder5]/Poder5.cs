@@ -11,10 +11,13 @@ public class Poder5 : MonoBehaviour
     public float dashCooldown;
     private float nextTime=0;
     AttributesEnemies attributesEnemies;
-    public float dmg;
+ 
     private float speed;
-      public Image poder5;
+    public Image poder5;
     public Image cpoder5;
+    public float dmg;
+    GameObject enemy;
+    public bool dash = false;
     
 
     // Start is called before the first frame update
@@ -30,15 +33,15 @@ public class Poder5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextTime)
-        {
+        
+        
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             StartCoroutine(Dash());
+            StartCoroutine(Dashhit());
             nextTime = Time.time+dashCooldown;
             poder5.fillAmount= 0;
            
-        }
         }
         else
         {
@@ -59,5 +62,11 @@ public class Poder5 : MonoBehaviour
             yield return null;
         }
     }
-   
+     IEnumerator Dashhit()
+    {
+        dash  = true;
+        yield return new WaitForSeconds(dashTime);
+        dash  = false;
+    }
+
 }

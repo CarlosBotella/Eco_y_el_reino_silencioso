@@ -37,7 +37,7 @@ public class DarkNibbleKing : MonoBehaviour
         if(Eco)
         {
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
-        if(Alert == true)
+        if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.LookAt(posPlayer);
