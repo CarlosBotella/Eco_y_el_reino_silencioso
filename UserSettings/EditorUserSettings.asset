@@ -6,47 +6,22 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5b0556045c020a035c0f0a7343200a44104e1a292e7c77347f2f1c30e1e5303e
+      value: 5301040006535a5a5908542442260b44404e4a7e2f2975342c7d4436b4b1633a
       flags: 0
     RecentlyUsedSceneGuid-1:
-<<<<<<< HEAD
       value: 06570300510558030e585c7347710644454f4b7e757b7669747e4535bab9363c
       flags: 0
     RecentlyUsedSceneGuid-2:
       value: 0505030303055b0f0e5c5e7345755c44404e412c7d2c7e6929714f36b7e5653b
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 5b04035f540c0b5d5a5a0d7340210844404f1e7d2e2d24617b2f4536b0e2363b
-=======
       value: 510106525c005c090c5b0e7716205b4443164c2f782d20357a7a4f32e6e5606e
       flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 01575752010c5d020f5b082444740c4440161d287c7072357e7c4e60e7b5636d
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 56030204000c0b080b0d5f2345730d4412161c282e7c77322c7a1b60e4b23139
->>>>>>> develop
-      flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 5708030751000b0c0e5c552411200b4447161a2b2e2d71657a7f4e61bae4376d
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 0107500503015f09095f542041275d4444164173787d24647e2d1c35e7b6376c
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 5104560500560f0b0f0c5f74112008444e4e1e7c7b7c7061787a1b60e6e6363b
-      flags: 0
-    RecentlyUsedSceneGuid-7:
-      value: 5b04035f540c0b5d5a5a0d7340210844404f1e7d2e2d24617b2f4536b0e2363b
-      flags: 0
-    RecentlyUsedSceneGuid-8:
-      value: 0505030303055b0f0e5c5e7345755c44404e412c7d2c7e6929714f36b7e5653b
-      flags: 0
-    RecentlyUsedSceneGuid-9:
-      value: 5350075e50510a09095b0e7b40705b4440154c2c2e2e7762757c1f67bab3653e
-      flags: 0
-    RecentlyUsedSceneGuid-5:
       value: 545556075d505d03545b082115750b444e4f4b2c2f2c7f342e7b1f32e3e13168
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5b04035f540c0b5d5a5a0d7340210844404f1e7d2e2d24617b2f4536b0e2363b
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
