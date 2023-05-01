@@ -75,7 +75,8 @@ public class PlayerController : MonoBehaviour
 
     public void playerSkills()
     {
-        if(player.isGrounded && Input.GetButtonDown("Jump")) 
+        // if(player.isGrounded && Input.GetButtonDown("Jump")) 
+        if(Input.GetButtonDown("Jump")) 
         {
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;
