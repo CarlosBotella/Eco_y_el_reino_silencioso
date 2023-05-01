@@ -13,7 +13,7 @@ public class GameOverScript : MonoBehaviour
 
     public void Salir()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Continuar()

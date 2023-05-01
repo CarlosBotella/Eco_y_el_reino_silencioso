@@ -51,6 +51,7 @@ public class DeepSeaKing : MonoBehaviour
               if(Time.time > nextTimeTorbellino)
                 {
                     TorbellinoSpawner.position = player.position+new Vector3(Random.Range(-randomx,randomx),TorbellinoSpawner.position.y-1,Random.Range(-randomz,randomz));
+                     TorbellinoSpawner.position= new Vector3( TorbellinoSpawner.position.x,0, TorbellinoSpawner.position.z);
                     Instantiate(torbellino,  TorbellinoSpawner.position,TorbellinoSpawner.rotation);
                     nextTimeTorbellino = Time.time+nextTorbellino;
                 }

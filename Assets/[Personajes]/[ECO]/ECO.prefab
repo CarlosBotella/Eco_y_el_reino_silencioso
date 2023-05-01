@@ -598,7 +598,6 @@ GameObject:
   - component: {fileID: 6905916617775323595}
   - component: {fileID: -9099888261414095990}
   - component: {fileID: 6183048137166165275}
-  - component: {fileID: 6423674573132556323}
   m_Layer: 6
   m_Name: ECO
   m_TagString: Player
@@ -678,8 +677,6 @@ MonoBehaviour:
   dashCooldown: 60
   poder5: {fileID: 2544819504428711652}
   cpoder5: {fileID: 2160693534973675421}
-  dmg: 25
-  dash: 0
 --- !u!114 &8612140431319028982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,28 +788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac12f8567baf1640a249b7bd0404205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poder2Cooldown: 0
-  range: 0
-  damage: 0
-  poder2: {fileID: 0}
-  cpoder2: {fileID: 0}
---- !u!114 &6423674573132556323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5286779099281855573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac12f8567baf1640a249b7bd0404205, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poder2Cooldown: 4
+  poder2Cooldown: 20
   range: 4
-  damage: 15
-  poder2: {fileID: 0}
-  cpoder2: {fileID: 0}
+  damage: 20
+  poder2: {fileID: 9214488028190691424}
+  cpoder2: {fileID: 532313002870205799}
 --- !u!1 &5691759535722158293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +982,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 38, y: 38}
+  m_SizeDelta: {x: 68, y: 68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8774718771707353426
 CanvasRenderer:
