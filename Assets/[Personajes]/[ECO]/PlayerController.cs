@@ -31,15 +31,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Buscar el objeto del menú por su nombre
+        // Buscar el objeto del menï¿½ por su nombre
         GameObject menuObject = GameObject.Find("EscMenu");
 
         if (menuObject != null)
         {
-            // Detectar si el menú está activo o no
+            // Detectar si el menï¿½ estï¿½ activo o no
             bool isMenuActive = menuObject.activeSelf;
 
-            // Ajustar el bloqueo del cursor según el estado del menú
+            // Ajustar el bloqueo del cursor segï¿½n el estado del menï¿½
             if (isMenuActive)
             {
                 Cursor.lockState = CursorLockMode.None;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
                 Cursor.visible = false;
             }
 
-            // Detectar si se ha presionado la tecla "Escape" para abrir/cerrar el menú
+            // Detectar si se ha presionado la tecla "Escape" para abrir/cerrar el menï¿½
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 menuObject.SetActive(!isMenuActive);
@@ -118,8 +118,7 @@ public class PlayerController : MonoBehaviour
 
     public void playerSkills()
     {
-        // if(player.isGrounded && Input.GetButtonDown("Jump")) 
-        if(Input.GetButtonDown("Jump")) 
+        if(player.isGrounded && Input.GetButtonDown("Jump")) 
         {
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;

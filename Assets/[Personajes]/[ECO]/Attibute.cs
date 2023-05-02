@@ -11,6 +11,7 @@ public class Attibute : MonoBehaviour
     public GameOverScript GameOverScript;
     private float maxheal;
     private float timedmg;
+    public MenuPausa menuPausa;
 
 
     private void Start() {
@@ -26,12 +27,10 @@ public class Attibute : MonoBehaviour
                 heal=heal+5*Time.deltaTime;
             }
         }
-        if(heal<=0)
+
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            vida.fillAmount=0;
-            GameOverScript.Setup();
-            Destroy(gameObject);
-            
+            menuPausa.Setup();
         }
     }
 
@@ -44,8 +43,7 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount=0;
             GameOverScript.Setup();
-            Cursor.lockState = CursorLockMode.None;
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
         }
     }
     public void Cuarar(float cantidad)

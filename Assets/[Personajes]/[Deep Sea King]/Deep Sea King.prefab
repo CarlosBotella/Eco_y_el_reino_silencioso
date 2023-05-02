@@ -196,7 +196,6 @@ MonoBehaviour:
   playermask:
     serializedVersion: 2
     m_Bits: 64
-  Speed: 3
   attack: 0
   Attackspeed: 1
   torbellino: {fileID: 8319778318620609249, guid: 4516e39700e4401459b23d9459931820, type: 3}
@@ -220,6 +219,7 @@ MonoBehaviour:
   attack: 28
   speed: 3
   textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
+  IsBoss: 1
 --- !u!1 &8470461340525964161
 GameObject:
   m_ObjectHideFlags: 0

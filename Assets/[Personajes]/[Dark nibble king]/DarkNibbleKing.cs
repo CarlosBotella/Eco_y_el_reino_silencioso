@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class DarkNibbleKing : MonoBehaviour
 {
@@ -20,6 +22,10 @@ public class DarkNibbleKing : MonoBehaviour
     public float KnockbackTime;
     public float heal;
     float speed1;
+    private GameObject boss;
+    private Image healb;
+    float c= 0;
+     float vidatotal;
     
 
      void Start()
@@ -29,14 +35,30 @@ public class DarkNibbleKing : MonoBehaviour
         player1 = Eco.GetComponent<Attibute>();
         player  = Eco.transform;
         enemy = gameObject.GetComponent<AttributesEnemies>();
-        speed1=enemy.speed;   
+        speed1=enemy.speed;
+        boss = GameObject.Find("ECO/Canvas/Boss");
+        healb = GameObject.Find("ECO/Canvas/Boss/healBoss").GetComponent<Image>();
+        vidatotal= enemy.heal;
+
     }
 
     void Update()
     {
         if(Eco)
         {
+            if(c>0)
+            {
+                healb.fillAmount = enemy.heal/vidatotal;
+            }
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
+            if(Alert)
+            {
+                if(c==0)
+            {
+                boss.SetActive(true);
+                c++;
+            }
+            }
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);

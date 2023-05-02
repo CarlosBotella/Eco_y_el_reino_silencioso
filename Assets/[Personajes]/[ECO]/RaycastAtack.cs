@@ -10,6 +10,8 @@ public class RaycastAtack : MonoBehaviour
     private float nextTime=0;
     public float AttackCooldown = 1;
     public LayerMask layerMask;
+    private float criticChanche = 0.15f;
+    private float criticDmg = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +32,12 @@ public class RaycastAtack : MonoBehaviour
                     if(Input.GetMouseButtonDown(0))
                     {
                         attributesEnemies = hit.collider.gameObject.GetComponent<AttributesEnemies>();
-                        attributesEnemies.TakeDamage(player.attack);
+                        float totalDmg = player.attack;
+                        if(Random.Range(0f,1f)<=criticChanche)
+                        {
+                            totalDmg*=criticDmg;
+                        }
+                        attributesEnemies.TakeDamage(totalDmg);
                         nextTime = Time.time+AttackCooldown;
                     }
                 } 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mogou : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class Mogou : MonoBehaviour
      private float c=0;
      float vidatotal;
 
+    private GameObject boss;
+    private Image healb;
+    float v= 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +44,8 @@ public class Mogou : MonoBehaviour
         speed1=enemy.speed;
         attackr =player1.attack;
         vidatotal= enemy.heal;
+        boss = GameObject.Find("ECO/Canvas/Boss");
+        healb = GameObject.Find("ECO/Canvas/Boss/healBoss").GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -46,6 +53,10 @@ public class Mogou : MonoBehaviour
     {
         if(Eco)
         {
+             if(v>0)
+            {
+                healb.fillAmount = enemy.heal/vidatotal;
+            }
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             if(enemy.heal <= vidatotal/2 && c==1)
             {
@@ -58,6 +69,14 @@ public class Mogou : MonoBehaviour
                 c++;
             }
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
+        if(Alert)
+        {
+             if(v==0)
+            {
+                boss.SetActive(true);
+                v++;
+            }
+        }
         if(Alert == true && attack !=true)
         {
             transform.LookAt(posPlayer);

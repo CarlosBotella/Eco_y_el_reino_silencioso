@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeepSeaKing : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class DeepSeaKing : MonoBehaviour
     float healt;
     public float randomx;
     public float randomz;
+    private GameObject boss;
+    private Image healb;
+    float v= 0;
         
     
 
@@ -37,12 +41,26 @@ public class DeepSeaKing : MonoBehaviour
         enemy = gameObject.GetComponent<AttributesEnemies>();
         speed1=enemy.speed;
         healt = enemy.heal;
+        boss = GameObject.Find("ECO/Canvas/Boss");
+        healb = GameObject.Find("ECO/Canvas/Boss/healBoss").GetComponent<Image>();
         
     }
 
     void Update()
     {
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
+         if(v>0)
+            {
+                healb.fillAmount = enemy.heal/healt;
+            }
+             if(Alert)
+        {
+             if(v==0)
+            {
+                boss.SetActive(true);
+                v++;
+            }
+        }
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
@@ -51,7 +69,7 @@ public class DeepSeaKing : MonoBehaviour
               if(Time.time > nextTimeTorbellino)
                 {
                     TorbellinoSpawner.position = player.position+new Vector3(Random.Range(-randomx,randomx),TorbellinoSpawner.position.y-1,Random.Range(-randomz,randomz));
-                     TorbellinoSpawner.position= new Vector3( TorbellinoSpawner.position.x,0, TorbellinoSpawner.position.z);
+                    TorbellinoSpawner.position= new Vector3( TorbellinoSpawner.position.x,0, TorbellinoSpawner.position.z);
                     Instantiate(torbellino,  TorbellinoSpawner.position,TorbellinoSpawner.rotation);
                     nextTimeTorbellino = Time.time+nextTorbellino;
                 }

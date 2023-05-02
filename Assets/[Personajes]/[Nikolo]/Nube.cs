@@ -12,18 +12,24 @@ public class Nube : MonoBehaviour
      private Transform player;
      public GameObject rayo;
      public Transform spawnrayo;
+     GameObject Nikolo;
 
     // Start is called before the first frame update
     void Start()
     {
          Eco = GameObject.FindWithTag("Player");
          player  = Eco.transform;
+         Nikolo = GameObject.FindWithTag("Nikolo");
 
     }
 
     // Update is called once per frame
     void Update()
     {
+          if(!Nikolo)
+          {
+            Destroy(gameObject,0.1f);
+          }
          Alert = Physics.CheckSphere(transform.position, rango, playermask);
          if(Alert == true)
         {
