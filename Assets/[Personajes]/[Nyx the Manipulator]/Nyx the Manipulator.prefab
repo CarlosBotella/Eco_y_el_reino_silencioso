@@ -239,6 +239,7 @@ MonoBehaviour:
   attack: 16
   speed: 5
   textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
+  IsBoss: 0
 --- !u!65 &-6414570996055805658
 BoxCollider:
   m_ObjectHideFlags: 0

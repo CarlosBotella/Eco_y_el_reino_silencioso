@@ -8,6 +8,7 @@ public class AtajoPruebas : MonoBehaviour
         if( Input.GetKeyDown(KeyCode.P))
         {
             SceneManager.LoadScene("PurebaTodo");
+            Time.timeScale  =1f;
         }
         
     }

@@ -282,3 +282,4 @@ MonoBehaviour:
   attack: 5
   speed: 10
   textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
+  IsBoss: 1

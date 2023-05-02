@@ -43,7 +43,7 @@ public class DarkNibble : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(transform.position, 1, playermask);
+         attack = Physics.CheckSphere(transform.position, 1.1f, playermask);
         if(attack == true && enemy.speed != 0)
         {
             if (Time.time > nextTime)
@@ -68,7 +68,7 @@ public class DarkNibble : MonoBehaviour
         Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y-1,transform.position.z) , rango);
 
          Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), 1);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), 1.1f);
     } 
 
      IEnumerator Knockback()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Nikolo : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class Nikolo : MonoBehaviour
     public float bulletSpeed;
     public Transform spawnAttack;
     public GameObject AttackNikolo;
+
+    float vidatotal;
+
+    private GameObject boss;
+    private Image healb;
+    float v= 0;
     
 
     
@@ -42,6 +49,9 @@ public class Nikolo : MonoBehaviour
         enemy = gameObject.GetComponent<AttributesEnemies>();
         speed1=enemy.speed;
         speedr = playerController.playerSpeed;
+        vidatotal= enemy.heal;
+        boss = GameObject.Find("ECO/Canvas/Boss");
+        healb = GameObject.Find("ECO/Canvas/Boss/healBoss").GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -49,8 +59,20 @@ public class Nikolo : MonoBehaviour
     {
         if(Eco)
         {
+            if(v>0)
+            {
+                healb.fillAmount = enemy.heal/vidatotal;
+            }
         Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
+         if(Alert)
+        {
+             if(v==0)
+            {
+                boss.SetActive(true);
+                v++;
+            }
+        }
         if(Alert == true && attack !=true)
         {
             if(c==0)
