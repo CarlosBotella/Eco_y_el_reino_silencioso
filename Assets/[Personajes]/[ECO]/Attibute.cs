@@ -27,11 +27,13 @@ public class Attibute : MonoBehaviour
                 heal=heal+5*Time.deltaTime;
             }
         }
-
-        if(Input.GetKeyDown(KeyCode.Escape))
+        /*if(heal<=0)
         {
-            menuPausa.Setup();
-        }
+            vida.fillAmount=0;
+            GameOverScript.Setup();
+            Destroy(gameObject);
+            
+        }*/
     }
 
     public void TakeDamage(float amount){
@@ -43,7 +45,8 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount=0;
             GameOverScript.Setup();
-            Destroy(gameObject,0.1f);
+            //Cursor.lockState = CursorLockMode.None;
+            Destroy(gameObject);
         }
     }
     public void Cuarar(float cantidad)
