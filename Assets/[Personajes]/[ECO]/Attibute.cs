@@ -31,6 +31,7 @@ public class Attibute : MonoBehaviour
             }
         }
 
+
         if (Input.GetKeyDown(KeyCode.P) && !PanelAjustes.activeSelf && !ConfirmarSalir.activeSelf)
         {
             menuPausa.Setup();
