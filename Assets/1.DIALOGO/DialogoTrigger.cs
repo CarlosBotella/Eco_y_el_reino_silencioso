@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class DialogoTrigger : MonoBehaviour
 {
+    // Para que funcione correctamente tiene que tener 
+    
     public GameObject panel;
     public Text textoDialogo;
     public Text nombrePersonaje;
@@ -15,6 +17,7 @@ public class DialogoTrigger : MonoBehaviour
     public float velocidadTexto = 0.1f;
     private int index;
     private bool dentroDeRango;
+    public CharacterController cc;
     void Start()
     {
         nombrePersonaje.text = gameObject.name;
@@ -23,7 +26,7 @@ public class DialogoTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && dentroDeRango)
+        if (Input.GetKeyDown(KeyCode.N) && dentroDeRango)
         {
             if (textoDialogo.text == lineas[index])
             {
@@ -42,6 +45,8 @@ public class DialogoTrigger : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Capsula Eco"))
         {
+            //cc = collision.gameObject.GetComponent<CharacterController>();
+            cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
             dentroDeRango = true;
@@ -90,7 +95,8 @@ public class DialogoTrigger : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            cc.enabled = true;
+            panel.SetActive(false);
         }
     }
 }
