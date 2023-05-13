@@ -9,56 +9,57 @@ public class Attibute : MonoBehaviour
     public float attack = 10;
     public Image vida;
     public GameOverScript GameOverScript;
+    public GameObject PanelAjustes;
+    public GameObject ConfirmarSalir;
     private float maxheal;
     private float timedmg;
     public MenuPausa menuPausa;
 
 
-    private void Start() {
-        maxheal=heal;     
+    private void Start()
+    {
+        maxheal = heal;
     }
     private void Update()
     {
-        vida.fillAmount=heal/100;
-        if(heal<maxheal-30 && Time.time>timedmg+10)
+        vida.fillAmount = heal / 100;
+        if (heal < maxheal - 30 && Time.time > timedmg + 10)
         {
-            if(heal!=maxheal-30)
+            if (heal != maxheal - 30)
             {
-                heal=heal+5*Time.deltaTime;
+                heal = heal + 5 * Time.deltaTime;
             }
         }
-        /*if(heal<=0)
+
+        if (Input.GetKeyDown(KeyCode.P) && !PanelAjustes.activeSelf && !ConfirmarSalir.activeSelf)
         {
-            vida.fillAmount=0;
-            GameOverScript.Setup();
-            Destroy(gameObject);
-            
-        }*/
-    }
-
-    public void TakeDamage(float amount){
-
-
-        heal-= amount;
-        timedmg =Time.time;
-         if(heal<=0)
-        {
-            vida.fillAmount=0;
-            GameOverScript.Setup();
-            //Cursor.lockState = CursorLockMode.None;
-            Destroy(gameObject);
+            menuPausa.Setup();
         }
     }
-    public void Cuarar(float cantidad)
+
+    public void TakeDamage(float amount)
     {
-        float heal2=heal+cantidad;
-        if((heal2)>maxheal)
+
+
+        heal -= amount;
+        timedmg = Time.time;
+        if (heal <= 0)
         {
-            heal=maxheal;
+            vida.fillAmount = 0;
+            GameOverScript.Setup();
+            Destroy(gameObject, 0.1f);
+        }
+    }
+    public void Curar(float cantidad)
+    {
+        float heal2 = heal + cantidad;
+        if ((heal2) > maxheal)
+        {
+            heal = maxheal;
         }
         else
         {
-            heal=heal2;
+            heal = heal2;
         }
 
     }

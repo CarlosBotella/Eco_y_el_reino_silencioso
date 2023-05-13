@@ -8,7 +8,7 @@ public class Corazon : MonoBehaviour
     private   void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag=="Player")
         {
-            other.transform.GetComponent<Attibute>().Cuarar(heal);
+            other.transform.GetComponent<Attibute>().Curar(heal);
             Destroy(gameObject);
         }
     }

@@ -31,32 +31,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Buscar el objeto del men� por su nombre
-        GameObject menuObject = GameObject.Find("EscMenu");
-
-        if (menuObject != null)
-        {
-            // Detectar si el men� est� activo o no
-            bool isMenuActive = menuObject.activeSelf;
-
-            // Ajustar el bloqueo del cursor seg�n el estado del men�
-            if (isMenuActive)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-
-            // Detectar si se ha presionado la tecla "Escape" para abrir/cerrar el men�
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                menuObject.SetActive(!isMenuActive);
-            }
-        }
 
         if (playerSpeed == 0 )
         {

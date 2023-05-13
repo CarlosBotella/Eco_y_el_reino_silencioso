@@ -9,10 +9,8 @@ public class GameOverScript : MonoBehaviour
     {
         print("MUELTO");
         gameObject.SetActive(true);
-<<<<<<< Updated upstream:Assets/[Menus]/GameOverScript.cs
+
         Cursor.visible = true;
-=======
->>>>>>> Stashed changes:Assets/[Personajes]/[ECO]/GameOverScript.cs
         Cursor.lockState = CursorLockMode.None;
     }
 
