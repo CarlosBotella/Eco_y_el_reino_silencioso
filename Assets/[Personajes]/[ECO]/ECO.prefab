@@ -735,6 +735,7 @@ MonoBehaviour:
   playerSpeed: 10
   movePlayer: {x: 0, y: 0, z: 0}
   gravity: 9.81
+  fallVelocity: 0
   jumpForce: 6
   mainCamera: {fileID: 0}
 --- !u!114 &7346578676269668204
@@ -770,6 +771,8 @@ MonoBehaviour:
   attack: 10
   vida: {fileID: 6308805217010387729}
   GameOverScript: {fileID: 2292053738376991789, guid: b83196d6cb8632b41b971ac129c8ad43, type: 3}
+  PanelAjustes: {fileID: 0}
+  ConfirmarSalir: {fileID: 0}
   menuPausa: {fileID: 0}
 --- !u!114 &1134563193633629417
 MonoBehaviour:
@@ -861,7 +864,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5286779099281855573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cac12f8567baf1640a249b7bd0404205, type: 3}
   m_Name: 

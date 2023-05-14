@@ -35,7 +35,7 @@ public class DarkNibble : MonoBehaviour
         if(Eco)
         {
 
-            Alert = Physics.CheckSphere(transform.position, rango, playermask);
+        Alert = Physics.CheckSphere(transform.position, rango, playermask);
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
@@ -43,7 +43,7 @@ public class DarkNibble : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime );
         }
 
-         attack = Physics.CheckSphere(transform.position, 1.1f, playermask);
+         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z-0.25f), 1.1f, playermask);
         if(attack == true && enemy.speed != 0)
         {
             if (Time.time > nextTime)
@@ -65,10 +65,10 @@ public class DarkNibble : MonoBehaviour
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y-1,transform.position.z) , rango);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z) , rango);
 
          Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z), 1.1f);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z-0.25f), 1.1f);
     } 
 
      IEnumerator Knockback()

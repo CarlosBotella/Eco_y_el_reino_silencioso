@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class AttributesEnemies : MonoBehaviour
 {
     GameObject Eco;
@@ -14,10 +13,12 @@ public class AttributesEnemies : MonoBehaviour
     PlayerController playerController;
     private GameObject boss;
     public bool IsBoss;
+    private GameObject mainCamera;
 
     void Start()
     {
          Eco = GameObject.FindWithTag("Player");
+        mainCamera = GameObject.FindWithTag("MainCamera");
          player1 = Eco.GetComponent<Attibute>();
          playerController = Eco.GetComponent<PlayerController>();
         player  = Eco.transform;
@@ -42,8 +43,7 @@ public class AttributesEnemies : MonoBehaviour
     
    private void showtextdmg(float dmg)
     {   
-        Vector3 relativePos = transform.position - player.position;
-        var go=Instantiate(textdmg,transform.position,Quaternion.LookRotation(relativePos, Vector3.up),transform);
+        var go=Instantiate(textdmg,transform.position,Quaternion.LookRotation(mainCamera.transform.rotation * Vector3.forward , mainCamera.transform.rotation * Vector3.up),transform);
         go.GetComponent<TextMesh>().text = dmg.ToString();
     }
     
