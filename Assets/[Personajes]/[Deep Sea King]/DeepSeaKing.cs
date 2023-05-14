@@ -49,18 +49,18 @@ public class DeepSeaKing : MonoBehaviour
     void Update()
     {
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
-         if(v>0)
+        if(v>0)
             {
                 healb.fillAmount = enemy.heal/healt;
             }
-             if(Alert)
-        {
+        if(Alert)
+            {
              if(v==0)
             {
                 boss.SetActive(true);
                 v++;
             }
-        }
+            }
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
