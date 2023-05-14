@@ -75,7 +75,7 @@ public class DarkNibble : MonoBehaviour
     {
         if(Eco)
         {
-             heal=enemy.heal/100;
+             heal=enemy.heal/20;
             float startTime=Time.time;
             while(Time.time < startTime+ KnockbackTime )
             {
