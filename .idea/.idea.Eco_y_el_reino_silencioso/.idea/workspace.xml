@@ -4,7 +4,6 @@
     <list default="true" id="b8abb71f-9a86-4aca-96e7-44a46e26c915" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +12,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dapasa/FSM/FSMMachine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[FSM]/MchPatrullero.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[FSM]/SttAtaque.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[FSM]/SttPatrulla.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Personajes]/[ECO]/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -91,7 +86,7 @@
       <updated>1682621964049</updated>
       <workItem from="1682621969538" duration="8205000" />
       <workItem from="1683485829952" duration="6417000" />
-      <workItem from="1683988059480" duration="2468000" />
+      <workItem from="1683988059480" duration="3876000" />
     </task>
     <servers />
   </component>

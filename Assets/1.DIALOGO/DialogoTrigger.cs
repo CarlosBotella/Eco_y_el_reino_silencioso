@@ -8,22 +8,23 @@ using UnityEngine.UI;
 
 public class DialogoTrigger : MonoBehaviour
 {
-    // Para que funcione correctamente tiene que tener 
-    
-    public GameObject panel;
+
+
+    public GameObject panel; // poner panel
     public Text textoDialogo;
     public Text nombrePersonaje;
     public string[] lineas;
     public float velocidadTexto = 0.1f;
     private int index;
     private bool dentroDeRango;
-    public CharacterController cc;
+    public string tag; // para Eco --> "Capsula Eco"
+    public CharacterController cc; // poner CharacterController de Eco
     void Start()
     {
         nombrePersonaje.text = gameObject.name;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.N) && dentroDeRango)
@@ -43,9 +44,8 @@ public class DialogoTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         
-        if (collision.gameObject.CompareTag("Capsula Eco"))
+        if (collision.gameObject.CompareTag(tag))
         {
-            //cc = collision.gameObject.GetComponent<CharacterController>();
             cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
@@ -99,4 +99,6 @@ public class DialogoTrigger : MonoBehaviour
             panel.SetActive(false);
         }
     }
+    
+    // TODO: Codigo modular
 }
