@@ -58,9 +58,7 @@ public class DialogoTrigger1 : MonoBehaviour
             }
             else
             {
-                StopAllCoroutines();
-                Debug.Log("UPDATE: "+ lineas2[index]);
-                textoDialogo.text = lineas2[index];
+                velocidadTexto = 0f;
             }
         }
     }
@@ -141,9 +139,9 @@ public class DialogoTrigger1 : MonoBehaviour
         else
         {
             panel.SetActive(false);
+            acabado = true;
             textoDialogo.text = string.Empty;
             cc.enabled = true;
-            acabado = true;
         }
     }
     

@@ -19,7 +19,7 @@ public class DialogoTrigger : MonoBehaviour
     public bool acabado;
     public string tag; // para Eco --> "Capsula Eco"
     public CharacterController cc; // poner CharacterController de Eco
-    
+    private string text;
     void Start()
     {
         textoDialogo.text = string.Empty;
@@ -54,21 +54,17 @@ public class DialogoTrigger : MonoBehaviour
         {
             if (textoDialogo.text == lineas[index])
             {
-                Debug.Log("LISTA"+gameObject.name + ": " + lineas.Length);
                 NextLine();
             }
             else
             {
-                StopAllCoroutines();
-                Debug.Log("UPDATE: "+ lineas[index]);
-                textoDialogo.text = lineas[index];
+                velocidadTexto = 0f;
             }
         }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("DBG OnTriggerEnter");
         if (collision.gameObject.CompareTag(tag) && !OnStart)
         {
             cc.enabled = false;
@@ -79,20 +75,8 @@ public class DialogoTrigger : MonoBehaviour
         }
         
     }
-    /*private void OnTriggerExit(Collider collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Player") && !OnStart)
-        {
-            dentroDeRango = false;
-            panel.SetActive(false);
-            textoDialogo.text = string.Empty;
-        }
-        
-    }*/
     public void StartDIalogue()
     {
-        Debug.Log("DBG StartDIalogue");
         index = 0;
         foreach (var linea in lineas)
         {
@@ -132,15 +116,14 @@ public class DialogoTrigger : MonoBehaviour
 
     public void NextLine()
     {
+        textoDialogo.text = string.Empty;
         if (index < lineas.Length - 1)
         {
             index++;
-            textoDialogo.text = string.Empty;
             StartCoroutine(WriteLine());
         }
         else
         {
-            textoDialogo.text = string.Empty;
             cc.enabled = true;
             panel.SetActive(false);
         }
