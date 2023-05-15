@@ -19,7 +19,11 @@ public class ConseguirPoder1 : MonoBehaviour
             poder1 = other.transform.gameObject.GetComponent<Poder1>();
             poder1.enabled = true;
             imagen.SetActive(true);
-            Destroy(gameObject);
+            if (gameObject.GetComponent<DialogoTrigger1>().acabado)
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

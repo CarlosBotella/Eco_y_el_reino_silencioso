@@ -4,10 +4,11 @@
     <list default="true" id="b8abb71f-9a86-4aca-96e7-44a46e26c915" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/dialogo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Scenes]/dialogo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1.DIALOGO/ScriptDialogo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1.DIALOGO/ScriptDialogo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/ConseguirPoder1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/ConseguirPoder1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/Pruebas/PurebaTodo 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/Pruebas/PurebaTodo 1.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Personajes]/[ECO]/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -70,10 +72,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19140">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19140" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />

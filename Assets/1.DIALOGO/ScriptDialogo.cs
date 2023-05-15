@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ScriptDialogo : MonoBehaviour
 {
-    public TextMeshProUGUI textoDialogo;
+    public Text textoDialogo;
     public string[] lineas;
     public float velocidadTexto = 0.1f;
     private int index;

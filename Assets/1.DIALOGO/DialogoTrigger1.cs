@@ -6,13 +6,13 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class DialogoTrigger : MonoBehaviour
+public class DialogoTrigger1 : MonoBehaviour
 {
     public GameObject panel; // poner panel
     public Text textoDialogo;
     public string nombrePersonaje;
     public bool OnStart; 
-    [SerializeField] string[] lineas;
+    [SerializeField] string[] lineas2;
     public float velocidadTexto = 0.1f;
     private int index;
     private bool dentroDeRango;
@@ -22,14 +22,14 @@ public class DialogoTrigger : MonoBehaviour
     
     void Start()
     {
-        textoDialogo.text = string.Empty;
-        for (int i = 0; i < lineas.Length; i++)
+        
+        for (int i = 0; i < lineas2.Length; i++)
         {
             if (nombrePersonaje != "Narrador")
             {
                 textoDialogo.fontStyle = FontStyle.Normal;
-                string temp = lineas[i];
-                lineas[i] = "<b>"+ nombrePersonaje +": </b>" + temp;
+                string temp = lineas2[i];
+                lineas2[i] = "<b>"+ nombrePersonaje +": </b>" + temp;
             }
             else
             {
@@ -42,33 +42,32 @@ public class DialogoTrigger : MonoBehaviour
             cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
-            Debug.Log("DBG OnStart");
             StartDIalogue();
         }
     }
 
     
     void Update()
-    {  
+    {
         if (Input.GetKeyDown(KeyCode.A) && (dentroDeRango || OnStart) )
         {
-            if (textoDialogo.text == lineas[index])
+            if (textoDialogo.text == lineas2[index])
             {
-                Debug.Log("LISTA"+gameObject.name + ": " + lineas.Length);
+                Debug.Log("LISTA"+gameObject.name + ": " + lineas2.Length);
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                Debug.Log("UPDATE: "+ lineas[index]);
-                textoDialogo.text = lineas[index];
+                Debug.Log("UPDATE: "+ lineas2[index]);
+                textoDialogo.text = lineas2[index];
             }
         }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("DBG OnTriggerEnter");
+        
         if (collision.gameObject.CompareTag(tag) && !OnStart)
         {
             cc.enabled = false;
@@ -92,27 +91,27 @@ public class DialogoTrigger : MonoBehaviour
     }*/
     public void StartDIalogue()
     {
-        Debug.Log("DBG StartDIalogue");
+        OnStart = false;
         index = 0;
-        foreach (var linea in lineas)
+        foreach (var linea in lineas2)
         {
-            Debug.Log("DBG: "+linea);
+            Debug.Log(linea);
         }
         StartCoroutine(WriteLine());
-        acabado = true;
+        
+        
     }
 
     IEnumerator WriteLine()
     {
-        Debug.Log("DBG WriteLine");
         if (nombrePersonaje != "Narrador")
         {
             textoDialogo.text += "<b>" + nombrePersonaje + ": </b>";
 
             // Este método va escribiendo letra a letra cada x tiempo
-            for (int i = nombrePersonaje.Length + 9; i < lineas[index].ToCharArray().Length; i++)
+            for (int i = nombrePersonaje.Length + 9; i < lineas2[index].ToCharArray().Length; i++)
             {
-                textoDialogo.text += lineas[index].ToCharArray()[i];
+                textoDialogo.text += lineas2[index].ToCharArray()[i];
 
                 yield return new WaitForSeconds(velocidadTexto);
             }
@@ -120,19 +119,20 @@ public class DialogoTrigger : MonoBehaviour
         else
         {
 
-            foreach (char letra in lineas[index].ToCharArray())
+            foreach (char letra in lineas2[index].ToCharArray())
             {
 
                 textoDialogo.text += letra;
 
                 yield return new WaitForSeconds(velocidadTexto);
             }
+            
         }
     }
 
     public void NextLine()
     {
-        if (index < lineas.Length - 1)
+        if (index < lineas2.Length - 1)
         {
             index++;
             textoDialogo.text = string.Empty;
@@ -140,9 +140,10 @@ public class DialogoTrigger : MonoBehaviour
         }
         else
         {
+            panel.SetActive(false);
             textoDialogo.text = string.Empty;
             cc.enabled = true;
-            panel.SetActive(false);
+            acabado = true;
         }
     }
     
