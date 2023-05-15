@@ -179,7 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782760476492679953}
-  - component: {fileID: 7155215882465669535}
+  - component: {fileID: 5898305563396134}
   m_Layer: 0
   m_Name: Pino
   m_TagString: Untagged
@@ -207,8 +207,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7155215882465669535
-BoxCollider:
+--- !u!136 &5898305563396134
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -217,8 +217,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 15}
+  m_Radius: 4
+  m_Height: 25
+  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 7}
 --- !u!1 &3206673767272776935
 GameObject:
