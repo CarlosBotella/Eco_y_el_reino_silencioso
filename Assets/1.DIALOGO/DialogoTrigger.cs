@@ -12,22 +12,46 @@ public class DialogoTrigger : MonoBehaviour
 
     public GameObject panel; // poner panel
     public Text textoDialogo;
-    public Text nombrePersonaje;
+    public string nombrePersonaje;
+    public bool OnStart;
     public string[] lineas;
     public float velocidadTexto = 0.1f;
     private int index;
     private bool dentroDeRango;
     public string tag; // para Eco --> "Capsula Eco"
     public CharacterController cc; // poner CharacterController de Eco
+    
     void Start()
     {
-        nombrePersonaje.text = gameObject.name;
+        for (int i = 0; i < lineas.Length; i++)
+        {
+            if (nombrePersonaje != "Narrador")
+            {
+                textoDialogo.fontStyle = FontStyle.Normal;
+                string temp = lineas[i];
+                lineas[i] = "<b>"+ nombrePersonaje +": </b>" + temp;
+            }
+            else
+            {
+                textoDialogo.fontStyle = FontStyle.Italic;
+            }
+        }
+
+        if (OnStart)
+        {
+            cc.enabled = false;
+            panel.SetActive(true);
+            textoDialogo.text = string.Empty;
+            dentroDeRango = true;
+            textoDialogo.text = string.Empty;
+            StartDIalogue();
+        }
     }
 
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N) && dentroDeRango)
+        if (Input.anyKeyDown && (dentroDeRango || OnStart) )
         {
             if (textoDialogo.text == lineas[index])
             {
@@ -44,13 +68,12 @@ public class DialogoTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         
-        if (collision.gameObject.CompareTag(tag))
+        if (collision.gameObject.CompareTag(tag) && !OnStart)
         {
             cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
             dentroDeRango = true;
-            Debug.Log("iniciar dialogo");
             textoDialogo.text = string.Empty;
             StartDIalogue();
         }
@@ -59,7 +82,7 @@ public class DialogoTrigger : MonoBehaviour
     private void OnTriggerExit(Collider collision)
     {
         
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !OnStart)
         {
             dentroDeRango = false;
             panel.SetActive(false);
@@ -76,13 +99,29 @@ public class DialogoTrigger : MonoBehaviour
 
     IEnumerator WriteLine()
     {
-        // Este método va escribiendo letra a letra cada x tiempo
-        foreach (char letra in lineas[index].ToCharArray())
+        if (nombrePersonaje != "Narrador")
         {
-            textoDialogo.text += letra;
+            textoDialogo.text += "<b>" + nombrePersonaje + ": </b>";
 
-            yield return new WaitForSeconds(velocidadTexto);
-        } 
+            // Este método va escribiendo letra a letra cada x tiempo
+            for (int i = nombrePersonaje.Length + 9; i < lineas[index].ToCharArray().Length; i++)
+            {
+                textoDialogo.text += lineas[index].ToCharArray()[i];
+
+                yield return new WaitForSeconds(velocidadTexto);
+            }
+        }
+        else
+        {
+
+            foreach (char letra in lineas[index].ToCharArray())
+            {
+
+                textoDialogo.text += letra;
+
+                yield return new WaitForSeconds(velocidadTexto);
+            }
+        }
     }
 
     public void NextLine()
