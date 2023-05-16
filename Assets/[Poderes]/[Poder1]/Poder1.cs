@@ -29,7 +29,7 @@ public class Poder1 : MonoBehaviour
                     Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
                     foreach (var hitCollider in hitColliders)
                     {
-                        if(hitCollider.transform.gameObject.layer == 7)
+                        if(hitCollider.transform.gameObject.layer == 6)
                         {
                             attributesEnemies = hitCollider.gameObject.GetComponent<AttributesEnemies>();
                             attributesEnemies.TakeDamage(damage);

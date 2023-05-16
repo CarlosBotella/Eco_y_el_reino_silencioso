@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: -7846394630550413269}
   - component: {fileID: 5994818265708455274}
   - component: {fileID: -3233184894843762586}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Sphere003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8776092207063721000}
   - component: {fileID: -4526711267630338140}
   - component: {fileID: -7798175757374839549}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Sphere002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4928587188649745529}
   - component: {fileID: -5468211977286692510}
   - component: {fileID: 7569476433425590226}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Dark Nibble 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   rango: 10
   playermask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   attack: 0
   KnockbackForce: 7
   KnockbackCooldown: 2
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 6143486063068864235}
   - component: {fileID: 8147004748669776496}
   - component: {fileID: 2305302597091861298}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Sphere004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: -1698215504171738276}
   - component: {fileID: 2557129025851680969}
   - component: {fileID: 8006958694806783865}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Sphere001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: -511310931620521848}
   - component: {fileID: 6551726144519698248}
   - component: {fileID: 8424073627695423409}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Box001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
