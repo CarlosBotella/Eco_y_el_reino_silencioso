@@ -15,17 +15,17 @@ public class ConseguirPoder1 : MonoBehaviour
         imagen = GameObject.Find("ECO/Canvas/Poder1");
     }
 
-   private void Update()
+   /* private void Update()
     {
         if (gameObject.GetComponent<DialogoTrigger1>().acabado)
         {
             destruir = true;
         }
-    }
+    }*/
 
     void OnTriggerEnter(Collider other) {
     
-        if(other.gameObject.CompareTag("Player") && destruir )
+        if(other.gameObject.CompareTag("Player") /*&& destruir */)
         {
             poder1 = other.transform.gameObject.GetComponent<Poder1>();
             poder1.enabled = true;
