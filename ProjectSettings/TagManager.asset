@@ -20,7 +20,11 @@ TagManager:
   - Nyx
   - Seadraccon
   - Poder1Img
+<<<<<<< HEAD
   - Dark Nibble King
+=======
+  - Capsula Eco
+>>>>>>> develop
   layers:
   - Default
   - TransparentFX
