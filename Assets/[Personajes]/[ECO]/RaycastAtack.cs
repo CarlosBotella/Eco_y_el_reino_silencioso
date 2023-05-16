@@ -23,8 +23,8 @@ public class RaycastAtack : MonoBehaviour
     void Update()
     {
         Vector3 direction = Vector3.forward;
-        Ray theRay = new Ray(transform.position, transform.TransformDirection(direction*rango));
-        Debug.DrawRay(transform.position, transform.TransformDirection(direction*rango));
+        Ray theRay = new Ray(new Vector3(transform.position.x,transform.position.y+1.7f,transform.position.z), transform.TransformDirection(direction*rango));
+        Debug.DrawRay(new Vector3(transform.position.x,transform.position.y+1.7f,transform.position.z), transform.TransformDirection(direction*rango));
         if(Physics.Raycast(theRay, out RaycastHit hit, rango,layerMask))
         {
             if(Time.time > nextTime)
