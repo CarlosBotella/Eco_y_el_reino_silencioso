@@ -5,17 +5,22 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
+ public Transform[] ruta;
+
     NavMeshAgent agent;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int nextPoint = 0;
 
-    // Update is called once per frame
-    void Update()
+
+     void Start()
     {
-        
+        agent = GetComponent<NavMeshAgent>();
+    }
+    void Update(){
+        if(!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        {
+            nextPoint++;
+            agent.SetDestination(ruta[nextPoint % ruta.Length].position);
+        }
     }
 }
