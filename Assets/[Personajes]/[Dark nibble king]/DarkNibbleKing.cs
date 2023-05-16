@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 
 public class DarkNibbleKing : MonoBehaviour
@@ -24,8 +25,10 @@ public class DarkNibbleKing : MonoBehaviour
     float speed1;
     private GameObject boss;
     private Image healb;
-    float c= 0;
+    private Text text;
      float vidatotal;
+     public Transform punto;
+     NavMeshAgent agent;
     
 
      void Start()
@@ -38,7 +41,9 @@ public class DarkNibbleKing : MonoBehaviour
         speed1=enemy.speed;
         boss = GameObject.Find("ECO/Canvas/Boss");
         healb = GameObject.Find("ECO/Canvas/Boss/healBoss").GetComponent<Image>();
+        text = GameObject.Find("ECO/Canvas/Boss/nombre").GetComponent<Text>();
         vidatotal= enemy.heal;
+        agent = GetComponent<NavMeshAgent>();
 
     }
 
@@ -46,28 +51,27 @@ public class DarkNibbleKing : MonoBehaviour
     {
         if(Eco)
         {
-            if(c>0)
-            {
-                healb.fillAmount = enemy.heal/vidatotal;
-            }
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
-            if(Alert)
-            {
-                if(c==0)
+            if(Alert && enemy.heal>0)
             {
                 boss.SetActive(true);
-                c++;
+                healb.fillAmount = enemy.heal/vidatotal;
+                text.text = transform.tag;
             }
+            if(!Alert)
+            {
+                boss.SetActive(false);
+                transform.position = Vector3.MoveTowards(transform.position, punto.transform.position, enemy.speed * Time.deltaTime);
             }
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
-            transform.LookAt(posPlayer);
+                transform.LookAt(posPlayer);
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime);
         }
 
-         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y-2,transform.position.z), kr, playermask);
-        if (attack == true && enemy.speed != 0.5f)
+         attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z), kr, playermask);
+        if (attack == true && enemy.speed > 0.5f)
         {
             if (Time.time > nextTime)
             {
@@ -91,7 +95,7 @@ public class DarkNibbleKing : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, rango);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, kr);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z), kr);
     } 
 
      IEnumerator Knockback()
