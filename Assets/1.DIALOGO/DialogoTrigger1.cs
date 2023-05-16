@@ -18,6 +18,7 @@ public class DialogoTrigger1 : MonoBehaviour
     private bool dentroDeRango;
     public bool acabado;
     public string tag; // para Eco --> "Capsula Eco"
+    bool c=false;
     public CharacterController cc; // poner CharacterController de Eco
     
     void Start()
@@ -49,7 +50,7 @@ public class DialogoTrigger1 : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && (dentroDeRango || OnStart) )
+        if (Input.GetKeyDown(KeyCode.Tab) && (dentroDeRango || OnStart) )
         {
             if (textoDialogo.text == lineas2[index])
             {
@@ -65,14 +66,16 @@ public class DialogoTrigger1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        
-        if (collision.gameObject.CompareTag(tag) && !OnStart)
+        if(!c)
+        {
+            if (collision.gameObject.CompareTag(tag) && !OnStart)
         {
             cc.enabled = false;
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
             StartDIalogue();
+        }
         }
         
     }
@@ -140,6 +143,7 @@ public class DialogoTrigger1 : MonoBehaviour
         {
             panel.SetActive(false);
             acabado = true;
+            c=true;
             textoDialogo.text = string.Empty;
             cc.enabled = true;
         }
