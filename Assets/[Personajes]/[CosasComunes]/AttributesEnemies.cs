@@ -31,12 +31,12 @@ public class AttributesEnemies : MonoBehaviour
          heal-= amount;
          if(heal<=0)
         {
-            if(IsBoss)
+            player1.attack = 10;
+            playerController.playerSpeed = 10;
+              if(IsBoss)
             {
                 boss.SetActive(false);
             }
-            player1.attack = 10;
-            playerController.playerSpeed = 10;
             Destroy(gameObject,0.1f);
         }
     }
