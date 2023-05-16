@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6721992597810065892}
   - component: {fileID: 2480329734214988391}
   - component: {fileID: 4407187375235809858}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Box002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 695780190337766562}
   - component: {fileID: 6372230410528616847}
   - component: {fileID: 8042945548056573905}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: -683544762796525710}
   - component: {fileID: -9116581844951641894}
   - component: {fileID: -2921897329690451377}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cone003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: -3963122086285036664}
   - component: {fileID: -8763009403152598326}
   - component: {fileID: -2325696358441697187}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cone004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: -699414699748303295}
   - component: {fileID: -5111822623293391448}
   - component: {fileID: 5513386478252090863}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 5492777899781076104}
   - component: {fileID: -4253714572444619506}
   - component: {fileID: -2416966208680690910}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Dark NIbble King 1
   m_TagString: Dark Nibble King
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: -511310931620521848}
   - component: {fileID: 6551726144519698248}
   - component: {fileID: 8424073627695423409}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Box001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: -4084672777538192892}
   - component: {fileID: 4299754946083337097}
   - component: {fileID: 4431670454091400558}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cylinder001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

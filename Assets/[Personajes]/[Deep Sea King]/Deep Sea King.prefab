@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849271528610149646}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SpawnTorbellino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3036822484779099840}
   - component: {fileID: 4301834574958124312}
   - component: {fileID: 8600068701953390502}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8849655417742934576}
   - component: {fileID: 1893654452837094892}
   - component: {fileID: -2969118676669278693}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Deep Sea King
   m_TagString: DeepSeaKing
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1409011443047307042}
   - component: {fileID: 89748004103615027}
   - component: {fileID: 8256846231423901201}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

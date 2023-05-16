@@ -4,27 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemigo1
-  - PlayerInteractionZone
-  - Palo
+  - Poder1Img
+  - Dark Nibble King
   - Boss1
-  - Swampit
-  - MiniSwampit
-  - Mogou
-  - Stormbitz
-  - Nikolo
-  - Nube
   - DeepSeaKing
   - Torbellino
-  - Vipernox
+  - Nikolo
+  - Nube
   - Nyx
-  - Seadraccon
-  - Poder1Img
-<<<<<<< HEAD
-  - Dark Nibble King
-=======
-  - Capsula Eco
->>>>>>> develop
+  - Vipernox
   layers:
   - Default
   - TransparentFX
@@ -32,12 +20,12 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
   - Character
   - Pared
-  - IsWalked
-  - Suelo
-  - Agua
+  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 
