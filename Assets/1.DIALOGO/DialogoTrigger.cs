@@ -50,7 +50,7 @@ public class DialogoTrigger : MonoBehaviour
     
     void Update()
     {  
-        if (Input.GetKeyDown(KeyCode.A) && (dentroDeRango || OnStart) )
+        if (Input.GetKeyDown(KeyCode.Tab) && (dentroDeRango || OnStart) )
         {
             if (textoDialogo.text == lineas[index])
             {
