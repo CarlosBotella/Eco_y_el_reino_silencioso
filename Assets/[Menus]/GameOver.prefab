@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Continuar desde ultimo punto de control
+  m_Text: VOLVEr a EMpezar
 --- !u!1 &2292053737994810894
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Salir al menu principal
+  m_Text: SALIR
 --- !u!1 &2292053738376991788
 GameObject:
   m_ObjectHideFlags: 0

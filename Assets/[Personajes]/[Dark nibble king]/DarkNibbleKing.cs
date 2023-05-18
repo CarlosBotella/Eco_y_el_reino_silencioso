@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 public class DarkNibbleKing : MonoBehaviour
 {
-   GameObject Eco;
+    GameObject Eco;
     private Attibute player1;
     private AttributesEnemies enemy;
     PlayerController playerController;
@@ -29,6 +29,8 @@ public class DarkNibbleKing : MonoBehaviour
      float vidatotal;
      public Transform punto;
      NavMeshAgent agent;
+
+     private Animator animator;
     
 
      void Start()
@@ -44,13 +46,16 @@ public class DarkNibbleKing : MonoBehaviour
         text = GameObject.Find("ECO/Canvas/Boss/nombre").GetComponent<Text>();
         vidatotal= enemy.heal;
         agent = GetComponent<NavMeshAgent>();
-
+        animator = GetComponent<Animator>();
+        animator.SetBool("Idle", true);
+         Debug.Log(animator.GetBool("Idle"));
     }
 
     void Update()
     {
         if(Eco)
-        {
+        {   
+            animator.SetBool("Idle", true);
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
             if(Alert && enemy.heal>0)
             {
@@ -65,9 +70,14 @@ public class DarkNibbleKing : MonoBehaviour
             }
         if(Alert == true && !attack)
         {
+            animator.SetBool("Walk", true);
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
-                transform.LookAt(posPlayer);
+            transform.LookAt(posPlayer);
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
         }
 
          attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z), kr, playermask);
@@ -75,7 +85,7 @@ public class DarkNibbleKing : MonoBehaviour
         {
             if (Time.time > nextTime)
             {
-                
+
                 StartCoroutine(Knockback());
                 player1.TakeDamage(enemy.attack);
                 StartCoroutine(Stop());
