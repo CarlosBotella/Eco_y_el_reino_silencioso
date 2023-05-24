@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class DialogoTrigger1 : MonoBehaviour
 {
+    public Camera cam;
     public GameObject panel; // poner panel
     public Text textoDialogo;
     public string nombrePersonaje;
@@ -18,7 +19,9 @@ public class DialogoTrigger1 : MonoBehaviour
     private bool dentroDeRango;
     public bool acabado;
     public string tag; // para Eco --> "Capsula Eco"
-    bool c=false;
+    bool hecho=false;
+    public bool poder;
+    public Collider _collider;
     public CharacterController cc; // poner CharacterController de Eco
     
     void Start()
@@ -40,6 +43,7 @@ public class DialogoTrigger1 : MonoBehaviour
 
         if (OnStart)
         {
+            
             cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
@@ -66,7 +70,8 @@ public class DialogoTrigger1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if(!c)
+        _collider = collision;
+        if(!hecho)
         {
             if (collision.gameObject.CompareTag(tag) && !OnStart)
         {
@@ -92,6 +97,7 @@ public class DialogoTrigger1 : MonoBehaviour
     }*/
     public void StartDIalogue()
     {
+        cam.GetComponent<CinemachineBrain>().enabled = false;
         OnStart = false;
         index = 0;
         foreach (var linea in lineas2)
@@ -141,13 +147,22 @@ public class DialogoTrigger1 : MonoBehaviour
         }
         else
         {
+            
             panel.SetActive(false);
             acabado = true;
-            c=true;
+            
+            hecho = true;
             textoDialogo.text = string.Empty;
+            Time.timeScale = 1f;
             cc.enabled = true;
+            if (!(_collider.Equals(null))&& poder == true)
+            {
+                gameObject.GetComponent<ConseguirPoder1>().destruir = true;
+                gameObject.GetComponent<ConseguirPoder1>().prueba(_collider);
+            }
+            cam.GetComponent<CinemachineBrain>().enabled = true;
+            
         }
     }
-    
-    
+   
 }
