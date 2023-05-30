@@ -8,7 +8,7 @@ public class ConseguirPoder1 : MonoBehaviour
 {
     Poder1 poder1;
     GameObject imagen;
-    private bool destruir;
+    public bool destruir;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +25,13 @@ public class ConseguirPoder1 : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
     
+        
+    }
+
+    public void prueba(Collider other)
+    {
+        Debug.Log("TAG: "+other.gameObject.tag);
+        Debug.Log("DESTRUIR: "+destruir);
         if(other.gameObject.CompareTag("Player") && destruir )
         {
             poder1 = other.transform.gameObject.GetComponent<Poder1>();

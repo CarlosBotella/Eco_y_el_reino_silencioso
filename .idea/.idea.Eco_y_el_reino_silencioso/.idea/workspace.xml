@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8abb71f-9a86-4aca-96e7-44a46e26c915" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/ConseguirPoder1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/ConseguirPoder1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/Nivel1fin.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/Nivel1fin.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +11,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1.DIALOGO/DialogoTrigger1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Personajes]/[ECO]/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -94,6 +89,7 @@
       <workItem from="1683988059480" duration="3876000" />
       <workItem from="1684065538628" duration="650000" />
       <workItem from="1684159743100" duration="7459000" />
+      <workItem from="1684851083197" duration="6705000" />
     </task>
     <servers />
   </component>

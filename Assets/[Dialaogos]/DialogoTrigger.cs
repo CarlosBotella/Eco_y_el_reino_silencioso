@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class DialogoTrigger : MonoBehaviour
 {
+    public Camera cam;
     public GameObject panel; // poner panel
     public Text textoDialogo;
     public string nombrePersonaje;
@@ -77,6 +78,8 @@ public class DialogoTrigger : MonoBehaviour
     }
     public void StartDIalogue()
     {
+        cam.GetComponent<CinemachineBrain>().enabled = false;
+        //Time.timeScale = 0f;
         index = 0;
         foreach (var linea in lineas)
         {
@@ -124,8 +127,10 @@ public class DialogoTrigger : MonoBehaviour
         }
         else
         {
+            
             cc.enabled = true;
             panel.SetActive(false);
+            cam.GetComponent<CinemachineBrain>().enabled = true;
         }
     }
     
