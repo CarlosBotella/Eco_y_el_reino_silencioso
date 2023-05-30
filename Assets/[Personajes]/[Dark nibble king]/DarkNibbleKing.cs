@@ -31,6 +31,7 @@ public class DarkNibbleKing : MonoBehaviour
      NavMeshAgent agent;
 
      private Animator animator;
+      private Animator animator2;
     
 
      void Start()
@@ -47,37 +48,32 @@ public class DarkNibbleKing : MonoBehaviour
         vidatotal= enemy.heal;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        animator.SetBool("Idle", true);
-         Debug.Log(animator.GetBool("Idle"));
+        animator2 = Eco.GetComponent<Animator>();
     }
 
     void Update()
     {
         if(Eco)
         {   
-            animator.SetBool("Idle", true);
             Alert = Physics.CheckSphere(transform.position, rango, playermask);
             if(Alert && enemy.heal>0)
             {
                 boss.SetActive(true);
                 healb.fillAmount = enemy.heal/vidatotal;
                 text.text = transform.tag;
+                animator.SetBool("Alert",true);
             }
             if(!Alert)
             {
                 boss.SetActive(false);
                 transform.position = Vector3.MoveTowards(transform.position, punto.transform.position, enemy.speed * Time.deltaTime);
+                animator.SetBool("Alert",false);
             }
-        if(Alert == true && !attack)
+        if(Alert == true && !attack && enemy.heal>0)
         {
-            animator.SetBool("Walk", true);
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
             transform.LookAt(posPlayer);
             transform.position = Vector3.MoveTowards(transform.position, posPlayer, enemy.speed * Time.deltaTime);
-        }
-        else
-        {
-            animator.SetBool("Walk", false);
         }
 
          attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z), kr, playermask);
@@ -85,7 +81,7 @@ public class DarkNibbleKing : MonoBehaviour
         {
             if (Time.time > nextTime)
             {
-
+                animator.SetTrigger("Attack");
                 StartCoroutine(Knockback());
                 player1.TakeDamage(enemy.attack);
                 StartCoroutine(Stop());
@@ -112,6 +108,7 @@ public class DarkNibbleKing : MonoBehaviour
     {
         if(Eco)
         {
+            animator2.SetTrigger("KnockBack");
              heal = 1-enemy.heal/140;
             float startTime=Time.time;
             while(Time.time < startTime+ KnockbackTime )
@@ -140,4 +137,8 @@ public class DarkNibbleKing : MonoBehaviour
      }
 
      
+        private void OnAnimatorMove() {
+        
+    }
+
 }

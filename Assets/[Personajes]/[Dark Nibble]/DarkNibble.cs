@@ -19,6 +19,8 @@ public class DarkNibble : MonoBehaviour
     public float KnockbackTime;
     public float heal;
     float speed1;
+    public bool Attack2=false;
+    private Animator animator;
 
      void Start()
     { 
@@ -28,6 +30,7 @@ public class DarkNibble : MonoBehaviour
         player  = Eco.transform;
         enemy = gameObject.GetComponent<AttributesEnemies>();
         speed1 = enemy.speed;
+        animator = Eco.GetComponent<Animator>();
     }
 
     void Update()
@@ -36,6 +39,14 @@ public class DarkNibble : MonoBehaviour
         {
 
         Alert = Physics.CheckSphere(transform.position, rango, playermask);
+        if(Alert)
+        {
+            Attack2 = true;
+        }
+        else
+        {
+            Attack2 = false;
+        }
         if(Alert == true && !attack)
         {
             Vector3 posPlayer = new Vector3(player.position.x , transform.position.y , player.position.z);
@@ -75,13 +86,15 @@ public class DarkNibble : MonoBehaviour
     {
         if(Eco)
         {
-             heal=enemy.heal/20;
+            heal=enemy.heal/20;
             float startTime=Time.time;
+            //animator.SetBool("Knockback",true);
+            animator.SetTrigger("KnockBack");
             while(Time.time < startTime+ KnockbackTime )
             {
             playerController.player.Move((player.transform.position-new Vector3(transform.position.x,player.transform.position.y-1,transform.position.z))*KnockbackForce*heal*Time.deltaTime);
             yield return null;
-        }
+            }      
         }
     }
     IEnumerator Stop()
