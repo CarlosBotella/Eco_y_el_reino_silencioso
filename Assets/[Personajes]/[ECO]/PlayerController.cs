@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private float speedr;
     private Animator animator;
     private int targetAnimationHash;
+    private float nextTime;
+    public float nextJump;
+    private float lastground;
 
     private void Start()
     {
@@ -34,6 +37,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(player.isGrounded)
+        {
+            lastground = Time.time;
+        }
         if (playerSpeed == 0 )
         {
             StartCoroutine(Stun());
@@ -48,26 +55,7 @@ public class PlayerController : MonoBehaviour
         }
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack"))
         {
-           playerSpeed=0;
-           
-        }
-
-       if (animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-        {
-             
-            float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-
-            int currentFrame = Mathf.FloorToInt(normalizedTime * animator.GetCurrentAnimatorStateInfo(0).length * animator.GetCurrentAnimatorClipInfo(0)[0].clip.frameRate);
-
-            if(currentFrame == 10)
-            {
-                player.height = 1f;
-            }
-
-            if(currentFrame == 20)
-            {
-                player.height = 2.2f;
-            }
+           playerSpeed=0;           
         }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
@@ -127,7 +115,9 @@ public class PlayerController : MonoBehaviour
 
     public void playerSkills()
     {
-        if(player.isGrounded && Input.GetButtonDown("Jump")) 
+        if(Time.time > nextTime)
+        {
+            if(player.isGrounded && Input.GetButtonDown("Jump")) 
             {  
                 if(playerInput.magnitude == 0)
                 {
@@ -140,6 +130,8 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Jump");
                 fallVelocity = jumpForce;
                 movePlayer.y = fallVelocity;
+                nextTime = Time.time + nextJump;
+            }
         }
     }
 
