@@ -9,15 +9,16 @@ public class AI : MonoBehaviour
 
     NavMeshAgent agent;
 
-    int nextPoint = 0;
-
+    int nextPoint = 0;  
+    DarkNibble darkNibble;
 
      void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        darkNibble = GetComponent<DarkNibble>();
     }
     void Update(){
-        if(!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        if(!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && !darkNibble.Attack2)
         {
             nextPoint++;
             agent.SetDestination(ruta[nextPoint % ruta.Length].position);
