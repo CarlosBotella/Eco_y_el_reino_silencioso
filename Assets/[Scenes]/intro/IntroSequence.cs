@@ -54,7 +54,7 @@ public class IntroSequence : MonoBehaviour
         yield return new WaitForSeconds(blackScreenDuration);
 
         // Cargar la siguiente escena por nombre
-        SceneManager.LoadScene("Nivel1fin");
+        SceneManager.LoadScene("Nivel1");
     }
 
     private void FadeInPanel()
