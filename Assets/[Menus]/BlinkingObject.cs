@@ -11,7 +11,7 @@ public class BlinkingObject : MonoBehaviour
     private Image objectImage;
     private bool isBlinking = false;
 
-    private void Start()
+    private void OnEnable()
     {
         objectImage = GetComponent<Image>();
 
@@ -67,4 +67,5 @@ public class BlinkingObject : MonoBehaviour
     {
         StopBlinking();
     }
+
 }
