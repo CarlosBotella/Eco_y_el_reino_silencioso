@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private float speedr;
     private Animator animator;
     private int targetAnimationHash;
+    private float nextTime;
+    public float nextJump;
+    private float lastground;
 
     private void Start()
     {
@@ -48,26 +51,15 @@ public class PlayerController : MonoBehaviour
         }
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack"))
         {
-           playerSpeed=0;
-           
+           playerSpeed=0;           
         }
-
-       if (animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-        {
-             
-            float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-
-            int currentFrame = Mathf.FloorToInt(normalizedTime * animator.GetCurrentAnimatorStateInfo(0).length * animator.GetCurrentAnimatorClipInfo(0)[0].clip.frameRate);
-
-            if(currentFrame == 10)
+         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        {   
+            if(player.isGrounded)
             {
-                player.height = 1f;
-            }
-
-            if(currentFrame == 20)
-            {
-                player.height = 2.2f;
-            }
+                lastground = Time.time;
+                nextTime = lastground + nextJump;
+            }           
         }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
@@ -127,8 +119,12 @@ public class PlayerController : MonoBehaviour
 
     public void playerSkills()
     {
-        if(player.isGrounded && Input.GetButtonDown("Jump")) 
+        if(Time.time > nextTime)
+        {
+            if(player.isGrounded && Input.GetButtonDown("Jump")) 
             {  
+                //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName)
+                animator.SetFloat("PlayerWalkVelocity",0f);
                 if(playerInput.magnitude == 0)
                 {
                 animator.SetFloat("Jumpf",0f);
@@ -140,6 +136,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Jump");
                 fallVelocity = jumpForce;
                 movePlayer.y = fallVelocity;
+            }
         }
     }
 

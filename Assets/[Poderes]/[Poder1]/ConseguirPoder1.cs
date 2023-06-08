@@ -62,4 +62,5 @@ public class ConseguirPoder1 : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

@@ -32,6 +32,7 @@ public class DarkNibbleKing : MonoBehaviour
 
      private Animator animator;
       private Animator animator2;
+    public GameObject luces;
     
 
      void Start()
@@ -50,7 +51,6 @@ public class DarkNibbleKing : MonoBehaviour
         animator = GetComponent<Animator>();
         animator2 = Eco.GetComponent<Animator>();
     }
-
     void Update()
     {
         if(Eco)
@@ -61,6 +61,7 @@ public class DarkNibbleKing : MonoBehaviour
                 boss.SetActive(true);
                 healb.fillAmount = enemy.heal/vidatotal;
                 text.text = transform.tag;
+                luces.SetActive(true);
                 animator.SetBool("Alert",true);
             }
             if(!Alert)
@@ -136,9 +137,6 @@ public class DarkNibbleKing : MonoBehaviour
         enemy.speed=speed1;
      }
 
-     
-        private void OnAnimatorMove() {
-        
-    }
+    
 
 }
