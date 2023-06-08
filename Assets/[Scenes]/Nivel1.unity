@@ -501,11 +501,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15313844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_LocalPosition: {x: -98.96056, y: -4.51, z: 43.48221}
-=======
   m_LocalPosition: {x: 130.39972, y: -7.8039064, z: -9}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1258,11 +1255,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: 16
-=======
       value: 18
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
@@ -2961,11 +2955,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: 7
-=======
       value: 6
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3552,7 +3543,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: -93.18
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
@@ -3562,7 +3552,6 @@ PrefabInstance:
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 47.43
-=======
       value: 130.4
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
@@ -3572,7 +3561,6 @@ PrefabInstance:
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -15
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7255,11 +7243,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422865644}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_LocalRotation: {x: 0.13058576, y: 0.46180144, z: -0.06895083, w: 0.8746042}
-=======
   m_LocalRotation: {x: 0.000002707637, y: 0.9929755, z: -0.118320696, w: 0.000022723134}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9107,11 +9092,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: 20
-=======
       value: 22
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
@@ -11254,11 +11236,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767464197}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_LocalRotation: {x: 0.15092544, y: 0.4600698, z: -0.07969043, w: 0.8713247}
-=======
   m_LocalRotation: {x: 0.0000032368782, y: 0.9899495, z: -0.14142135, w: 0.000022658149}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11815,11 +11794,8 @@ Transform:
   - {fileID: 1282932233}
   - {fileID: 1921143946}
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_RootOrder: 18
-=======
   m_RootOrder: 20
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &826441926 stripped
 Transform:
@@ -12835,8 +12811,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
   m_PrefabInstance: {fileID: 178414258}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
-=======
 --- !u!1 &895549945
 GameObject:
   m_ObjectHideFlags: 0
@@ -12931,7 +12905,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
 --- !u!1001 &896822417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16249,11 +16222,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: 14
-=======
       value: 13
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
@@ -18406,11 +18376,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_RootOrder: 3
-=======
   m_RootOrder: 2
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalEulerAnglesHint: {x: 117.015, y: 90, z: 90}
 --- !u!1001 &1378845935
 PrefabInstance:
@@ -19565,8 +19532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
-=======
 --- !u!1001 &1423050888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19640,7 +19605,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
 --- !u!1001 &1424341688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19877,11 +19841,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
       value: 4
-=======
       value: 3
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20305,7 +20266,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
 --- !u!224 &1501879982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20326,8 +20286,6 @@ RectTransform:
   m_AnchoredPosition: {x: 438, y: 2}
   m_SizeDelta: {x: 390.755, y: 52.071}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
 --- !u!114 &1501879983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23714,8 +23672,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
   m_PrefabInstance: {fileID: 253158270}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
-=======
 --- !u!1001 &1728959297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23789,7 +23745,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
 --- !u!4 &1730924898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
@@ -23864,11 +23819,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731359179}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_LocalRotation: {x: 0.11026356, y: 0.46327657, z: -0.058220476, w: 0.87739795}
-=======
   m_LocalRotation: {x: 0.0000021820717, y: 0.9954528, z: -0.095256105, w: 0.000022803257}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25099,22 +25051,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830172519}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_LocalRotation: {x: 0.13058576, y: 0.4618015, z: -0.06895084, w: 0.8746043}
   m_LocalPosition: {x: -98.96056, y: -4.51, z: 43.48221}
-=======
   m_LocalRotation: {x: 0.0000027071278, y: 0.9929755, z: -0.11832069, w: 0.00002271886}
   m_LocalPosition: {x: 130.39972, y: -7.8039064, z: -9}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_RootOrder: 6
-=======
   m_RootOrder: 4
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1830172523
 MonoBehaviour:
@@ -25953,8 +25899,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 352667075}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
-=======
 --- !u!1001 &1921395168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26016,7 +25960,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de283b37bdd532540a43a9dabc14ffce, type: 3}
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
 --- !u!4 &1927630196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 199f3057d04b2ea448d2a1473242401b, type: 3}
@@ -28062,11 +28005,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/[Scenes]/Nivel1.unity
   m_RootOrder: 22
-=======
   m_RootOrder: 23
->>>>>>> develop:Assets/[Scenes]/NIVEL1/Nivel1fin.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146105027
 PrefabInstance:
