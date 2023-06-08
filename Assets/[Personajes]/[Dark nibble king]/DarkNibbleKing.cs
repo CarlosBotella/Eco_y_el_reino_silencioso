@@ -137,9 +137,6 @@ public class DarkNibbleKing : MonoBehaviour
         enemy.speed=speed1;
      }
 
-     
-        private void OnAnimatorMove() {
-        
-    }
+    
 
 }
