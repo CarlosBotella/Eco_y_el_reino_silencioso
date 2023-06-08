@@ -7,7 +7,7 @@ public class AtajoPruebas : MonoBehaviour
     {
         if( Input.GetKeyDown(KeyCode.X))
         {
-            SceneManager.LoadScene("Nivel1fin");
+            SceneManager.LoadScene("Nivel1");
             Time.timeScale  =1f;
         }
         

@@ -13,12 +13,27 @@ public class ConseguirPoder1 : MonoBehaviour
     private GameObject imagen;
     public bool destruir;
 
+    public AudioClip audioClip; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor; // Nuevo objeto que reproducirá el sonido
+
     void Start()
     {
         imagen = GameObject.Find("ECO/Canvas/Poder1");
         if (objetoParaActivar != null)
         {
             objetoParaActivar.SetActive(true);
+        }
+
+        if (audioClip != null && objetoReproductor != null)
+        {
+            AudioSource audioSource = objetoReproductor.GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = objetoReproductor.AddComponent<AudioSource>();
+            }
+
+            audioSource.clip = audioClip;
+            audioSource.Play();
         }
     }
 

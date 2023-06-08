@@ -7,6 +7,10 @@ public class ActivateObject : MonoBehaviour
     public GameObject objeto2;
     public GameObject objetoActivado;
     public float fundidoDuracion = 1f;
+    public float volumenSonido = 1f;  // Nuevo campo para el volumen del sonido
+
+    public AudioClip sonidoActivacion;
+    private AudioSource audioSource;
 
     private Image[] images;
     private Color[] initialColors;
@@ -22,7 +26,6 @@ public class ActivateObject : MonoBehaviour
         {
             initialColors[i] = images[i].color;
 
-            // Si el objeto Image pertenece al objeto activado, no se aplica el fundido
             if (images[i].gameObject == objetoActivado)
             {
                 images[i].color = initialColors[i];
@@ -35,6 +38,11 @@ public class ActivateObject : MonoBehaviour
 
         tiempoInicio = Time.time;
         estaActivado = false;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.clip = sonidoActivacion;
+        audioSource.volume = volumenSonido;  // Ajustar el volumen del AudioSource
     }
 
     private void Update()
@@ -45,6 +53,11 @@ public class ActivateObject : MonoBehaviour
         {
             estaActivado = activarObjeto;
             tiempoInicio = Time.time;
+
+            if (estaActivado)
+            {
+                audioSource.Play();
+            }
         }
 
         float t = (Time.time - tiempoInicio) / fundidoDuracion;
@@ -54,7 +67,7 @@ public class ActivateObject : MonoBehaviour
         {
             if (images[i].gameObject == objetoActivado)
             {
-                continue; // Salta el objeto activado para mantenerlo sin fundido
+                continue;
             }
 
             if (estaActivado)

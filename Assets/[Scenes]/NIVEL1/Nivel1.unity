@@ -9246,9 +9246,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 6a7be825878b7d440929c77bb4f85ada, type: 2}
     - target: {fileID: 8114164517232272945, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 57de1683ae2d9ac40bf1041dbaf262ea, type: 3}
+    - target: {fileID: 8114164517232272945, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: objetoParaActivar
       value: 
       objectReference: {fileID: 810954208}
+    - target: {fileID: 8114164517232272945, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
+      propertyPath: objetoReproductor
+      value: 
+      objectReference: {fileID: 651684179}
     - target: {fileID: 9138862168867576101, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_Name
       value: Poder1U
@@ -10193,6 +10201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
+--- !u!1 &651684179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5286779099281855573, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
+  m_PrefabInstance: {fileID: 211496891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &652983388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
@@ -15548,8 +15561,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.861023, y: -0.66400146}
-  m_SizeDelta: {x: 7954.888, y: 133.254}
+  m_AnchoredPosition: {x: 6.651001, y: 4.2860107}
+  m_SizeDelta: {x: 8157.667, y: 152.766}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125200595
 MonoBehaviour:
@@ -15564,7 +15577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.055826664, a: 0}
+  m_Color: {r: 1, g: 0.23009288, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15601,7 +15614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e5ae84050ece43866e4daf6229273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blinkInterval: 0.5
+  blinkInterval: 1
   minOpacity: 0
   maxOpacity: 0.3
 --- !u!1001 &1138964196
@@ -16715,6 +16728,8 @@ MonoBehaviour:
   objeto2: {fileID: 31541551}
   objetoActivado: {fileID: 682364809}
   fundidoDuracion: 1
+  volumenSonido: 0.1
+  sonidoActivacion: {fileID: 8300000, guid: 486d8dc272880f447ad8f0100646cd97, type: 3}
 --- !u!114 &1217746676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16731,6 +16746,8 @@ MonoBehaviour:
   objeto2: {fileID: 810954208}
   objetoActivado: {fileID: 1645312171}
   fundidoDuracion: 1
+  volumenSonido: 0.1
+  sonidoActivacion: {fileID: 8300000, guid: 486d8dc272880f447ad8f0100646cd97, type: 3}
 --- !u!114 &1217746677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16932,8 +16949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.2999878, y: -3.5}
-  m_SizeDelta: {x: 1566.057, y: 160.787}
+  m_AnchoredPosition: {x: 0.9760132, y: -0.83499146}
+  m_SizeDelta: {x: 1638.124, y: 174.849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233357597
 MonoBehaviour:
@@ -16947,7 +16964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e5ae84050ece43866e4daf6229273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blinkInterval: 0.5
+  blinkInterval: 1
   minOpacity: 0
   maxOpacity: 0.3
 --- !u!114 &1233357598
@@ -16963,7 +16980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.055826664, a: 0}
+  m_Color: {r: 1, g: 0.23009288, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -29449,7 +29466,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731359179}
-  m_LocalRotation: {x: 0.124690294, y: 0.000004308033, z: -0.000000541395, w: 0.9921957}
+  m_LocalRotation: {x: 0.124690294, y: 0.0000043432283, z: -0.0000005458181, w: 0.9921957}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
