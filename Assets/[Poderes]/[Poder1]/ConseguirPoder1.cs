@@ -41,4 +41,5 @@ public class ConseguirPoder1 : MonoBehaviour
             
         }
     }
+
 }

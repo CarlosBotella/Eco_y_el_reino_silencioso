@@ -37,10 +37,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(player.isGrounded)
-        {
-            lastground = Time.time;
-        }
         if (playerSpeed == 0 )
         {
             StartCoroutine(Stun());
@@ -56,6 +52,14 @@ public class PlayerController : MonoBehaviour
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack"))
         {
            playerSpeed=0;           
+        }
+         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        {   
+            if(player.isGrounded)
+            {
+                lastground = Time.time;
+                nextTime = lastground + nextJump;
+            }           
         }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
@@ -119,6 +123,8 @@ public class PlayerController : MonoBehaviour
         {
             if(player.isGrounded && Input.GetButtonDown("Jump")) 
             {  
+                //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName)
+                animator.SetFloat("PlayerWalkVelocity",0f);
                 if(playerInput.magnitude == 0)
                 {
                 animator.SetFloat("Jumpf",0f);
@@ -130,7 +136,6 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Jump");
                 fallVelocity = jumpForce;
                 movePlayer.y = fallVelocity;
-                nextTime = Time.time + nextJump;
             }
         }
     }

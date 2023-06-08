@@ -32,10 +32,11 @@ public class AttributesEnemies : MonoBehaviour
         {
             player1.attack = 10;
             playerController.playerSpeed = 10;
-              if(IsBoss)
+            if(IsBoss)
             {
                 boss.SetActive(false);
             }
+            speed=0;
             animator.SetTrigger("Die");
             Destroy(gameObject,3f);
         }
@@ -53,6 +54,7 @@ public class AttributesEnemies : MonoBehaviour
             {
                 boss.SetActive(false);
             }
+            speed=0;
             animator.SetTrigger("Die");
             Destroy(gameObject,3f);
         }

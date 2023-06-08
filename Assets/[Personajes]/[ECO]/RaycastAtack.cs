@@ -15,6 +15,7 @@ public class RaycastAtack : MonoBehaviour
     private Animator animator;
     private PlayerController playerController;
     private float speed;
+    private CharacterController characterController;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class RaycastAtack : MonoBehaviour
         animator = GetComponent<Animator>();
         playerController = GetComponent<PlayerController>();
         speed = playerController.playerSpeed;
+        characterController = gameObject.GetComponent<CharacterController>();
 
     }
 
@@ -35,7 +37,7 @@ public class RaycastAtack : MonoBehaviour
             Debug.DrawRay(new Vector3(transform.position.x,transform.position.y+1.7f,transform.position.z), transform.TransformDirection(direction*rango));
         if(Time.time > nextTime)
         { 
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && characterController.isGrounded)
             {
             animator.SetTrigger("Attack");
             StartCoroutine(Stop(theRay));

@@ -21,6 +21,8 @@ public class DarkNibble : MonoBehaviour
     float speed1;
     public bool Attack2=false;
     private Animator animator;
+    private Animator animator2;
+
 
      void Start()
     { 
@@ -30,7 +32,8 @@ public class DarkNibble : MonoBehaviour
         player  = Eco.transform;
         enemy = gameObject.GetComponent<AttributesEnemies>();
         speed1 = enemy.speed;
-        animator = Eco.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        animator2 = Eco.GetComponent<Animator>();
     }
 
     void Update()
@@ -42,10 +45,13 @@ public class DarkNibble : MonoBehaviour
         if(Alert)
         {
             Attack2 = true;
+            animator.SetBool("Alert",true);
+            
         }
         else
         {
             Attack2 = false;
+            animator.SetBool("Alert",false);
         }
         if(Alert == true && !attack)
         {
@@ -59,7 +65,7 @@ public class DarkNibble : MonoBehaviour
         {
             if (Time.time > nextTime)
             {
-                
+                animator.SetTrigger("Attack");
                 StartCoroutine(Knockback());
                 player1.TakeDamage(enemy.attack);
                 StartCoroutine(Stop());
@@ -89,7 +95,7 @@ public class DarkNibble : MonoBehaviour
             heal=enemy.heal/20;
             float startTime=Time.time;
             //animator.SetBool("Knockback",true);
-            animator.SetTrigger("KnockBack");
+            animator2.SetTrigger("KnockBack");
             while(Time.time < startTime+ KnockbackTime )
             {
             playerController.player.Move((player.transform.position-new Vector3(transform.position.x,player.transform.position.y-1,transform.position.z))*KnockbackForce*heal*Time.deltaTime);
@@ -109,7 +115,6 @@ public class DarkNibble : MonoBehaviour
         yield return new WaitForSeconds(2);
         enemy.speed=speed1;
      }
-
 
      
 }
