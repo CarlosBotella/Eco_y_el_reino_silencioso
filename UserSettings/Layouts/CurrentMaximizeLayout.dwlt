@@ -23,6 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   controlID: 1418
 =======
@@ -36,6 +37,9 @@ MonoBehaviour:
   controlID: 58630
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  controlID: 58630
+>>>>>>> MasoMenos
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,6 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -311,6 +316,8 @@ MonoBehaviour:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -560,6 +567,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: 61.90147, y: -10.346302, z: -50.07399}
     speed: 2
@@ -581,6 +589,11 @@ MonoBehaviour:
     m_Value: {x: -40.90221, y: -4.1848307, z: 45.941017}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    m_Target: {x: -40.90221, y: -4.1848307, z: 45.941017}
+    speed: 2
+    m_Value: {x: -40.90221, y: -4.1848307, z: 45.941017}
+>>>>>>> MasoMenos
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -627,6 +640,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -644,6 +658,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
     m_Target: {x: 0.28966418, y: -0.5910965, z: 0.24016245, w: 0.7134926}
     speed: 2
     m_Value: {x: 0.28966418, y: -0.59109646, z: 0.24016245, w: 0.71349263}
@@ -652,10 +668,13 @@ MonoBehaviour:
     speed: 2
     m_Value: 22.600407
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -673,6 +692,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LastSceneViewRotation: {x: 0.46418533, y: -0.27270827, z: 0.15291445, w: 0.82886326}
 =======
@@ -686,12 +706,16 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: 0.28966418, y: -0.5910965, z: 0.24016245, w: 0.7134926}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LastSceneViewRotation: {x: 0.28966418, y: -0.5910965, z: 0.24016245, w: 0.7134926}
+>>>>>>> MasoMenos
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!114 &9
 =======
@@ -699,6 +723,8 @@ MonoBehaviour:
 <<<<<<< HEAD
 --- !u!114 &9
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!114 &3
@@ -865,10 +891,13 @@ MonoBehaviour:
   m_LastSelected: 1
 --- !u!114 &8
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -917,6 +946,7 @@ MonoBehaviour:
     m_ValueSerializationHelper:
     - e00: 0.3599937
 <<<<<<< HEAD
+<<<<<<< HEAD
       e01: 0
       e02: 0
       e03: -3.4274292
@@ -943,6 +973,8 @@ MonoBehaviour:
       e12: 0
       e13: 4.699997
 =======
+=======
+>>>>>>> MasoMenos
       e01: 0
       e02: 0
       e03: -3.4274292
@@ -950,7 +982,26 @@ MonoBehaviour:
       e11: 0.3599937
       e12: 0
       e13: 223.1961
+<<<<<<< HEAD
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -990,10 +1041,10 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &10
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1003,6 +1054,127 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+=======
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 715.2
+    y: 0
+    width: 499.99994
+    height: 454.4
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 10}
+  m_Panes:
+  - {fileID: 10}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 715.2
+    y: 73.6
+    width: 497.99994
+    height: 433.4
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1920, y: 1080}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 497.99994
+      height: 412.4
+    m_Scale: {x: 0.32421872, y: 0.32421872}
+    m_Translation: {x: 248.99997, y: 206.2}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -768
+      y: -635.9904
+      width: 1536
+      height: 1271.9808
+    m_MinimalGUI: 1
+  m_defaultScale: 0.32421872
+  m_LastWindowPixelSize: {x: 622.49994, y: 541.75}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> MasoMenos
   m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
@@ -1054,6 +1226,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LastVerticalScrollValue: 0
 =======
@@ -1067,6 +1240,9 @@ MonoBehaviour:
   m_LastVerticalScrollValue: 70.399994
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LastVerticalScrollValue: 70.399994
+>>>>>>> MasoMenos
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1165,10 +1341,13 @@ MonoBehaviour:
     m_LastClickedID: 32054
     m_ExpandedIDs: 00000000267d0000287d00002a7d00002c7d00002e7d0000307d0000327d0000347d0000367d0000387d00003a7d00003c7d0000d07f0000
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1221,6 +1400,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1233,6 +1413,8 @@ MonoBehaviour:
 <<<<<<< Updated upstream
 =======
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
     m_SelectedInstanceIDs: 66b8fbff
@@ -1264,7 +1446,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 179.6}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -1326,6 +1508,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LastSelectedObjectID: 150258
 =======
@@ -1339,3 +1522,6 @@ MonoBehaviour:
   m_LastSelectedObjectID: 1331446
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LastSelectedObjectID: 1331446
+>>>>>>> MasoMenos

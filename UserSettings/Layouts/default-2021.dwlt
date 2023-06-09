@@ -19,6 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Title: Scene
   m_RootView: {fileID: 2}
@@ -30,6 +31,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
 <<<<<<< HEAD
   m_Title: Game
   m_RootView: {fileID: 2}
@@ -38,10 +41,13 @@ MonoBehaviour:
   m_Title: Scene
   m_RootView: {fileID: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -53,14 +59,49 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: AnimatorControllerTool
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 639.2
+    y: 0
+    width: 505.60004
+    height: 516
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> develop
   m_EditorHideFlags: 1
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 3}
   - {fileID: 5}
   - {fileID: 4}
+=======
+  - {fileID: 4}
+  - {fileID: 6}
+  - {fileID: 5}
+>>>>>>> develop
   m_Position:
     serializedVersion: 2
     x: 0
@@ -73,7 +114,11 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
 --- !u!114 &3
+=======
+--- !u!114 &4
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +140,11 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 --- !u!114 &4
+=======
+--- !u!114 &5
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,7 +165,11 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!114 &5
+=======
+--- !u!114 &6
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,12 +182,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 6}
+  - {fileID: 11}
+=======
+  - {fileID: 7}
+>>>>>>> develop
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 1536
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -154,12 +213,20 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+=======
+<<<<<<< HEAD
+    height: 730.8
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+>>>>>>> MasoMenos
   controlID: 114
 --- !u!114 &6
 =======
     height: 722.8
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
+<<<<<<< HEAD
   vertical: 0
   controlID: 111
 --- !u!114 &7
@@ -182,6 +249,12 @@ MonoBehaviour:
 >>>>>>> develop
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  vertical: 0
+  controlID: 111
+--- !u!114 &7
+>>>>>>> develop
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,14 +267,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 7}
-  - {fileID: 11}
+  - {fileID: 10}
+=======
+  - {fileID: 8}
+  - {fileID: 12}
+>>>>>>> develop
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< Updated upstream
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -226,6 +305,16 @@ MonoBehaviour:
   controlID: 115
 --- !u!114 &7
 =======
+=======
+    width: 1235.2
+    height: 730.8
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 115
+--- !u!114 &7
+=======
+>>>>>>> MasoMenos
     width: 1536
     height: 722.8
   m_MinSize: {x: 400, y: 200}
@@ -235,10 +324,13 @@ MonoBehaviour:
 --- !u!114 &8
 >>>>>>> develop
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,15 +343,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 8}
   - {fileID: 9}
+=======
+  - {fileID: 9}
   - {fileID: 10}
+  - {fileID: 2}
+  - {fileID: 11}
+>>>>>>> develop
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< Updated upstream
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -305,6 +404,24 @@ MonoBehaviour:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    width: 1235.2
+    height: 457.6
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 116
+--- !u!114 &8
+=======
+    width: 1536
+    height: 516
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 32384, y: 8096}
+  vertical: 0
+  controlID: 113
+--- !u!114 &9
+>>>>>>> develop
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,6 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 204.8
     height: 486.4
@@ -339,6 +457,11 @@ MonoBehaviour:
     height: 457.6
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+    width: 244.8
+    height: 457.6
+>>>>>>> MasoMenos
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -347,6 +470,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
+=======
+    width: 204.8
+    height: 516
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,6 +496,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -376,15 +512,21 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
 >>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
+>>>>>>> MasoMenos
     x: 244.8
     y: 0
     width: 990.39996
     height: 457.6
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -395,6 +537,21 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
+=======
+    x: 204.8
+    y: 0
+    width: 434.40002
+    height: 516
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,13 +559,18 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+  m_Name: ProjectBrowser
+=======
   m_Name: InspectorWindow
+>>>>>>> develop
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -428,6 +590,9 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
 >>>>>>> MasoMenos
     x: 0
     y: 457.6
@@ -451,7 +616,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &11
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 =======
@@ -460,6 +627,11 @@ MonoBehaviour:
 --- !u!114 &12
 >>>>>>> develop
 >>>>>>> Stashed changes
+=======
+=======
+--- !u!114 &12
+>>>>>>> develop
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,11 +641,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+  m_Name: 
+=======
   m_Name: ProjectBrowser
+>>>>>>> develop
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -484,12 +661,23 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
 =======
+=======
+<<<<<<< HEAD
+    x: 1235.2
+    y: 0
+    width: 300.80005
+    height: 730.8
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+=======
+>>>>>>> MasoMenos
     x: 0
     y: 516
     width: 1536
     height: 206.79999
   m_MinSize: {x: 230, y: 271}
   m_MaxSize: {x: 10000, y: 10021}
+<<<<<<< HEAD
 >>>>>>> develop
   m_ActualView: {fileID: 18}
   m_Panes:
@@ -530,12 +718,23 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 271}
   m_MaxSize: {x: 10000, y: 10021}
   m_ActualView: {fileID: 17}
+=======
+>>>>>>> develop
+  m_ActualView: {fileID: 18}
+>>>>>>> MasoMenos
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
+=======
+  - {fileID: 20}
+  m_Selected: 0
+<<<<<<< HEAD
+  m_LastSelected: 0
+>>>>>>> MasoMenos
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -545,6 +744,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
@@ -558,6 +760,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -572,15 +775,20 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
     x: 244.8
     y: 73.6
     width: 988.39996
     height: 436.6
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -627,6 +835,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -641,21 +850,27 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       width: 988.39996
       height: 415.6
     m_Scale: {x: 0.48101854, y: 0.4810185}
     m_Translation: {x: 494.19998, y: 207.8}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -689,6 +904,15 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 1235.5, y: 545.75}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      x: -1027.4032
+      y: -432
+      width: 2054.8064
+      height: 864
+    m_MinimalGUI: 1
+  m_defaultScale: 0.4810185
+  m_LastWindowPixelSize: {x: 1235.5, y: 545.75}
+>>>>>>> MasoMenos
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -716,6 +940,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 203.8
     height: 465.4
@@ -733,12 +958,17 @@ MonoBehaviour:
     height: 436.6
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    width: 243.8
+    height: 436.6
+>>>>>>> MasoMenos
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -753,15 +983,20 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       scrollPos: {x: 0, y: 296.83768}
       m_SelectedIDs: 341e0000
       m_LastClickedID: 0
       m_ExpandedIDs: 1afbffffe0670000806b0000586c0000
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -786,6 +1021,10 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
 --- !u!114 &14
+=======
+  m_LastSelected: 2
+--- !u!114 &13
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -805,6 +1044,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -834,6 +1074,16 @@ MonoBehaviour:
     x: 204.8
     y: 73.6
 >>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
+    x: 244.8
+    y: 73.6
+    width: 988.39996
+    height: 436.6
+=======
+    x: 204.8
+    y: 73.6
+>>>>>>> MasoMenos
     width: 432.40002
     height: 495
 >>>>>>> develop
@@ -848,11 +1098,14 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
 =======
+=======
+>>>>>>> MasoMenos
 <<<<<<< HEAD
       snapOffset: {x: -100, y: -25.600006}
       snapOffsetDelta: {x: 0, y: 0}
@@ -872,9 +1125,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 149}
+      snapOffset: {x: -141, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -927,6 +1180,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
@@ -935,9 +1189,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
       snapOffset: {x: 0, y: 24.8}
+=======
+<<<<<<< HEAD
+      snapOffset: {x: 67.5, y: -124}
+>>>>>>> MasoMenos
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> MasoMenos
@@ -945,15 +1204,20 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 2
 =======
+=======
+>>>>>>> MasoMenos
       snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
 >>>>>>> develop
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       id: Orientation
       index: 0
       layout: 4
@@ -1110,6 +1374,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: 61.90147, y: -10.346302, z: -50.07399}
     speed: 2
@@ -1123,6 +1388,9 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
 >>>>>>> MasoMenos
     m_Target: {x: 959.9968, y: 145.33017, z: 0}
     speed: 2
@@ -1176,6 +1444,7 @@ MonoBehaviour:
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1198,6 +1467,9 @@ MonoBehaviour:
 <<<<<<< HEAD
     m_ShowGrid: 1
 =======
+    m_ShowGrid: 1
+=======
+<<<<<<< HEAD
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
@@ -1225,6 +1497,20 @@ MonoBehaviour:
     m_Value: 674.396
 =======
     m_ShowGrid: 0
+>>>>>>> MasoMenos
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: -0.044291448, y: -0.6447013, z: -0.037308365, w: 0.7623403}
+    speed: 2
+    m_Value: {x: -0.04314467, y: -0.6447062, z: -0.03633826, w: 0.7623463}
+  m_Size:
+<<<<<<< HEAD
+    m_Target: 674.396
+    speed: 2
+    m_Value: 674.396
+=======
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -1238,6 +1524,10 @@ MonoBehaviour:
     m_Target: 5.6041594
     speed: 2
 >>>>>>> MasoMenos
+=======
+    m_Target: 5.6041594
+    speed: 2
+>>>>>>> MasoMenos
     m_Value: 5.362832
 >>>>>>> develop
 >>>>>>> MasoMenos
@@ -1247,15 +1537,24 @@ MonoBehaviour:
     speed: 2
     m_Value: 0
   m_CameraSettings:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> MasoMenos
 <<<<<<< HEAD
     m_Speed: 0.36082
     m_SpeedNormalized: 0.17999999
 =======
+<<<<<<< HEAD
 >>>>>>> Stashed changes
     m_Speed: 0.96051997
     m_SpeedNormalized: 0.48
+=======
+    m_Speed: 0.96051997
+    m_SpeedNormalized: 0.48
+>>>>>>> develop
+>>>>>>> MasoMenos
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1266,6 +1565,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LastSceneViewRotation: {x: 0.46418533, y: -0.27270827, z: 0.15291445, w: 0.82886326}
 =======
@@ -1278,6 +1578,11 @@ MonoBehaviour:
 >>>>>>> MasoMenos
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
 =======
+=======
+<<<<<<< HEAD
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+>>>>>>> MasoMenos
   m_LastSceneViewRotation: {x: 0.28966418, y: -0.5910965, z: 0.24016245, w: 0.7134926}
 >>>>>>> develop
 >>>>>>> MasoMenos
@@ -1288,6 +1593,66 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
+--- !u!114 &15
+=======
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73.6
+    width: 203.8
+    height: 495
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 7ef5ffff
+      m_LastClickedID: -2690
+      m_ExpandedIDs: 1afbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 9}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1298,11 +1663,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
   m_Name: 
@@ -1468,6 +1836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 204.8
     y: 73.6
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 924.39996
     height: 465.4
@@ -1485,6 +1854,10 @@ MonoBehaviour:
     height: 495
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    width: 432.40002
+    height: 495
+>>>>>>> MasoMenos
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1614,10 +1987,13 @@ MonoBehaviour:
   m_RenderTexture: {fileID: 0}
 --- !u!114 &17
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1637,6 +2013,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1651,15 +2028,20 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
     x: 1144.8
     y: 73.6
     width: 390.19995
     height: 495
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1671,13 +2053,14 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 162
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1698,6 +2081,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     y: 560
     width: 1536
@@ -1718,6 +2102,15 @@ MonoBehaviour:
 =======
     y: 589.60004
     width: 1536
+=======
+<<<<<<< HEAD
+    y: 531.2
+    width: 1234.2
+    height: 252.19998
+=======
+    y: 589.60004
+    width: 1536
+>>>>>>> MasoMenos
     height: 185.79999
 >>>>>>> develop
 >>>>>>> MasoMenos
@@ -1739,6 +2132,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     - Assets/[Scenes]/NIVEL1
 =======
@@ -1749,6 +2143,11 @@ MonoBehaviour:
 <<<<<<< HEAD
     - Assets/[Dialogos]
 =======
+=======
+>>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
+    - Assets/[Dialogos]
 =======
 >>>>>>> MasoMenos
     - Assets/[Personajes]/[ECO]
@@ -1763,6 +2162,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
   - Assets/[Scenes]/NIVEL1
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/[Scenes]/NIVEL1
@@ -1805,6 +2205,23 @@ MonoBehaviour:
     m_LastClickedID: 32696
     m_ExpandedIDs: 00000000687d00006a7d00006c7d00006e7d0000707d0000727d000000ca9a3b
 =======
+=======
+  - Assets/[Dialogos]
+=======
+  - Assets/[Personajes]/[ECO]
+>>>>>>> develop
+  m_LastFoldersGridSize: 96
+  m_LastProjectPath: C:\Users\eduar\Desktop\Eco y el reino silencioso\Eco_y_el_reino_silencioso
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b87f0000
+    m_LastClickedID: 32696
+    m_ExpandedIDs: 00000000687d00006a7d00006c7d00006e7d0000707d0000727d000000ca9a3b
+=======
+>>>>>>> MasoMenos
     scrollPos: {x: 0, y: 127}
     m_SelectedIDs: dc870000
     m_LastClickedID: 34780
@@ -1827,9 +2244,12 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       m_ClientGUIView: {fileID: 11}
 =======
+=======
+>>>>>>> MasoMenos
 <<<<<<< HEAD
       m_ClientGUIView: {fileID: 10}
 =======
@@ -1848,6 +2268,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_ExpandedIDs: 00000000887e00008a7e00008c7e00008e7e0000907e0000927e0000947e0000967e0000987e00009a7e00009c7e00009e7e0000a07e0000a27e0000
 =======
@@ -1860,6 +2281,11 @@ MonoBehaviour:
 >>>>>>> MasoMenos
     m_ExpandedIDs: 00000000687d00006a7d00006c7d00006e7d0000707d0000727d0000
 =======
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 00000000687d00006a7d00006c7d00006e7d0000707d0000727d0000
+=======
+>>>>>>> MasoMenos
     m_ExpandedIDs: 00000000c2870000c4870000c6870000c8870000ca870000cc870000ce870000d0870000d2870000d4870000d6870000d8870000da870000dc870000
 >>>>>>> develop
 >>>>>>> MasoMenos
@@ -1896,6 +2322,7 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000a4920e005e7d00002c6b00003a6b0000
 =======
@@ -1905,6 +2332,10 @@ MonoBehaviour:
 >>>>>>> MasoMenos
     m_ExpandedInstanceIDs: c6230000000000007c6a0000666d0000
 =======
+=======
+    m_ExpandedInstanceIDs: c6230000000000007c6a0000666d0000
+=======
+>>>>>>> MasoMenos
     m_ExpandedInstanceIDs: c623000000000000a4920e005e7d0000
 >>>>>>> develop
 >>>>>>> MasoMenos
@@ -1924,6 +2355,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       m_ClientGUIView: {fileID: 11}
 =======
@@ -1934,15 +2366,21 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
 >>>>>>> MasoMenos
+=======
+<<<<<<< HEAD
+>>>>>>> MasoMenos
       m_ClientGUIView: {fileID: 10}
 =======
       m_ClientGUIView: {fileID: 0}
 >>>>>>> develop
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1954,7 +2392,11 @@ MonoBehaviour:
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &18
+<<<<<<< HEAD
+--- !u!114 &16
+=======
+--- !u!114 &19
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1982,11 +2424,14 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 560
     width: 1536
     height: 215.4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
     y: 518.4
@@ -2003,7 +2448,11 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &19
+<<<<<<< HEAD
+--- !u!114 &17
+=======
+--- !u!114 &20
+>>>>>>> develop
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2023,8 +2472,11 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> MasoMenos
     x: 7.2000003
     y: 516.8
     width: 1209.4
@@ -2065,19 +2517,25 @@ MonoBehaviour:
     height: 709.8
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     x: 0
     y: 574.4
     width: 1536
     height: 201
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> develop
@@ -2094,11 +2552,14 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 150258
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
   m_ObjectsLockedBeforeSerialization: []
@@ -2120,7 +2581,10 @@ MonoBehaviour:
   m_LastSelectedObjectID: 570302
 >>>>>>> develop
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos

@@ -642,6 +642,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -660,6 +661,9 @@ AnimatorStateTransition:
   m_Conditions: []
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_Conditions: []
+>>>>>>> MasoMenos
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5178945302012927189}
   m_Solo: 0

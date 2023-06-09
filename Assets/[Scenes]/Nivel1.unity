@@ -501,6 +501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15313844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalPosition: {x: 129.97395, y: -8.13, z: -19.000055}
 =======
@@ -516,6 +517,10 @@ Transform:
   m_LocalPosition: {x: 130.39972, y: -7.8039064, z: -9}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: -98.96056, y: -4.51, z: 43.48221}
+  m_LocalPosition: {x: 130.39972, y: -7.8039064, z: -9}
+>>>>>>> MasoMenos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -717,6 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -830,6 +836,8 @@ MonoBehaviour:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &34557753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
@@ -1276,6 +1284,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 39
 =======
@@ -1289,6 +1298,9 @@ Transform:
   m_RootOrder: 41
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 41
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &55955163
 PrefabInstance:
@@ -1393,6 +1405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1404,6 +1417,9 @@ PrefabInstance:
       value: 16
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 16
+>>>>>>> MasoMenos
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
@@ -1412,6 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 15.5
 =======
@@ -1425,6 +1442,9 @@ PrefabInstance:
       value: 12.5
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 12.5
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
@@ -1432,6 +1452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -70.29
 =======
@@ -1445,6 +1466,9 @@ PrefabInstance:
       value: -70.36
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -70.36
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1452,6 +1476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 51.69
 =======
@@ -1465,6 +1490,9 @@ PrefabInstance:
       value: 50.63
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 50.63
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1963,6 +1991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -2051,6 +2080,8 @@ CanvasRenderer:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &96890626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2804,6 +2835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -2834,6 +2866,8 @@ BoxCollider:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &144336607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3251,6 +3285,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3267,6 +3302,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     - target: {fileID: 1760381541687541415, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_Name
       value: Dark Nibble 1
@@ -3274,6 +3311,7 @@ PrefabInstance:
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_RootOrder
       value: 7
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3285,6 +3323,9 @@ PrefabInstance:
       value: 6
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 6
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3806,6 +3847,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7118678217624744557, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3822,6 +3864,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       propertyPath: menuPausa
       value: 
       objectReference: {fileID: 1241208299}
@@ -3841,6 +3885,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3857,6 +3902,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     - target: {fileID: 49579108021437234, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -3873,6 +3920,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3893,6 +3941,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     - target: {fileID: 2377345187369526014, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -3902,6 +3952,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3184049532227597152, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       propertyPath: nextjump
       value: 1.1
@@ -3919,6 +3970,10 @@ PrefabInstance:
       value: 0.001
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      propertyPath: nextJump
+      value: 0.001
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 3184049532227597152, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: jumpForce
@@ -3938,6 +3993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -3955,6 +4011,8 @@ PrefabInstance:
 <<<<<<< Updated upstream
 =======
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
       value: -93.18
@@ -3976,10 +4034,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -15
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 4983582622657627985, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4499,11 +4560,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!1001 &241374816
@@ -4564,10 +4628,13 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 061addefb53b12746a9c1d96bca10fc9, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &241604607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5462,6 +5529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261293243}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalPosition: {x: -70.4, y: 2.9, z: 52.9}
 =======
@@ -5475,10 +5543,14 @@ Transform:
   m_LocalPosition: {x: -70.4, y: 2.9, z: 52}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: -70.4, y: 2.9, z: 52}
+>>>>>>> MasoMenos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 40
 =======
@@ -5492,6 +5564,9 @@ Transform:
   m_RootOrder: 42
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 42
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &264539337 stripped
 Transform:
@@ -5766,6 +5841,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
   m_PrefabInstance: {fileID: 690735920}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1001 &305932364
 =======
@@ -5773,6 +5849,8 @@ Transform:
 <<<<<<< HEAD
 --- !u!1001 &305932364
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!4 &311939027 stripped
@@ -5792,14 +5870,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &321207536
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -6081,6 +6163,61 @@ PrefabInstance:
     - target: {fileID: 1134951815588960339, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
       propertyPath: m_Layer
       value: 7
+=======
+    m_TransformParent: {fileID: 391374600}
+    m_Modifications:
+    - target: {fileID: -8081348558823717844, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_RootOrder
+      value: 142
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.92949
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.63067913
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.011444
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134951815588960339, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 2598045452425437355, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
       propertyPath: m_Name
@@ -6093,6 +6230,9 @@ PrefabInstance:
     - target: {fileID: 3206673767272776935, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
       propertyPath: m_Layer
       value: 7
+<<<<<<< HEAD
+>>>>>>> MasoMenos
+=======
 >>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 4782969165219850690, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
@@ -6785,6 +6925,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 38
 =======
@@ -6798,6 +6939,9 @@ Transform:
   m_RootOrder: 40
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 40
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &383691768 stripped
 Transform:
@@ -6920,6 +7064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_AnchoredPosition: {x: 230.363, y: -2}
   m_SizeDelta: {x: 522.541, y: 51.898}
@@ -6937,6 +7082,10 @@ RectTransform:
   m_SizeDelta: {x: 170.254, y: 51.898}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_AnchoredPosition: {x: -102, y: -2}
+  m_SizeDelta: {x: 170.254, y: 51.898}
+>>>>>>> MasoMenos
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387282820
 MonoBehaviour:
@@ -6971,6 +7120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Text: Pulsa    para continuar
 =======
@@ -6984,6 +7134,9 @@ MonoBehaviour:
   m_Text: Pulse
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_Text: Pulse
+>>>>>>> MasoMenos
 --- !u!222 &387282821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7851,6 +8004,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4356e831d8d7e044f846932876f3cb0a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 10
 =======
@@ -7864,6 +8018,9 @@ PrefabInstance:
       value: 11
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 11
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4356e831d8d7e044f846932876f3cb0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7992,6 +8149,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422865644}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalRotation: {x: 0.00025682297, y: 0.99297315, z: -0.11832038, w: 0.0021553205}
 =======
@@ -8007,6 +8165,10 @@ Transform:
   m_LocalRotation: {x: 0.000002707637, y: 0.9929755, z: -0.118320696, w: 0.000022723134}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalRotation: {x: 0.13058576, y: 0.46180144, z: -0.06895083, w: 0.8746042}
+  m_LocalRotation: {x: 0.000002707637, y: 0.9929755, z: -0.118320696, w: 0.000022723134}
+>>>>>>> MasoMenos
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8377,6 +8539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 8.5
 =======
@@ -8390,6 +8553,9 @@ PrefabInstance:
       value: 7
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 7
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
@@ -8798,6 +8964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -8813,16 +8980,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 6.3329334
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalScale.y
       value: 3.8797178
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalScale.z
@@ -8834,6 +9006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -8849,16 +9022,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: -14.3
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalPosition.z
       value: -76.5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9712,6 +9890,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     - target: {fileID: 317471845793921582, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_RootOrder
@@ -9733,6 +9912,11 @@ PrefabInstance:
       value: 0
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    - target: {fileID: 33362987241023956, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_RootOrder
@@ -9740,6 +9924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -9759,6 +9944,8 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
@@ -9769,10 +9956,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9780,6 +9970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -4.89
 =======
@@ -9793,6 +9984,9 @@ PrefabInstance:
       value: -4
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -4
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 1210839658801290666, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9826,6 +10020,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -9858,6 +10053,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
     - target: {fileID: 9138862168867576101, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_Name
       value: Poder1U
@@ -9865,6 +10062,7 @@ PrefabInstance:
     - target: {fileID: 9144720397385363081, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
       propertyPath: m_Mesh
       value: 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
@@ -9884,6 +10082,11 @@ PrefabInstance:
     - {fileID: 7272246899929403132, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      objectReference: {fileID: 973877516759717424, guid: c00f1a676a4301146aa1306c071450d1, type: 3}
+    m_RemovedComponents:
+    - {fileID: 7272246899929403132, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
+>>>>>>> MasoMenos
   m_SourcePrefab: {fileID: 100100000, guid: f887475d93bfd7840b7207ec0c36ac1d, type: 3}
 --- !u!4 &539668483 stripped
 Transform:
@@ -10008,6 +10211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -10019,10 +10223,14 @@ PrefabInstance:
       value: 20
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 20
+>>>>>>> MasoMenos
       value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 3
 =======
@@ -10036,6 +10244,9 @@ PrefabInstance:
       value: 5
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 5
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
@@ -10043,6 +10254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -10058,16 +10270,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.x
       value: -93
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10075,6 +10292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 44.78
 =======
@@ -10088,6 +10306,9 @@ PrefabInstance:
       value: 47
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 47
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10874,6 +11095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -10891,6 +11113,8 @@ GameObject:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &652983388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
@@ -10983,6 +11207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657801249}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalPosition: {x: -36.83, y: 2.87, z: 37.25}
 =======
@@ -10996,10 +11221,14 @@ Transform:
   m_LocalPosition: {x: -37.44, y: 2.87, z: 39.35}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: -37.44, y: 2.87, z: 39.35}
+>>>>>>> MasoMenos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 37
 =======
@@ -11013,6 +11242,9 @@ Transform:
   m_RootOrder: 39
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 39
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &659059154
 PrefabInstance:
@@ -11611,6 +11843,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 1151875471}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -11704,6 +11937,10 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 --- !u!1001 &690735920
 PrefabInstance:
+=======
+--- !u!1001 &690735920
+PrefabInstance:
+>>>>>>> MasoMenos
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -12338,6 +12575,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767464197}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalRotation: {x: 0.0003069621, y: 0.9899472, z: -0.14142099, w: 0.002148735}
 =======
@@ -12353,6 +12591,10 @@ Transform:
   m_LocalRotation: {x: 0.0000032368782, y: 0.9899495, z: -0.14142135, w: 0.000022658149}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalRotation: {x: 0.15092544, y: 0.4600698, z: -0.07969043, w: 0.8713247}
+  m_LocalRotation: {x: 0.0000032368782, y: 0.9899495, z: -0.14142135, w: 0.000022658149}
+>>>>>>> MasoMenos
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12614,6 +12856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -12625,10 +12868,14 @@ PrefabInstance:
 =======
 --- !u!1001 &808568830
 >>>>>>> MasoMenos
+=======
+--- !u!1001 &808568830
+>>>>>>> MasoMenos
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_TransformParent: {fileID: 391374600}
@@ -12657,6 +12904,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.7071068
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
     m_TransformParent: {fileID: 0}
@@ -12727,7 +12976,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9742d19b77f00974cbd1c698c15f6a97, type: 3}
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &808825506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12758,6 +13010,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.7071068
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -12765,6 +13018,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
       propertyPath: m_LocalRotation.y
@@ -12821,6 +13076,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 773677032}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -12926,10 +13182,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
   m_PrefabInstance: {fileID: 10370935}
 =======
+=======
+>>>>>>> MasoMenos
 --- !u!4 &812546903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
   m_PrefabInstance: {fileID: 10370935}
+<<<<<<< HEAD
+>>>>>>> MasoMenos
+=======
 >>>>>>> MasoMenos
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &816459706 stripped
@@ -13023,6 +13284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -13111,6 +13373,8 @@ CanvasRenderer:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1 &824660217
 GameObject:
   m_ObjectHideFlags: 0
@@ -13151,6 +13415,7 @@ Transform:
   - {fileID: 1282932233}
   - {fileID: 1921143946}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -13162,6 +13427,9 @@ Transform:
   m_RootOrder: 18
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 18
+>>>>>>> MasoMenos
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &826441926 stripped
@@ -13387,6 +13655,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
   m_PrefabInstance: {fileID: 775355519}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -13475,6 +13744,8 @@ CanvasRenderer:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &851319398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4befc402fb8af4d43aa7462f8ce77460, type: 3}
@@ -13820,6 +14091,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 36
 =======
@@ -13833,6 +14105,9 @@ Transform:
   m_RootOrder: 38
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 38
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &876128923 stripped
 Transform:
@@ -14587,6 +14862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -14601,6 +14877,8 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!1 &906845257
@@ -14697,7 +14975,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &918153046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
@@ -14707,6 +14988,7 @@ Transform:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -14714,6 +14996,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_Modification:
     m_TransformParent: {fileID: 391374600}
     m_Modifications:
@@ -15723,6 +16007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995278269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalPosition: {x: -115, y: -6.969808, z: 47}
 =======
@@ -15736,6 +16021,9 @@ Transform:
   m_LocalPosition: {x: -125, y: -6.969808, z: 47}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: -125, y: -6.969808, z: 47}
+>>>>>>> MasoMenos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16276,6 +16564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Text: "Deber\xEDas avanzar para comprobar que es. "
 =======
@@ -16291,6 +16580,10 @@ MonoBehaviour:
     y [Barra espaciadora para saltar]. "
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_Text: " Deber\xEDas avanzar para comprobar que es.  Utiliza WASD para desplazarte
+    y [Barra espaciadora para saltar]. "
+>>>>>>> MasoMenos
 --- !u!222 &1099455151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16308,6 +16601,7 @@ RectTransform:
   m_GameObject: {fileID: 1099455149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalScale: {x: 0.48305297, y: 0.48305297, z: 0.48305297}
 =======
@@ -16321,6 +16615,9 @@ RectTransform:
   m_LocalScale: {x: 0.48305294, y: 0.48305294, z: 0.48305294}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalScale: {x: 0.48305294, y: 0.48305294, z: 0.48305294}
+>>>>>>> MasoMenos
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1617465075}
@@ -16328,6 +16625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_AnchoredPosition: {x: 0.000061035156, y: -26.251007}
 =======
@@ -16341,6 +16639,9 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000012279, y: -26.251}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_AnchoredPosition: {x: -0.000012279, y: -26.251}
+>>>>>>> MasoMenos
   m_SizeDelta: {x: 1638.5193, y: 169.1109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1103699343
@@ -16607,6 +16908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -16706,6 +17008,10 @@ MonoBehaviour:
   maxOpacity: 0.3
 --- !u!1001 &1138964196
 PrefabInstance:
+=======
+--- !u!1001 &1138964196
+PrefabInstance:
+>>>>>>> MasoMenos
 =======
 --- !u!1001 &1138964196
 PrefabInstance:
@@ -17117,6 +17423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 18.75
 =======
@@ -17130,6 +17437,9 @@ PrefabInstance:
       value: 17.99
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 17.99
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17137,6 +17447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 13.01
 =======
@@ -17150,6 +17461,9 @@ PrefabInstance:
       value: 15.01
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 15.01
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17434,6 +17748,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 41
 =======
@@ -17447,6 +17762,9 @@ Transform:
   m_RootOrder: 43
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 43
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1184984229
 PrefabInstance:
@@ -17804,6 +18122,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 1367567205}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -17901,6 +18220,8 @@ MonoBehaviour:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &1227761226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17926,6 +18247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 18
 =======
@@ -17939,6 +18261,9 @@ PrefabInstance:
       value: 17
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 17
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
@@ -17946,6 +18271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -79.28
 =======
@@ -17959,6 +18285,9 @@ PrefabInstance:
       value: -79.6
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -79.6
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17966,6 +18295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 44.78
 =======
@@ -17979,6 +18309,9 @@ PrefabInstance:
       value: 45.1
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 45.1
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18032,6 +18365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -18043,6 +18377,9 @@ PrefabInstance:
       value: 14
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 14
+>>>>>>> MasoMenos
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
@@ -18051,6 +18388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 15
 =======
@@ -18064,6 +18402,9 @@ PrefabInstance:
       value: 14
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 14
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
@@ -18071,6 +18412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -43.97
 =======
@@ -18084,6 +18426,9 @@ PrefabInstance:
       value: -43.9
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -43.9
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18091,6 +18436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 46.69
 =======
@@ -18104,6 +18450,9 @@ PrefabInstance:
       value: 46.9
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 46.9
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18135,6 +18484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -18255,6 +18605,8 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
 --- !u!224 &1241208298 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2017875232163981986, guid: 38e1d11a442441949aeb8536d88e8ec0, type: 3}
@@ -18274,10 +18626,13 @@ MonoBehaviour:
 --- !u!1001 &1241301959
 PrefabInstance:
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -18392,6 +18747,7 @@ MonoBehaviour:
   nombrePersonaje: Narrador
   OnStart: 1
   lineas:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   - "Percibes una vibraci\xF3n extra\xF1a cerca de ti."
   - "Deber\xEDas avanzar para comprobar de que se trata."
@@ -18411,6 +18767,11 @@ MonoBehaviour:
     [Barra espaciadora para saltar] "
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  - " Percibes una vibraci\xF3n extra\xF1a cerca de ti."
+  - "Deber\xEDas avanzar para comprobar que es.  Utiliza WASD para desplazarte y
+    [Barra espaciadora para saltar] "
+>>>>>>> MasoMenos
   velocidadTexto: 0.1
   acabado: 0
   tag: Player
@@ -18422,6 +18783,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242314265}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -18439,6 +18801,8 @@ Transform:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -186.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -18447,10 +18811,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1244035003 stripped
 Transform:
@@ -19157,6 +19524,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: 0.19051757
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.19051757
@@ -24178,6 +24546,43 @@ ParticleSystem:
 =======
 =======
 =======
+=======
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19051757
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 31.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134951815588960339, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598045452425437355, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Name
+      value: Pino (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598045452425437355, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206673767272776935, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782969165219850690, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+      propertyPath: m_Layer
+      value: 7
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 7032537811324817278, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
       propertyPath: m_Layer
@@ -24241,6 +24646,9 @@ PrefabInstance:
       value: -80.288
       objectReference: {fileID: 0}
     - target: {fileID: 1134951815588960339, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
+>>>>>>> MasoMenos
+=======
 >>>>>>> MasoMenos
       propertyPath: m_Layer
       value: 7
@@ -24349,10 +24757,13 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1001 &1314604800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25160,6 +25571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 27.5
 =======
@@ -25173,6 +25585,9 @@ PrefabInstance:
       value: 29.84
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 29.84
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25180,6 +25595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 22.23
 =======
@@ -25193,6 +25609,9 @@ PrefabInstance:
       value: 24.96
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 24.96
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25412,6 +25831,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -25423,6 +25843,9 @@ Transform:
   m_RootOrder: 2
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 2
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 117.015, y: 90, z: 90}
 --- !u!1001 &1378845935
 PrefabInstance:
@@ -26594,6 +27017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 33
 =======
@@ -26607,6 +27031,9 @@ PrefabInstance:
       value: 35
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 35
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
@@ -26899,6 +27326,7 @@ PrefabInstance:
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_RootOrder
       value: 4
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -26913,16 +27341,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.52
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26930,6 +27363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 22.771957
 =======
@@ -26943,6 +27377,9 @@ PrefabInstance:
       value: 25.79
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 25.79
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27146,6 +27583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -27215,6 +27653,8 @@ PrefabInstance:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1 &1467971528
 GameObject:
   m_ObjectHideFlags: 0
@@ -27423,11 +27863,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!224 &1501879982
@@ -27451,10 +27894,13 @@ RectTransform:
   m_SizeDelta: {x: 390.755, y: 52.071}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!114 &1501879983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27510,6 +27956,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 43
 =======
@@ -27523,6 +27970,9 @@ RectTransform:
   m_RootOrder: 44
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 44
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27850,6 +28300,7 @@ MonoBehaviour:
   poder: 1
   _collider: {fileID: 0}
   cc: {fileID: 1255203545}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -27863,6 +28314,8 @@ Transform:
 <<<<<<< Updated upstream
 =======
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!135 &1508114946
@@ -27879,10 +28332,13 @@ SphereCollider:
   m_Radius: 1.0084908
   m_Center: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!1 &1509297625
 GameObject:
   m_ObjectHideFlags: 3
@@ -28028,6 +28484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 6
 =======
@@ -28041,6 +28498,9 @@ PrefabInstance:
       value: 5
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 5
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 3503920843965136704, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28082,6 +28542,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -28176,6 +28637,10 @@ CanvasRenderer:
   m_SourcePrefab: {fileID: 100100000, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd8fd6df9e09ed342877973eba2bd950, type: 3}
+>>>>>>> MasoMenos
 --- !u!1001 &1520700748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29953,6 +30418,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 1251034432}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -30044,6 +30510,8 @@ RectTransform:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &1648632367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
@@ -30521,6 +30989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6502512780410745691, guid: ff71c2dfd8509f64e99ca400fdd02307, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -10.18
 =======
@@ -30534,6 +31003,9 @@ PrefabInstance:
       value: -10.22
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -10.22
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6502512780410745691, guid: ff71c2dfd8509f64e99ca400fdd02307, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31009,6 +31481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 12.534037
 =======
@@ -31022,6 +31495,9 @@ PrefabInstance:
       value: 8
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 8
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.z
@@ -31029,6 +31505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -36.54
 =======
@@ -31042,6 +31519,9 @@ PrefabInstance:
       value: -37
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: -37
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31049,6 +31529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 36.37
 =======
@@ -31062,6 +31543,9 @@ PrefabInstance:
       value: 38.12
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 38.12
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31133,6 +31617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 35
 =======
@@ -31146,6 +31631,9 @@ PrefabInstance:
       value: 37
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 37
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 6785305890499128545, guid: 0a71676022dbd9f4a89ddc741e71eb17, type: 3}
       propertyPath: m_LocalScale.x
@@ -31275,6 +31763,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731359179}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalRotation: {x: 0.00020676146, y: 0.9954505, z: -0.09525585, w: 0.0021607154}
 =======
@@ -31290,6 +31779,10 @@ Transform:
   m_LocalRotation: {x: 0.0000021820717, y: 0.9954528, z: -0.095256105, w: 0.000022803257}
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_LocalRotation: {x: 0.11026356, y: 0.46327657, z: -0.058220476, w: 0.87739795}
+  m_LocalRotation: {x: 0.0000021820717, y: 0.9954528, z: -0.095256105, w: 0.000022803257}
+>>>>>>> MasoMenos
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31754,6 +32247,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31763,6 +32257,8 @@ Transform:
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
   m_RootOrder: 36
@@ -31862,10 +32358,13 @@ Transform:
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &1804385675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8162283893398508262, guid: f9726647bb8985040b11ec1eb2aa5ba1, type: 3}
@@ -32030,6 +32529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 15
 =======
@@ -32043,6 +32543,9 @@ PrefabInstance:
       value: 9.065835
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 9.065835
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalScale.y
@@ -32050,6 +32553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -32065,16 +32569,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 3.9622216
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.96
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32082,6 +32591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -32097,16 +32607,21 @@ PrefabInstance:
 =======
 =======
 >>>>>>> MasoMenos
+=======
+>>>>>>> MasoMenos
       value: 37.17
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.97236997
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32114,6 +32629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 0.33349517
 =======
@@ -32127,6 +32643,9 @@ PrefabInstance:
       value: 0.23344536
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 0.23344536
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -32138,6 +32657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 38.962
 =======
@@ -32151,6 +32671,9 @@ PrefabInstance:
       value: 27
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+      value: 27
+>>>>>>> MasoMenos
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -32612,6 +33135,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830172519}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_LocalRotation: {x: 0.00025682306, y: 0.99297315, z: -0.11832043, w: 0.0021553205}
   m_LocalPosition: {x: 129.97395, y: -8.13, z: -19.000055}
@@ -32621,6 +33145,8 @@ Transform:
   m_LocalRotation: {x: 0.00025682306, y: 0.99297315, z: -0.11832043, w: 0.0021553205}
   m_LocalPosition: {x: 129.97395, y: -8.13, z: -19.000055}
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
   m_LocalRotation: {x: 0.13058576, y: 0.4618015, z: -0.06895084, w: 0.8746043}
@@ -32628,14 +33154,18 @@ Transform:
   m_LocalRotation: {x: 0.0000027071278, y: 0.9929755, z: -0.11832069, w: 0.00002271886}
   m_LocalPosition: {x: 130.39972, y: -7.8039064, z: -9}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 5
 =======
@@ -32651,6 +33181,10 @@ Transform:
   m_RootOrder: 4
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 6
+  m_RootOrder: 4
+>>>>>>> MasoMenos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1830172523
 MonoBehaviour:
@@ -33489,11 +34023,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 782760476492679953, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
   m_PrefabInstance: {fileID: 352667075}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!1001 &1921395168
@@ -33558,10 +34095,13 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de283b37bdd532540a43a9dabc14ffce, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
 --- !u!4 &1927630196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 199f3057d04b2ea448d2a1473242401b, type: 3}
@@ -34079,6 +34619,7 @@ RectTransform:
   - {fileID: 192637560}
   - {fileID: 615403390}
   - {fileID: 1617465075}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -34095,6 +34636,8 @@ RectTransform:
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35623,6 +36166,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -35634,6 +36178,9 @@ Transform:
   m_RootOrder: 22
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 22
+>>>>>>> MasoMenos
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146105027
@@ -35717,11 +36264,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38c29659968c0409fcb72e59d2a540, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 --- !u!1001 &8028097373483124569
@@ -35790,7 +36340,10 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f47f7f6d3ffa5f41bcb0f1413f036d5, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> MasoMenos
 =======
 >>>>>>> MasoMenos
 >>>>>>> Stashed changes
+=======
+>>>>>>> MasoMenos
