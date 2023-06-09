@@ -471,6 +471,7 @@ MonoBehaviour:
   fallVelocity: 0
   jumpForce: 6
   mainCamera: {fileID: 0}
+  nextJump: 0
 --- !u!114 &-7118678217624744557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +502,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.2
+  m_Height: 2.3
   m_Radius: 0.35
   m_SlopeLimit: 45
   m_StepOffset: 0.3
