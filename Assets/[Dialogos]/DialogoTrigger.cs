@@ -21,8 +21,11 @@ public class DialogoTrigger : MonoBehaviour
     public string tag; // para Eco --> "Capsula Eco"
     public CharacterController cc; // poner CharacterController de Eco
     private string text;
+    private Animator animator;
     void Start()
     {
+        animator = GameObject.FindWithTag("Player").GetComponent<Animator>();
+        animator.enabled = false;
         textoDialogo.text = string.Empty;
         for (int i = 0; i < lineas.Length; i++)
         {
@@ -127,7 +130,7 @@ public class DialogoTrigger : MonoBehaviour
         }
         else
         {
-            
+            animator.enabled = true;
             cc.enabled = true;
             panel.SetActive(false);
             cam.GetComponent<CinemachineBrain>().enabled = true;

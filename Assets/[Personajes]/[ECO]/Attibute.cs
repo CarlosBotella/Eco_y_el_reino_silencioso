@@ -11,6 +11,7 @@ public class Attibute : MonoBehaviour
     public GameOverScript GameOverScript;
     public GameObject PanelAjustes;
     public GameObject ConfirmarSalir;
+    private PlayerController playerController;
     private float maxheal;
     private float timedmg;
     public MenuPausa menuPausa;
@@ -22,6 +23,7 @@ public class Attibute : MonoBehaviour
     {
         maxheal = heal;
         animator = GetComponent<Animator>();
+        playerController = GetComponent<PlayerController>();
     }
     private void Update()
     {
@@ -42,6 +44,9 @@ public class Attibute : MonoBehaviour
         if (heal <= 0)
         {
             vida.fillAmount = 0;
+            playerController.playerSpeed=0;
+            playerController.jumpForce = 0;
+            playerController.jumpForce = 0;
             animator.SetTrigger("Die");
             Invoke("Die",3f);
             //Destroy(gameObject, 5f);
@@ -57,6 +62,8 @@ public class Attibute : MonoBehaviour
         if (heal <= 0)
         {
             vida.fillAmount = 0;
+            playerController.playerSpeed=0;
+            playerController.jumpForce = 0;
             animator.SetTrigger("Die");
             Invoke("Die",3f);
             //Destroy(gameObject, 5f);

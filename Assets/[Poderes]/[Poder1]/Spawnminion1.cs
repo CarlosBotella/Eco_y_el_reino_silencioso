@@ -8,10 +8,13 @@ public class Spawnminion1 : MonoBehaviour
     public GameObject minion;
     public bool c=false;
     private void OnTriggerEnter(Collider other) {
-        if(!c)
+        if(other.gameObject.CompareTag("Player"))
         {
-            Instantiate(minion,spawn.transform.position,spawn.transform.rotation);
-            c=true;
+            if(!c)
+            {
+                Instantiate(minion,spawn.transform.position,spawn.transform.rotation);
+                c=true;
+            }
         }
     }
 }

@@ -25,7 +25,8 @@ public class AudioPlayer : MonoBehaviour
                 Invoke("PlayAudio", delay);
             }
         }
-    }
+    } 
+    //
 
     private void PlayAudio()
     {
