@@ -24,9 +24,9 @@ public class DialogoTrigger1 : MonoBehaviour
     public Collider _collider;
     public CharacterController cc; // poner CharacterController de Eco
     
+
     void Start()
     {
-        
         for (int i = 0; i < lineas2.Length; i++)
         {
             if (nombrePersonaje != "Narrador")
@@ -147,13 +147,11 @@ public class DialogoTrigger1 : MonoBehaviour
         }
         else
         {
-            
+
             panel.SetActive(false);
             acabado = true;
-            
             hecho = true;
             textoDialogo.text = string.Empty;
-            Time.timeScale = 1f;
             cc.enabled = true;
             if (!(_collider.Equals(null))&& poder == true)
             {
@@ -161,7 +159,6 @@ public class DialogoTrigger1 : MonoBehaviour
                 gameObject.GetComponent<ConseguirPoder1>().prueba(_collider);
             }
             cam.GetComponent<CinemachineBrain>().enabled = true;
-            
         }
     }
    

@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Slow());
         }
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack"))
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack") || animator.GetCurrentAnimatorStateInfo(0).IsName("GetUp") || animator.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
         {
            playerSpeed=0;           
         }
@@ -121,18 +121,9 @@ public class PlayerController : MonoBehaviour
     {
         if(Time.time > nextTime)
         {
-            if(player.isGrounded && Input.GetButtonDown("Jump")) 
+            if(player.isGrounded && Input.GetButtonDown("Jump") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Punch")) 
             {  
-                //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName)
                 animator.SetFloat("PlayerWalkVelocity",0f);
-                if(playerInput.magnitude == 0)
-                {
-                animator.SetFloat("Jumpf",0f);
-                }
-                else
-                {
-                    animator.SetFloat("Jumpf",1f);
-                }
                 animator.SetTrigger("Jump");
                 fallVelocity = jumpForce;
                 movePlayer.y = fallVelocity;
