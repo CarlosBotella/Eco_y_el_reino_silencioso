@@ -45,11 +45,8 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount = 0;
             playerController.playerSpeed=0;
-<<<<<<< HEAD
             playerController.jumpForce = 0;
             playerController.jumpForce = 0;
-=======
->>>>>>> MasoMenos
             animator.SetTrigger("Die");
             Invoke("Die",3f);
             //Destroy(gameObject, 5f);
@@ -66,10 +63,7 @@ public class Attibute : MonoBehaviour
         {
             vida.fillAmount = 0;
             playerController.playerSpeed=0;
-<<<<<<< HEAD
             playerController.jumpForce = 0;
-=======
->>>>>>> MasoMenos
             animator.SetTrigger("Die");
             Invoke("Die",3f);
             //Destroy(gameObject, 5f);
