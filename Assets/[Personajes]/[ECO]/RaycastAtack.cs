@@ -39,6 +39,7 @@ public class RaycastAtack : MonoBehaviour
         { 
             if(Input.GetMouseButtonDown(0) && characterController.isGrounded)
             {
+            playerController.playerSpeed=0;
             animator.SetTrigger("Attack");
             StartCoroutine(Stop(theRay));
             nextTime = Time.time+AttackCooldown;  
@@ -48,7 +49,6 @@ public class RaycastAtack : MonoBehaviour
 
     IEnumerator Stop(Ray ray)
     {
-        playerController.playerSpeed=0;
             if(Physics.Raycast(ray, out RaycastHit hit, rango,layerMask))
             {      
                         attributesEnemies = hit.collider.gameObject.GetComponent<AttributesEnemies>();
