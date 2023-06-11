@@ -113,10 +113,13 @@ public class DarkNibble : MonoBehaviour
 
      public IEnumerator Stun()
      {
-        stars.SetActive(true);
-        yield return new WaitForSeconds(2);
-        stars.SetActive(false);
-        enemy.speed=speed1;
+        if(enemy.heal > 0)
+        {
+            stars.SetActive(true);
+            yield return new WaitForSeconds(2);
+            stars.SetActive(false);
+            enemy.speed=speed1;
+        }
      }
 
      
