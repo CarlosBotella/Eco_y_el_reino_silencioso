@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
+
 public class DialogoTrigger1 : MonoBehaviour
 {
     public Camera cam;
@@ -22,7 +23,8 @@ public class DialogoTrigger1 : MonoBehaviour
     bool hecho=false;
     public bool poder;
     public Collider _collider;
-    
+    public AudioSource audioSource;
+    private bool isPlayingAudio;
 
     void Start()
     {
@@ -71,26 +73,16 @@ public class DialogoTrigger1 : MonoBehaviour
         if(!hecho)
         {
             if (collision.gameObject.CompareTag(tagEco) && !OnStart)
-        {
+            {
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
             StartDIalogue();
-        }
+            }
         }
         
     }
-    /*private void OnTriggerExit(Collider collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Player") && !OnStart)
-        {
-            dentroDeRango = false;
-            panel.SetActive(false);
-            textoDialogo.text = string.Empty;
-        }
-        
-    }*/
+
     public void StartDIalogue()
     {
         Time.timeScale = 0f;
@@ -98,8 +90,15 @@ public class DialogoTrigger1 : MonoBehaviour
         OnStart = false;
         index = 0;
         StartCoroutine(WriteLine());
-        
-        
+        // Inicia la reproducción del sonido en bucle
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.loop = true;
+            audioSource.Play();
+            isPlayingAudio = true;
+        }
+
+
     }
 
     IEnumerator WriteLine()
@@ -151,6 +150,13 @@ public class DialogoTrigger1 : MonoBehaviour
                 gameObject.GetComponent<ConseguirPoder1>().prueba(_collider);
             }
             cam.GetComponent<CinemachineBrain>().enabled = true;
+
+            // Detiene la reproducción del sonido en bucle
+            if (isPlayingAudio && audioSource != null)
+            {
+                audioSource.Stop();
+                isPlayingAudio = false;
+            }
         }
     }
    
