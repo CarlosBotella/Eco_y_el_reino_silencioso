@@ -1,3 +1,5 @@
+<<<<<<< HEAD:Assets/[Scenes]/NIVEL1/Nivel1.unity.meta
+=======
 fileFormatVersion: 2
 guid: a08cf6b68f988a146b0853cf33148914
 NativeFormatImporter:
@@ -6,3 +8,4 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+>>>>>>> develop:Assets/[Personajes]/[ECO]/Eco 1.controller.meta
