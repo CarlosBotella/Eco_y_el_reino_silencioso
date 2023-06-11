@@ -4,6 +4,9 @@ using UnityEngine.Audio;
 public class MenuAjustes : MonoBehaviour
 {
     public AudioMixer mainMixer;
+    public AudioMixer Voces;
+    public AudioMixer Otros;
+
 
     public void SetPantallaCompleta(bool PantallaEstaCompleta)
     {
@@ -17,6 +20,8 @@ public class MenuAjustes : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        mainMixer.SetFloat("volume", volume);
+     mainMixer.SetFloat("volume", volume);
+     Voces.SetFloat("volume", volume);
+     Otros.SetFloat("volume", volume);
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
@@ -9,17 +8,20 @@ using UnityEngine.UI;
 public class DialogoTrigger : MonoBehaviour
 {
     public Camera cam;
-    public GameObject panel; // poner panel
+    public GameObject panel;
     public Text textoDialogo;
     public string nombrePersonaje;
-    public bool OnStart; 
-    [SerializeField] string[] lineas;
+    public bool OnStart;
+    public string[] lineas;
     public float velocidadTexto = 0.1f;
     private int index;
     private bool dentroDeRango;
     public bool acabado;
-    public string tagEco; // para Eco --> "Capsula Eco"
+    public string tagEco;
     private string text;
+    public AudioSource audioSource; 
+
+    private bool isPlayingAudio; 
 
     void Start()
     {
@@ -31,7 +33,7 @@ public class DialogoTrigger : MonoBehaviour
             {
                 textoDialogo.fontStyle = FontStyle.Normal;
                 string temp = lineas[i];
-                lineas[i] = "<b>"+ nombrePersonaje +": </b>" + temp;
+                lineas[i] = "<b>" + nombrePersonaje + ": </b>" + temp;
             }
             else
             {
@@ -43,14 +45,14 @@ public class DialogoTrigger : MonoBehaviour
         {
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
-            StartDIalogue();
+            StartDialogue();
         }
     }
 
-    
+
     void Update()
-    {  
-        if (Input.GetKeyDown(KeyCode.Space) && (dentroDeRango || OnStart) )
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && (dentroDeRango || OnStart))
         {
             if (textoDialogo.text == lineas[index])
             {
@@ -70,17 +72,26 @@ public class DialogoTrigger : MonoBehaviour
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
-            StartDIalogue();
+            StartDialogue();
         }
-        
+
     }
-    public void StartDIalogue()
+
+    public void StartDialogue()
     {
         cam.GetComponent<CinemachineBrain>().enabled = false;
         Time.timeScale = 0f;
         index = 0;
         StartCoroutine(WriteLine());
         acabado = true;
+
+        // Inicia la reproducción del sonido en bucle
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.loop = true;
+            audioSource.Play();
+            isPlayingAudio = true;
+        }
     }
 
     IEnumerator WriteLine()
@@ -119,8 +130,14 @@ public class DialogoTrigger : MonoBehaviour
             Time.timeScale = 1f;
             panel.SetActive(false);
             cam.GetComponent<CinemachineBrain>().enabled = true;
+
+            // Detiene la reproducción del sonido en bucle
+            if (isPlayingAudio && audioSource != null)
+            {
+                audioSource.Stop();
+                isPlayingAudio = false;
+            }
         }
     }
-    
-    
+
 }
