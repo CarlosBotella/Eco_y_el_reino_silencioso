@@ -18,15 +18,15 @@ public class DialogoTrigger1 : MonoBehaviour
     private int index;
     private bool dentroDeRango;
     public bool acabado;
-    public string tag; // para Eco --> "Capsula Eco"
+    public string tagEco; // para Eco --> "Capsula Eco"
     bool hecho=false;
     public bool poder;
     public Collider _collider;
-    public CharacterController cc; // poner CharacterController de Eco
     
 
     void Start()
     {
+        Time.timeScale = 0f;
         for (int i = 0; i < lineas2.Length; i++)
         {
             if (nombrePersonaje != "Narrador")
@@ -43,8 +43,6 @@ public class DialogoTrigger1 : MonoBehaviour
 
         if (OnStart)
         {
-            
-            cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
             StartDIalogue();
@@ -58,7 +56,6 @@ public class DialogoTrigger1 : MonoBehaviour
         {
             if (textoDialogo.text == lineas2[index])
             {
-                Debug.Log("LISTA"+gameObject.name + ": " + lineas2.Length);
                 NextLine();
             }
             else
@@ -73,9 +70,8 @@ public class DialogoTrigger1 : MonoBehaviour
         _collider = collision;
         if(!hecho)
         {
-            if (collision.gameObject.CompareTag(tag) && !OnStart)
+            if (collision.gameObject.CompareTag(tagEco) && !OnStart)
         {
-            cc.enabled = false;
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
@@ -97,13 +93,10 @@ public class DialogoTrigger1 : MonoBehaviour
     }*/
     public void StartDIalogue()
     {
+        Time.timeScale = 0f;
         cam.GetComponent<CinemachineBrain>().enabled = false;
         OnStart = false;
         index = 0;
-        foreach (var linea in lineas2)
-        {
-            Debug.Log(linea);
-        }
         StartCoroutine(WriteLine());
         
         
@@ -120,7 +113,7 @@ public class DialogoTrigger1 : MonoBehaviour
             {
                 textoDialogo.text += lineas2[index].ToCharArray()[i];
 
-                yield return new WaitForSeconds(velocidadTexto);
+                yield return new WaitForSecondsRealtime(velocidadTexto);
             }
         }
         else
@@ -131,7 +124,7 @@ public class DialogoTrigger1 : MonoBehaviour
 
                 textoDialogo.text += letra;
 
-                yield return new WaitForSeconds(velocidadTexto);
+                yield return new WaitForSecondsRealtime(velocidadTexto);
             }
             
         }
@@ -147,12 +140,11 @@ public class DialogoTrigger1 : MonoBehaviour
         }
         else
         {
-
             panel.SetActive(false);
             acabado = true;
             hecho = true;
+            Time.timeScale = 1f;
             textoDialogo.text = string.Empty;
-            cc.enabled = true;
             if (!(_collider.Equals(null))&& poder == true)
             {
                 gameObject.GetComponent<ConseguirPoder1>().destruir = true;

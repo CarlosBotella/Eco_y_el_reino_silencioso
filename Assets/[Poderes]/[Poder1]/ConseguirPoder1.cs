@@ -52,8 +52,6 @@ public class ConseguirPoder1 : MonoBehaviour
 
     public void prueba(Collider other)
     {
-        Debug.Log("TAG: " + other.gameObject.tag);
-        Debug.Log("DESTRUIR: " + destruir);
         if (other.gameObject.CompareTag("Player") && destruir)
         {
             poder1 = other.transform.gameObject.GetComponent<Poder1>();

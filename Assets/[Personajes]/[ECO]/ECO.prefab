@@ -491,6 +491,7 @@ MonoBehaviour:
   PanelAjustes: {fileID: 0}
   ConfirmarSalir: {fileID: 0}
   menuPausa: {fileID: 0}
+  Particleheal: {fileID: 1659794060486793882, guid: d841fd059e56e3e4098a4388794c9919, type: 3}
 --- !u!143 &1805941435273905784
 CharacterController:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class Attibute : MonoBehaviour
     private float timedmg;
     public MenuPausa menuPausa;
     private Animator animator;
+    private bool done=false;
+    public GameObject Particleheal;
     
 
 
@@ -31,9 +33,18 @@ public class Attibute : MonoBehaviour
         if (heal < maxheal - 30 && Time.time > timedmg + 10 && heal>0)
         {
             if (heal != maxheal - 30)
-            {
+            {   
+                if(!done)
+                {
+                    Instantiate(Particleheal,transform.position,transform.rotation);
+                    done=true;
+                }
                 heal = heal + 5 * Time.deltaTime;
             }
+        }
+        else 
+        {
+            done = false;
         }
 
 

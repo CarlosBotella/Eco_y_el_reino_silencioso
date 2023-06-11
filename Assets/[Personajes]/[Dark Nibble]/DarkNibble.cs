@@ -22,6 +22,7 @@ public class DarkNibble : MonoBehaviour
     public bool Attack2=false;
     private Animator animator;
     private Animator animator2;
+    public GameObject stars;
 
 
      void Start()
@@ -61,7 +62,7 @@ public class DarkNibble : MonoBehaviour
         }
 
          attack = Physics.CheckSphere(new Vector3(transform.position.x,transform.position.y+1,transform.position.z), 1.1f, playermask);
-        if(attack == true && enemy.speed != 0)
+        if(attack == true && enemy.speed != 0 && enemy.heal>0)
         {
             if (Time.time > nextTime)
             {
@@ -112,7 +113,9 @@ public class DarkNibble : MonoBehaviour
 
      public IEnumerator Stun()
      {
+        stars.SetActive(true);
         yield return new WaitForSeconds(2);
+        stars.SetActive(false);
         enemy.speed=speed1;
      }
 
