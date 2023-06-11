@@ -9,7 +9,6 @@ public class ScriptText : MonoBehaviour
     [SerializeField] private float duration = 3f;
 
     private string originalText;
-    private float timer = 0f;
 
     private void Start()
     {

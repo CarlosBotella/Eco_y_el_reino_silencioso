@@ -7,7 +7,6 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] private float[] delays;
 
     private AudioSource audioSource;
-    private int currentRepetition = 0;
 
     private void Start()
     {

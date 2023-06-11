@@ -52,17 +52,17 @@ public class RaycastAtack : MonoBehaviour
     {
             if(Physics.Raycast(ray, out RaycastHit hit, rango,layerMask))
             {      
-                 attributesEnemies = hit.collider.gameObject.GetComponent<AttributesEnemies>();
-                 string Dmgparticle= hit.collider.gameObject.name.ToString() + "/Dmg"; 
-                 particleSystem = GameObject.Find(Dmgparticle).GetComponent<ParticleSystem>();
-                 float totalDmg = player.attack;
-                 if(Random.Range(0f,1f)<=criticChanche)
-                 {
-                    totalDmg*=criticDmg;
-                 }
-                 yield return new WaitForSeconds(0.3f);
-                 particleSystem.Play();
-                 attributesEnemies.TakeDamage(totalDmg);
+                attributesEnemies = hit.collider.gameObject.GetComponent<AttributesEnemies>();
+                string Dmgparticle= hit.collider.gameObject.name.ToString() + "/Dmg"; 
+                particleSystem = GameObject.Find(Dmgparticle).GetComponent<ParticleSystem>();
+                float totalDmg = player.attack;
+                if(Random.Range(0f,1f)<=criticChanche)
+                {
+                   totalDmg*=criticDmg;
+                }
+                yield return new WaitForSeconds(0.3f);
+                particleSystem.Play();
+                attributesEnemies.TakeDamage(totalDmg);
             } 
         yield return new WaitForSeconds(1f);
         playerController.playerSpeed=speed;
