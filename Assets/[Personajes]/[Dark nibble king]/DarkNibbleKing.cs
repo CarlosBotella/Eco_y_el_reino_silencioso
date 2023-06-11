@@ -31,8 +31,9 @@ public class DarkNibbleKing : MonoBehaviour
      NavMeshAgent agent;
 
      private Animator animator;
-      private Animator animator2;
+    private Animator animator2;
     public GameObject luces;
+    public GameObject stars;
     
 
      void Start()
@@ -133,7 +134,9 @@ public class DarkNibbleKing : MonoBehaviour
         {
             yield return null;
         }
+        stars.SetActive(true);
         yield return new WaitForSeconds(2);
+        stars.SetActive(false);
         enemy.speed=speed1;
      }
 
