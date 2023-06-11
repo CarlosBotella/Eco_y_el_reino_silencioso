@@ -18,15 +18,13 @@ public class DialogoTrigger : MonoBehaviour
     private int index;
     private bool dentroDeRango;
     public bool acabado;
-    public string tag; // para Eco --> "Capsula Eco"
-    public CharacterController cc; // poner CharacterController de Eco
+    public string tagEco; // para Eco --> "Capsula Eco"
     private string text;
-    private Animator animator;
+
     void Start()
     {
-        animator = GameObject.FindWithTag("Player").GetComponent<Animator>();
-        animator.enabled = false;
         textoDialogo.text = string.Empty;
+        Time.timeScale = 0f;
         for (int i = 0; i < lineas.Length; i++)
         {
             if (nombrePersonaje != "Narrador")
@@ -43,10 +41,8 @@ public class DialogoTrigger : MonoBehaviour
 
         if (OnStart)
         {
-            cc.enabled = false;
             panel.SetActive(true);
             textoDialogo.text = string.Empty;
-            Debug.Log("DBG OnStart");
             StartDIalogue();
         }
     }
@@ -69,9 +65,8 @@ public class DialogoTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag(tag) && !OnStart)
+        if (collision.gameObject.CompareTag(tagEco) && !OnStart)
         {
-            cc.enabled = false;
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
@@ -82,19 +77,14 @@ public class DialogoTrigger : MonoBehaviour
     public void StartDIalogue()
     {
         cam.GetComponent<CinemachineBrain>().enabled = false;
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
         index = 0;
-        foreach (var linea in lineas)
-        {
-            Debug.Log("DBG: "+linea);
-        }
         StartCoroutine(WriteLine());
         acabado = true;
     }
 
     IEnumerator WriteLine()
     {
-        Debug.Log("DBG WriteLine");
         if (nombrePersonaje != "Narrador")
         {
             textoDialogo.text += "<b>" + nombrePersonaje + ": </b>";
@@ -103,19 +93,15 @@ public class DialogoTrigger : MonoBehaviour
             for (int i = nombrePersonaje.Length + 9; i < lineas[index].ToCharArray().Length; i++)
             {
                 textoDialogo.text += lineas[index].ToCharArray()[i];
-
-                yield return new WaitForSeconds(velocidadTexto);
+                yield return new WaitForSecondsRealtime(velocidadTexto);
             }
         }
         else
         {
-
             foreach (char letra in lineas[index].ToCharArray())
             {
-
                 textoDialogo.text += letra;
-
-                yield return new WaitForSeconds(velocidadTexto);
+                yield return new WaitForSecondsRealtime(velocidadTexto);
             }
         }
     }
@@ -130,8 +116,7 @@ public class DialogoTrigger : MonoBehaviour
         }
         else
         {
-            animator.enabled = true;
-            cc.enabled = true;
+            Time.timeScale = 1f;
             panel.SetActive(false);
             cam.GetComponent<CinemachineBrain>().enabled = true;
         }

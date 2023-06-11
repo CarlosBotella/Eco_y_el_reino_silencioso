@@ -14,6 +14,7 @@ public class Poder1 : MonoBehaviour
 
     public Image poder1;
     public Image cpoder1;
+    private new ParticleSystem particleSystem;
 
 
     private void Start() {
@@ -34,8 +35,13 @@ public class Poder1 : MonoBehaviour
                     {
                         if(hitCollider.transform.gameObject.layer == 6)
                         {
+                            Debug.Log(hitCollider.name);
+                            string stun  = hitCollider.name.ToString() + "/Stun";    
+                            Debug.Log(GameObject.Find(stun));
+                            particleSystem = GameObject.Find(stun).GetComponent<ParticleSystem>();
                             attributesEnemies = hitCollider.gameObject.GetComponent<AttributesEnemies>();
                             attributesEnemies.TakeDamage(damage);
+                            particleSystem.Play();
                             attributesEnemies.speed=0;
                         } 
                     }
