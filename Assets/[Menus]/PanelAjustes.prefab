@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_MinValue: -50
   m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: -25
+  m_Value: -20
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1790,7 +1790,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ad4089fe20c32418726cc8e73b7dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMixer: {fileID: 0}
+  MainMixer: {fileID: 0}
+  Voces: {fileID: 0}
+  Otros: {fileID: 0}
 --- !u!1 &3712904832076116348
 GameObject:
   m_ObjectHideFlags: 0
