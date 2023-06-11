@@ -13,6 +13,11 @@ TagManager:
   - Nube
   - Nyx
   - Vipernox
+  - MiniSwampit
+  - Seadraccon
+  - Swampit
+  - Stormbitz
+  - Mogou
   layers:
   - Default
   - TransparentFX
@@ -23,7 +28,7 @@ TagManager:
   - Character
   - Pared
   - Player
-  - 
+  - PostProcesing
   - 
   - 
   - 

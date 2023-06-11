@@ -18,6 +18,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 camFroward;
     private Vector3 camRight;
     private float speedr;
+    private Animator animator;
+    private int targetAnimationHash;
+    private float nextTime;
+    public float nextJump;
+    private float lastground;
 
     private void Start()
     {
@@ -27,11 +32,11 @@ public class PlayerController : MonoBehaviour
         // Bloquear el cursor al inicio
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-
         if (playerSpeed == 0 )
         {
             StartCoroutine(Stun());
@@ -44,11 +49,30 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Slow());
         }
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("KncokBack") || animator.GetCurrentAnimatorStateInfo(0).IsName("GetUp") || animator.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
+        {
+           playerSpeed=0;           
+        }
+         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        {   
+            if(player.isGrounded)
+            {
+                lastground = Time.time;
+                nextTime = lastground + nextJump;
+            }           
+        }
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
         playerInput = new Vector3(horizontalMove, 0 , verticalMove);
         playerInput = Vector3.ClampMagnitude(playerInput,1);
+
+          if(playerInput.magnitude!=0)
+          {
+            animator.SetBool("Rumba",false);
+          }
+
+        animator.SetFloat("PlayerWalkVelocity",playerInput.magnitude * playerSpeed);
 
         camDirection();
         movePlayer = playerInput.x * camRight + playerInput.z * camFroward;
@@ -58,11 +82,11 @@ public class PlayerController : MonoBehaviour
         
         setGravity();
         playerSkills();
-        
-
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            animator.SetBool("Rumba",true);
+        }
         player.Move(movePlayer * Time.deltaTime);
-        
-
     }
 
     public void camDirection()
@@ -82,20 +106,28 @@ public class PlayerController : MonoBehaviour
         {
             fallVelocity = -gravity * Time.deltaTime;
             movePlayer.y = fallVelocity;
+
         }
         else
         {
             fallVelocity -= gravity * Time.deltaTime;  
             movePlayer.y = fallVelocity;
+            animator.SetFloat("PlayerVerticalVelocity",player.velocity.y);
         }
+        animator.SetBool("IsGrounded",player.isGrounded);
     }
 
     public void playerSkills()
     {
-        if(player.isGrounded && Input.GetButtonDown("Jump")) 
+        if(Time.time > nextTime)
         {
-            fallVelocity = jumpForce;
-            movePlayer.y = fallVelocity;
+            if(player.isGrounded && Input.GetButtonDown("Jump") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Punch")) 
+            {  
+                animator.SetFloat("PlayerWalkVelocity",0f);
+                animator.SetTrigger("Jump");
+                fallVelocity = jumpForce;
+                movePlayer.y = fallVelocity;
+            }
         }
     }
 
@@ -121,6 +153,10 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         playerSpeed=speedr;
+    }
+
+    private void OnAnimatorMove() {
+        
     }
 
 }

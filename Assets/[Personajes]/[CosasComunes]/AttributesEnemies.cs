@@ -14,6 +14,7 @@ public class AttributesEnemies : MonoBehaviour
     private GameObject boss;
     public bool IsBoss;
     private GameObject mainCamera;
+    private Animator animator;
 
     void Start()
     {
@@ -23,6 +24,22 @@ public class AttributesEnemies : MonoBehaviour
          playerController = Eco.GetComponent<PlayerController>();
         player  = Eco.transform;
             boss = GameObject.Find("ECO/Canvas/Boss");
+            animator = gameObject.GetComponent<Animator>();
+    }
+    private void Update()
+    {
+         if(heal<=0)
+        {
+            player1.attack = 10;
+            playerController.playerSpeed = 10;
+            if(IsBoss)
+            {
+                boss.SetActive(false);
+            }
+            speed=0;
+            animator.SetTrigger("Die");
+            Destroy(gameObject,3f);
+        }
     }
     public void TakeDamage(float amount){
         if(textdmg){
@@ -37,7 +54,9 @@ public class AttributesEnemies : MonoBehaviour
             {
                 boss.SetActive(false);
             }
-            Destroy(gameObject,0.1f);
+            speed=0;
+            animator.SetTrigger("Die");
+            Destroy(gameObject,3f);
         }
     }
     
