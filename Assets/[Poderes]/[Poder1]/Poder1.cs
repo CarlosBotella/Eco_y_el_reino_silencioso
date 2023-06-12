@@ -14,7 +14,8 @@ public class Poder1 : MonoBehaviour
 
     public Image poder1;
     public Image cpoder1;
-    private new ParticleSystem particleSystem;
+    private  ParticleSystem aturdido;
+    public  ParticleSystem onda;
 
 
     private void Start() {
@@ -30,16 +31,17 @@ public class Poder1 : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Q))
             {
                     animator.SetTrigger("Poder1");
+                    onda.Play();
                     Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
                     foreach (var hitCollider in hitColliders)
                     {
                         if(hitCollider.transform.gameObject.layer == 6)
                         {
                             string stun  = hitCollider.name.ToString() + "/Stun";    
-                            particleSystem = GameObject.Find(stun).GetComponent<ParticleSystem>();
+                            aturdido = GameObject.Find(stun).GetComponent<ParticleSystem>();
                             attributesEnemies = hitCollider.gameObject.GetComponent<AttributesEnemies>();
                             attributesEnemies.TakeDamage(damage);
-                            particleSystem.Play();
+                            aturdido.Play();
                             attributesEnemies.speed=0;
                         } 
                     }

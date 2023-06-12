@@ -34,6 +34,11 @@ public class DarkNibbleKing : MonoBehaviour
     private Animator animator2;
     public GameObject luces;
     public GameObject stars;
+    public AudioClip musica;
+    public AudioClip musicaBoss;
+    public GameObject controlador;
+    private AudioSource audioSource;
+    private bool mboss = false;
     
 
      void Start()
@@ -51,6 +56,8 @@ public class DarkNibbleKing : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         animator2 = Eco.GetComponent<Animator>();
+        audioSource = controlador.GetComponent<AudioSource>();
+
     }
     void Update()
     {
@@ -64,12 +71,24 @@ public class DarkNibbleKing : MonoBehaviour
                 text.text = transform.tag;
                 luces.SetActive(true);
                 animator.SetBool("Alert",true);
+                if(!mboss)
+                {   
+                    audioSource.clip = musicaBoss;
+                    audioSource.Play();
+                    mboss = true;
+                }
             }
             if(!Alert)
             {
                 boss.SetActive(false);
                 transform.position = Vector3.MoveTowards(transform.position, punto.transform.position, enemy.speed * Time.deltaTime);
                 animator.SetBool("Alert",false);
+                 if(mboss)
+                {   
+                    audioSource.clip = musica;
+                    audioSource.Play();
+                    mboss = false;
+                }
             }
         if(Alert == true && !attack && enemy.heal>0)
         {
