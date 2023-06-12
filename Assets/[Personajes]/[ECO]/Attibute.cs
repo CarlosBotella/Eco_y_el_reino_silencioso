@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class Attibute : MonoBehaviour
 {
+    public HealthBar HealthBar;
     public float heal = 100;
     public float attack = 10;
-    public Image vida;
+    //public Image vida;
     public GameOverScript GameOverScript;
     public GameObject PanelAjustes;
     public GameObject ConfirmarSalir;
@@ -29,7 +30,8 @@ public class Attibute : MonoBehaviour
     }
     private void Update()
     {
-        vida.fillAmount = heal / 100;
+        HealthBar.setHealth(heal/100);
+        //vida.fillAmount = heal / 100;
         if (heal < maxheal - 30 && Time.time > timedmg + 10 && heal>0)
         {
             if (heal != maxheal - 30)
@@ -54,7 +56,8 @@ public class Attibute : MonoBehaviour
         }
         if (heal <= 0)
         {
-            vida.fillAmount = 0;
+            HealthBar.setHealth(0);
+            //vida.fillAmount = 0;
             playerController.playerSpeed=0;
             playerController.jumpForce = 0;
             playerController.jumpForce = 0;
@@ -72,7 +75,8 @@ public class Attibute : MonoBehaviour
         timedmg = Time.time;
         if (heal <= 0)
         {
-            vida.fillAmount = 0;
+            HealthBar.setHealth(0);
+            //vida.fillAmount = 0;
             playerController.playerSpeed=0;
             playerController.jumpForce = 0;
             animator.SetTrigger("Die");
