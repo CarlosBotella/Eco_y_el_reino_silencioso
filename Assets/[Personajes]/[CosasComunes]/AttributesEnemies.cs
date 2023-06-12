@@ -15,6 +15,8 @@ public class AttributesEnemies : MonoBehaviour
     public bool IsBoss;
     private GameObject mainCamera;
     private Animator animator;
+    public AudioClip audioClip2; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor2; // Nuevo objeto que reproducir� el sonido
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class AttributesEnemies : MonoBehaviour
         player  = Eco.transform;
             boss = GameObject.Find("ECO/Canvas/Boss");
             animator = gameObject.GetComponent<Animator>();
+            objetoReproductor2 = gameObject;
     }
     private void Update()
     {
@@ -45,11 +48,18 @@ public class AttributesEnemies : MonoBehaviour
         if(textdmg){
              showtextdmg(amount);
         }
-         heal-= amount;
+        heal-= amount;
          if(heal<=0)
         {
             player1.attack = 10;
             playerController.playerSpeed = 10;
+            AudioSource audioSource2 = objetoReproductor2.GetComponent<AudioSource>();
+            if (audioSource2 == null)
+            {
+                audioSource2 = objetoReproductor2.AddComponent<AudioSource>();
+            }
+            audioSource2.clip = audioClip2;
+            audioSource2.Play();
               if(IsBoss)
             {
                 boss.SetActive(false);

@@ -39,6 +39,11 @@ public class DarkNibbleKing : MonoBehaviour
     public GameObject controlador;
     private AudioSource audioSource;
     private bool mboss = false;
+
+      public AudioClip audioClip1; // Nueva variable para el AudioClip
+    public AudioClip audioClip2; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor2; // Nuevo objeto que reproducir� el sonido
+    private bool alert2 = false;
     
 
      void Start()
@@ -71,6 +76,20 @@ public class DarkNibbleKing : MonoBehaviour
                 text.text = transform.tag;
                 luces.SetActive(true);
                 animator.SetBool("Alert",true);
+
+                if (!alert2)
+                {
+                    AudioSource audioSource1 = objetoReproductor2.GetComponent<AudioSource>();
+                    if (audioSource1 == null)
+                    {
+                        audioSource1 = objetoReproductor2.AddComponent<AudioSource>();
+                    }
+
+                    audioSource1.clip = audioClip1;
+                    audioSource1.Play();
+                    alert2 = true;
+                }
+
                 if(!mboss)
                 {   
                     audioSource.clip = musicaBoss;
@@ -80,6 +99,7 @@ public class DarkNibbleKing : MonoBehaviour
             }
             if(!Alert)
             {
+                alert2 = false;
                 boss.SetActive(false);
                 transform.position = Vector3.MoveTowards(transform.position, punto.transform.position, enemy.speed * Time.deltaTime);
                 animator.SetBool("Alert",false);
@@ -103,6 +123,15 @@ public class DarkNibbleKing : MonoBehaviour
             if (Time.time > nextTime)
             {
                 animator.SetTrigger("Attack");
+
+                AudioSource audioSource2 = objetoReproductor2.GetComponent<AudioSource>();
+                if (audioSource2 == null)
+                {
+                    audioSource2 = objetoReproductor2.AddComponent<AudioSource>();
+                }
+                audioSource2.clip = audioClip2;
+                audioSource2.Play();
+
                 StartCoroutine(Knockback());
                 player1.TakeDamage(enemy.attack);
                 StartCoroutine(Stop());

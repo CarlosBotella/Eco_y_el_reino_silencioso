@@ -24,6 +24,11 @@ public class DarkNibble : MonoBehaviour
     private Animator animator2;
     public GameObject stars;
 
+    public AudioClip audioClip1; // Nueva variable para el AudioClip
+    public AudioClip audioClip2; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor2;
+    private bool alert2 = false;
+
 
      void Start()
     { 
@@ -35,6 +40,8 @@ public class DarkNibble : MonoBehaviour
         speed1 = enemy.speed;
         animator = GetComponent<Animator>();
         animator2 = Eco.GetComponent<Animator>();
+        objetoReproductor2 = gameObject;
+        
     }
 
     void Update()
@@ -47,12 +54,25 @@ public class DarkNibble : MonoBehaviour
         {
             Attack2 = true;
             animator.SetBool("Alert",true);
+
+            if (!alert2)
+            {
+                AudioSource audioSource1 = objetoReproductor2.GetComponent<AudioSource>();
+                if (audioSource1 == null)
+                {
+                    audioSource1 = objetoReproductor2.AddComponent<AudioSource>();
+                }
+                audioSource1.clip = audioClip1;
+                audioSource1.Play();
+                alert2 = true;
+            }
             
         }
         else
         {
             Attack2 = false;
             animator.SetBool("Alert",false);
+            alert2 = false;
         }
         if(Alert == true && !attack)
         {
@@ -67,6 +87,15 @@ public class DarkNibble : MonoBehaviour
             if (Time.time > nextTime)
             {
                 animator.SetTrigger("Attack");
+
+                AudioSource audioSource2 = objetoReproductor2.GetComponent<AudioSource>();
+                if (audioSource2 == null)
+                {
+                    audioSource2 = objetoReproductor2.AddComponent<AudioSource>();
+                }
+                audioSource2.clip = audioClip2;
+                audioSource2.Play();     
+
                 StartCoroutine(Knockback());
                 player1.TakeDamage(enemy.attack);
                 StartCoroutine(Stop());

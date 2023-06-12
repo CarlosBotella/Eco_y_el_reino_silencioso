@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private float nextTime;
     public float nextJump;
     private float lastground;
+     public AudioClip audioClip; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor;
 
     private void Start()
     {
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator = GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -123,6 +126,14 @@ public class PlayerController : MonoBehaviour
         {
             if(player.isGrounded && Input.GetButtonDown("Jump") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Punch")) 
             {  
+                 AudioSource audioSource = objetoReproductor.GetComponent<AudioSource>();
+                if (audioSource == null)
+                {
+                    audioSource = objetoReproductor.AddComponent<AudioSource>();
+                }
+                audioSource.clip = audioClip;
+                audioSource.Play();
+
                 animator.SetFloat("PlayerWalkVelocity",0f);
                 animator.SetTrigger("Jump");
                 fallVelocity = jumpForce;

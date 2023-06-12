@@ -19,6 +19,12 @@ public class Attibute : MonoBehaviour
     private Animator animator;
     private bool done=false;
     public GameObject Particleheal;
+
+    
+    public AudioClip audioClip1; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor1;
+    public AudioClip audioClip2; // Nueva variable para el AudioCli
+    private bool dies = false;
     
 
 
@@ -56,10 +62,21 @@ public class Attibute : MonoBehaviour
         }
         if (heal <= 0)
         {
+            AudioSource audioSource2 = objetoReproductor1.GetComponent<AudioSource>();
+            if (audioSource2 == null)
+            {
+                audioSource2 = objetoReproductor1.AddComponent<AudioSource>();
+            }
+            audioSource2.clip = audioClip1;
+            if(!dies)
+            {
+                audioSource2.Play();
+                dies = true;
+            }
+            
             HealthBar.setHealth(0);
             //vida.fillAmount = 0;
             playerController.playerSpeed=0;
-            playerController.jumpForce = 0;
             playerController.jumpForce = 0;
             animator.SetTrigger("Die");
             Invoke("Die",3f);
@@ -72,6 +89,14 @@ public class Attibute : MonoBehaviour
 
 
         heal -= amount;
+        AudioSource audioSource1 = objetoReproductor1.GetComponent<AudioSource>();
+        if (audioSource1 == null)
+        {
+            audioSource1 = objetoReproductor1.AddComponent<AudioSource>();
+        }
+        audioSource1.clip = audioClip2;
+        audioSource1.Play();
+
         timedmg = Time.time;
         if (heal <= 0)
         {

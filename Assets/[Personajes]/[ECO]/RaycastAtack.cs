@@ -18,6 +18,9 @@ public class RaycastAtack : MonoBehaviour
     private CharacterController characterController;
     private new ParticleSystem particleSystem;
 
+        public AudioClip audioClip; // Nueva variable para el AudioClip
+    public GameObject objetoReproductor;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,15 +36,27 @@ public class RaycastAtack : MonoBehaviour
     // Update is called once per frame(
     void Update()
     {
-        Vector3 direction = Vector3.forward;
+            Vector3 direction = Vector3.forward;
             Ray theRay = new Ray(new Vector3(transform.position.x,transform.position.y+1.7f,transform.position.z), transform.TransformDirection(direction*rango));
             Debug.DrawRay(new Vector3(transform.position.x,transform.position.y+1.7f,transform.position.z), transform.TransformDirection(direction*rango));
-        if(Time.time > nextTime)
-        { 
+            if(Time.time > nextTime)
+            { 
             if(Input.GetMouseButtonDown(0) && characterController.isGrounded)
             {
             playerController.playerSpeed=0;
             animator.SetTrigger("Attack");
+            
+            if (audioClip != null && objetoReproductor != null)
+            {
+                AudioSource audioSource = objetoReproductor.GetComponent<AudioSource>();
+                if (audioSource == null)
+                {
+                    audioSource = objetoReproductor.AddComponent<AudioSource>();
+                }
+                audioSource.clip = audioClip;
+                audioSource.Play();
+            }
+
             StartCoroutine(Stop(theRay));
             nextTime = Time.time+AttackCooldown;  
             } 

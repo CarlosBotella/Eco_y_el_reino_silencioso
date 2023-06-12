@@ -789,6 +789,8 @@ MonoBehaviour:
   jumpForce: 6
   mainCamera: {fileID: 0}
   nextJump: 0
+  audioClip: {fileID: 0}
+  objetoReproductor: {fileID: 0}
 --- !u!114 &-7118678217624744557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,6 +811,9 @@ MonoBehaviour:
   ConfirmarSalir: {fileID: 0}
   menuPausa: {fileID: 0}
   Particleheal: {fileID: 1659794060486793882, guid: d841fd059e56e3e4098a4388794c9919, type: 3}
+  audioClip1: {fileID: 0}
+  objetoReproductor1: {fileID: 0}
+  audioClip2: {fileID: 0}
 --- !u!143 &1805941435273905784
 CharacterController:
   m_ObjectHideFlags: 0
@@ -844,6 +849,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  audioClip: {fileID: 0}
+  objetoReproductor: {fileID: 0}
 --- !u!114 &-5518246973323569932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,6 +869,8 @@ MonoBehaviour:
   poder1: {fileID: 5626062595415324947}
   cpoder1: {fileID: 3248400783122538969}
   onda: {fileID: 4664439612047211704}
+  audioClip: {fileID: 0}
+  objetoReproductor: {fileID: 0}
 --- !u!136 &8897757030861479006
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1219,8 +1228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -6.5, y: -0.00013733}
-  m_SizeDelta: {x: 70, y: 70}
+  m_AnchoredPosition: {x: -0.31251526, y: -0.00013733}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5491490803701485338
 CanvasRenderer:

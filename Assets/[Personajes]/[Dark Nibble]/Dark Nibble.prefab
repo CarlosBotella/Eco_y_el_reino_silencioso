@@ -9747,6 +9747,9 @@ MonoBehaviour:
   heal: 0
   Attack2: 0
   stars: {fileID: 1498842348442485040}
+  audioClip1: {fileID: 8300000, guid: 8f91cc173d57e0f42a6ec5d813952cdd, type: 3}
+  audioClip2: {fileID: 8300000, guid: 3e9c66d5268ed484687278b4848f807a, type: 3}
+  objetoReproductor2: {fileID: 0}
 --- !u!114 &1430718644016342194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9764,6 +9767,8 @@ MonoBehaviour:
   speed: 9
   textdmg: {fileID: 4800495277794462709, guid: 3fb70a5014e158f43ab21fd6bc307641, type: 3}
   IsBoss: 0
+  audioClip2: {fileID: 8300000, guid: 425e811a28bfb9744b960064f6a20ac8, type: 3}
+  objetoReproductor2: {fileID: 0}
 --- !u!65 &4928587188649745529
 BoxCollider:
   m_ObjectHideFlags: 0

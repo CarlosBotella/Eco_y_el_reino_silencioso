@@ -17,6 +17,8 @@ public class Poder1 : MonoBehaviour
     private  ParticleSystem aturdido;
     public  ParticleSystem onda;
 
+    public AudioClip audioClip;
+    public GameObject objetoReproductor;
 
     private void Start() {
         cpoder1.enabled = enabled;
@@ -26,12 +28,25 @@ public class Poder1 : MonoBehaviour
     }
     void Update()
     {
-         if(Time.time > nextTime)
+        if(Time.time > nextTime)
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
                     animator.SetTrigger("Poder1");
                     onda.Play();
+
+                    if (audioClip != null && objetoReproductor != null)
+                    {
+                    AudioSource audioSource = objetoReproductor.GetComponent<AudioSource>();
+                    if (audioSource == null)
+                    {
+                        audioSource = objetoReproductor.AddComponent<AudioSource>();
+                    }
+
+                    audioSource.clip = audioClip;
+                    audioSource.Play();
+                    }
+                    
                     Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
                     foreach (var hitCollider in hitColliders)
                     {
@@ -45,8 +60,8 @@ public class Poder1 : MonoBehaviour
                             attributesEnemies.speed=0;
                         } 
                     }
-                nextTime = Time.time+poder1Cooldown;
-                poder1.fillAmount= 0;
+                    nextTime = Time.time+poder1Cooldown;
+                    poder1.fillAmount= 0;
             }
         }
         else
@@ -57,7 +72,6 @@ public class Poder1 : MonoBehaviour
                 poder1.fillAmount = 1;
             }
         }
-       
-    }
 
+}
 }
