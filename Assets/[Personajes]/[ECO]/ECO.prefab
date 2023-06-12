@@ -861,6 +861,7 @@ MonoBehaviour:
   damage: 5
   poder1: {fileID: 5626062595415324947}
   cpoder1: {fileID: 3248400783122538969}
+  onda: {fileID: 4664439612047211704}
 --- !u!136 &8897757030861479006
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2032,6 +2033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2882659ddb8ab994b9f47e4cbd40c05d, type: 3}
+--- !u!198 &4664439612047211704 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198798914852134490, guid: 2882659ddb8ab994b9f47e4cbd40c05d, type: 3}
+  m_PrefabInstance: {fileID: 4789909785471034082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4785285204323972032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945707815571746, guid: 2882659ddb8ab994b9f47e4cbd40c05d, type: 3}
