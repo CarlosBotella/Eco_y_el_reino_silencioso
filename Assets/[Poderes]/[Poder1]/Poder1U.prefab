@@ -4828,6 +4828,7 @@ GameObject:
   - component: {fileID: 7272246899929403132}
   - component: {fileID: 5538786587536826262}
   - component: {fileID: -4802880972316971972}
+  - component: {fileID: -4893261315806084409}
   m_Layer: 0
   m_Name: Poder1U
   m_TagString: Untagged
@@ -4926,7 +4927,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62e93a3dec68e94ca8340302770d404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetoParaActivar: {fileID: 0}
   destruir: 0
+  audioClip: {fileID: 0}
+  objetoReproductor: {fileID: 0}
 --- !u!54 &7272246899929403132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4976,3 +4980,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4893261315806084409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9138862168867576101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7096b332132d44a9fe9ab6d5e5f6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Voces: {fileID: 24100000, guid: ce3d295dc899b8f4d9dbbe36c4da72c8, type: 2}
+  Otros: {fileID: 24100000, guid: 36d2d28c73b23414f909c3b14aa24ce8, type: 2}

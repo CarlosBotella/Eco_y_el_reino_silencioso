@@ -6,23 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/[Menus]/MainMenu.unity
+    path: Assets/[Scenes]/MainMenu.unity
     guid: 7dba8e4895dce644883fcd9dc2baaae0
-  - enabled: 1
-    path: Assets/[Scenes]/NIVEL1/Zarzitaaas.unity
-    guid: f1f8d2e0cbc24c14bb9a2137630f383f
-  - enabled: 0
-    path: Assets/[TestScenes]/PurebaTodo.unity
-    guid: 0a385dc2d5b903d46b4fbf1285b4831f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 195e5d3411187b548a5a3c5c49aec215
-  - enabled: 0
-    path: Assets/[TestScenes]/PlantillaNivel.unity
-    guid: dc027f9964207694c9e494c92d83b950
   - enabled: 1
     path: Assets/[Scenes]/intro.unity
     guid: ddfad8ec735f84545962514610805e02
