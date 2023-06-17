@@ -7,7 +7,6 @@ public class GameOverScript : MonoBehaviour
 {
     public void Setup()
     {
-        print("MUELTO");
         gameObject.SetActive(true);
 
         Cursor.visible = true;

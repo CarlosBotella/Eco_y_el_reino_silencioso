@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ using UnityEngine.UI;
 
 public class DialogoTrigger1 : MonoBehaviour
 {
+    public bool destruir;
     public Camera cam;
     public GameObject panel; // poner panel
     public Text textoDialogo;
@@ -146,8 +148,13 @@ public class DialogoTrigger1 : MonoBehaviour
             textoDialogo.text = string.Empty;
             if (!(_collider.Equals(null))&& poder == true)
             {
-                gameObject.GetComponent<ConseguirPoder1>().destruir = true;
-                gameObject.GetComponent<ConseguirPoder1>().prueba(_collider);
+                if (gameObject.GetComponent<ConseguirPoder1>() != null)
+                {
+                    gameObject.GetComponent<ConseguirPoder1>().destruir = true;
+                    gameObject.GetComponent<ConseguirPoder1>().prueba(_collider);
+                }
+
+                
             }
             cam.GetComponent<CinemachineBrain>().enabled = true;
 
@@ -156,6 +163,11 @@ public class DialogoTrigger1 : MonoBehaviour
             {
                 audioSource.Stop();
                 isPlayingAudio = false;
+            }
+
+            if (destruir)
+            {
+                Destroy(gameObject);
             }
         }
     }

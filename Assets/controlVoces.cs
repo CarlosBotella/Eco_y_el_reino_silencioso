@@ -1,36 +1,28 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudiosPoder : MonoBehaviour
+
+public class controlVoces : MonoBehaviour
 {
-    
-    public AudioMixer Otros;
-    public AudioMixer MainMixer;
-    public float volumen;
-  //  public GameObject vocesControl;
-    public GameObject poder;
-    public BoxCollider box;
-    public bool result = false;
-    // Start is called before the first frame update
     public AudioMixer Voces;
+    public GameObject poder;
     void Start()
     {
         Voces.SetFloat("volume", -80f);
-        Voces.GetFloat("volume", out volumen);
-        Debug.Log(volumen);
     }
 
     void Update()
     {   
         if(poder == null)
         {
-            box.enabled = true;
+            vocesControl.SetActive(true);
         }
         if(result)
         {
-            Voces.SetFloat("volume",volumen+10);
+            Voces.SetFloat("volume",volumen+20);
         }
         else
         {
@@ -38,7 +30,7 @@ public class AudiosPoder : MonoBehaviour
         }
     }
     // Update is called once per frame
-    private void OnTriggerEnter(Collider other) {
+    /*private void OnTriggerEnter(Collider other) {
         
       if(other.gameObject.CompareTag("Player"))
       {
@@ -49,5 +41,6 @@ public class AudiosPoder : MonoBehaviour
              
            }
       }
-  }
+  }#1#
 }
+*/
