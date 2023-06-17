@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Spawnminion1 : MonoBehaviour
 {
-    public Transform spawn;
+    public Transform spawnMinion;
     public GameObject minion;
+    public GameObject molio;
     public bool c=false;
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Player"))
         {
             if(!c)
             {
-                Instantiate(minion,spawn.transform.position,spawn.transform.rotation);
+                molio.SetActive(true);
+                Instantiate(minion,spawnMinion.transform.position,spawnMinion.transform.rotation);
                 c=true;
             }
         }
