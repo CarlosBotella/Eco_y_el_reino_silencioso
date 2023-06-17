@@ -97,7 +97,7 @@ public class DialogoTrigger1 : MonoBehaviour
         // Inicia la reproducción del sonido en bucle
         if (audioSource != null && audioSource.clip != null)
         {
-            audioSource.loop = true;
+            audioSource.loop = false;
             audioSource.Play();
             isPlayingAudio = true;
         }
