@@ -21,7 +21,7 @@ public class MenuAjustes : MonoBehaviour
     public void SetVolume(float volume)
     {
      mainMixer.SetFloat("volume", volume);
-     Voces.SetFloat("volume", volume);
+     Voces.SetFloat("volume", volume+10);
      Otros.SetFloat("volume", volume);
     }
 }
