@@ -16,6 +16,7 @@ public class GameOverScript : MonoBehaviour
     public void Salir()
     {
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     public void Continuar()
@@ -24,4 +25,5 @@ public class GameOverScript : MonoBehaviour
         SceneManager.LoadScene(scene.name);
         print(scene.name);
     }
+    
 }
