@@ -2,21 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8abb71f-9a86-4aca-96e7-44a46e26c915" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/flecha-correcta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/flecha-correcta.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/girar-a-la-izquierda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/girar-a-la-izquierda.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/[Personajes]/[MOLIO]/Molio_hablar1_definitivo.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/[Personajes]/[MOLIO]/Molio_hablar2_definitivo.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/MuteAudioOnActivate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/MuteAudioOnActivate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/ObjectDeactivationAudio.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eco_y_el_reino_silencioso/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/SeaPattern.TGA" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SeaPattern.TGA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/GameOverScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/GameOverScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Green.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Green.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Grey.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Grey.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Orange.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Orange.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Sand.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/BrokenVector/LowPolyRockPack/Materials/Sand.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/NaturePack/Resources/Materials/23 - Default.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/NaturePack/Resources/Materials/23 - Default.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/ECO.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/ECO.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/FBX/Jog Forward (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/FBX/Jog Forward (2).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/[Dialogos]/DialogoTrigger1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Dialogos]/DialogoTrigger1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/GameOver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/GameOver.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/MenuAjustes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/MenuAjustes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/PanelAjustes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/PanelAjustes.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/Pause.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/[Menus]/Scripts/Pause.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Packages]/Travis Game Assets/Status Effects/Pipeline Upgrade/Status Effects FREE - URP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/FootstepMaster_Events.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/WalkingSound.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/grassStepR.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/pasos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/pasos.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/AudiosPoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Poderes]/[Poder1]/AudiosPoder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Scenes]/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/Audio/getPoder.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Scenes]/NIVEL1/Audio/getPoder.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Scenes]/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Scenes]/Nivel1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +36,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/FootstepMaster_Events.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Personajes]/[ECO]/Sonidos Eco/pasos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/controlVoces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
@@ -107,7 +117,7 @@
       <workItem from="1684159743100" duration="7459000" />
       <workItem from="1684851083197" duration="6705000" />
       <workItem from="1687010649032" duration="9889000" />
-      <workItem from="1687080177440" duration="3224000" />
+      <workItem from="1687080177440" duration="4565000" />
     </task>
     <servers />
   </component>

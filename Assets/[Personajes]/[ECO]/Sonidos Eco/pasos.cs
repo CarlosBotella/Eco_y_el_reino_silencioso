@@ -18,10 +18,10 @@ public class pasos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (var item in SonidosAndar)
+        /*foreach (var item in SonidosAndar)
         {
             Debug.Log(item.name);
-        }
+        }*/
     }
 
     public void FootstepLeft() {

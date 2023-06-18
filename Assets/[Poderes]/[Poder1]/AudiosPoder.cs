@@ -30,8 +30,7 @@ public class AudiosPoder : MonoBehaviour
         }
         if(result)
         {
-            Voces.SetFloat("volume",volumen+20);
-            
+            Voces.SetFloat("volume",volumen+10);
         }
         else
         {

@@ -6,6 +6,7 @@ public class MenuAjustes : MonoBehaviour
     public AudioMixer mainMixer;
     public AudioMixer Voces;
     public AudioMixer Otros;
+    public AudioMixer Pasos;
 
 
     public void SetPantallaCompleta(bool PantallaEstaCompleta)
@@ -21,7 +22,8 @@ public class MenuAjustes : MonoBehaviour
     public void SetVolume(float volume)
     {
      mainMixer.SetFloat("volume", volume);
-     Voces.SetFloat("volume", volume);
+     Voces.SetFloat("volume", volume+10);
      Otros.SetFloat("volume", volume);
+     Pasos.SetFloat("volume", volume+10);
     }
 }

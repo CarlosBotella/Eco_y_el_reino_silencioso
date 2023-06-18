@@ -69,20 +69,22 @@ public class DialogoTrigger1 : MonoBehaviour
         }
     }
 
+    private bool unDialogo = false; 
+
     private void OnTriggerEnter(Collider collision)
     {
         _collider = collision;
         if(!hecho)
         {
-            if (collision.gameObject.CompareTag(tagEco) && !OnStart)
+            if (collision.gameObject.CompareTag(tagEco) && !unDialogo && !OnStart)
             {
+            unDialogo = true;
             panel.SetActive(true);
             dentroDeRango = true;
             textoDialogo.text = string.Empty;
             StartDIalogue();
             }
         }
-        
     }
 
     public void StartDIalogue()
@@ -95,7 +97,7 @@ public class DialogoTrigger1 : MonoBehaviour
         // Inicia la reproducción del sonido en bucle
         if (audioSource != null && audioSource.clip != null)
         {
-            audioSource.loop = true;
+            audioSource.loop = false;
             audioSource.Play();
             isPlayingAudio = true;
         }
