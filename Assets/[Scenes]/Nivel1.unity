@@ -2339,7 +2339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4910625813227672810, guid: 15a4a7057a97f7847a5b82b7fcf1e6d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -26
+      value: -26.000061
       objectReference: {fileID: 0}
     - target: {fileID: 4910625813227672810, guid: 15a4a7057a97f7847a5b82b7fcf1e6d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4467,6 +4467,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7583923245543680492, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 36d2d28c73b23414f909c3b14aa24ce8, type: 2}
     - target: {fileID: 7925018213676639958, guid: 2fb6b291fe2289548a111dc0b191104c, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -8611,7 +8615,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422865644}
-  m_LocalRotation: {x: 0.07290482, y: -0.83899474, z: 0.11615997, w: 0.5265734}
+  m_LocalRotation: {x: 0.07290482, y: -0.83899474, z: 0.11615996, w: 0.5265735}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27119,7 +27123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3712904832031843985, guid: ad730e7eba59bba4c875a1e882ee8243, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33
+      value: -33.00006
       objectReference: {fileID: 0}
     - target: {fileID: 3712904832031843985, guid: ad730e7eba59bba4c875a1e882ee8243, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
